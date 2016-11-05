@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+{% assign onepageCollection = page.collection | default: site.onepage-default-collection %}
+{% assign blocks = site[onepageCollection] | sort:"order", "last" %}
+{% for block in blocks %}
+    {{ block.output }}
+{% endfor %}

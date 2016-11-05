@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body data-spy="scroll" data-target="#header">
+
+    {% include header.html %}
+
+    <main id="main" class="layout-{{ page.layout }}">
+        {{ content }}
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

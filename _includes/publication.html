@@ -1,0 +1,56 @@
+<div class="publication clearfix {% if page.tidy %}tidy{% endif %} {% if publication.class %}{{ publication.class }}{% endif %} {% if publication.highlight %}pub-highlight{% endif %}">
+  <div class="icon color-emph">
+    {% if publication.type == "conf" or publication.type == "conference" or publication.type == "inproceedings" or publication.type == "proceedings" %}
+      <i class="fa fa-building-o" data-toggle="tooltip" title="Conference"></i>
+    {% elsif publication.type == "workshop" %}
+      <i class="fa fa-users" data-toggle="tooltip" title="Workshop"></i>
+    {% elsif publication.type == "book" %}
+      <i class="fa fa-book" data-toggle="tooltip" title="Book"></i>
+    {% elsif publication.type == "bookchapter" or publication.type == "inbook" or publication.type == "incollection" %}
+      <i class="fa fa-book" data-toggle="tooltip" title="Book chapter"></i>
+    {% elsif publication.type == "journal" %}
+      <i class="fa fa-newspaper-o" data-toggle="tooltip" title="Journal"></i>
+    {% else %}
+      <i class="fa fa-file-text-o" data-toggle="tooltip" title="{{ publication.type }}"></i>
+    {% endif %}
+  </div>
+  {% if publication.image %}
+    <div class="pub-image"><img src="{% include url.html url=publication.image %}" alt=""></div>
+  {% endif %}
+  <div class="pub-content">
+    <h4 class="pub-title">{{ publication.title }}</h4>
+    {% if publication.full-raw-desc %}
+      <p class="pub-authors">{{ publication.full-raw-desc }}</p>
+    {% else %}
+      <p class="pub-authors">{{ publication.authors }}</p>
+      <p class="pub-in"><span class="color-emph-light">{%
+        if publication.raw-desc
+          %}{{ publication.raw-desc }}{%
+        else
+          %}{{ publication.in }} ({{ publication.year }}){% endif %}</span> {% if publication.additional %}<span class="small">{{ publication.additional }}</span>{%
+        endif %}
+      </p>
+    {% endif %}
+    {% if publication.urls or publication.url or publication.bibtex %}
+      <p class="pub-urls">
+      {% if publication.urls %}
+        {% for url in publication.urls %}
+          <a class="btn btn-{{ url.style | default: "primary" }} {% if page.tidy %}btn-xs{% endif %}" href="{% include url.html url=url.url %}">{{ url.title }}</a>
+        {% endfor %}
+      {% elsif publication.url %}
+        <a class="btn btn-primary {% if page.tidy %}btn-xs{% endif %}" href="{% include url.html url=publication.url %}">Paper</a>
+      {% endif %}
+      {% if publication.bibtex %}
+      <button class="btn btn-info bibtex-link {% if page.tidy %}btn-xs{% endif %}" type="button" data-toggle="collapse" data-target="#{{ publication.title | slugify }}-bibtex" aria-expanded="false">BibTex</button>
+      {% endif %}
+      </p>
+    {% endif %}
+    {% if publication.bibtex %}
+    <div class="bibtex-data collapse" id="{{ publication.title | slugify }}-bibtex">
+      <div class="well">
+        {{ publication.bibtex | newline_to_br }}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</div>

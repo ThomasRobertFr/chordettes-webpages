@@ -1,0 +1,57 @@
+---
+# This fontmatter is necessary for this file to be compiled to CSS
+---
+
+$font-size-base: 16px;
+
+$font-family-sans-serif:  "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif:       "Philosopher", Georgia, "Times New Roman", Times, serif;
+//$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+$headings-font-family:    $font-family-serif;
+$headings-font-weight:    400;
+
+$btn-default-bg:        #efefef; // because we remove borders
+
+$color-1:               #2b5b95;
+$color-1-light:         lighten($color-1, 30%);
+$color-1-lighter:       desaturate(lighten($color-1, 53%), 20%);
+$color-1-dark:          desaturate(darken($color-1, 10%), 20%);
+$color-2:               #2288b1;
+$color-2-light:         lighten($color-2, 30%);
+$color-2-lighter:       desaturate(lighten($color-2, 53%), 20%);
+$color-2-dark:          desaturate(darken($color-2, 10%), 20%);
+$color-3:               #46abb8;
+$color-3-light:         lighten($color-3, 28%);
+$color-3-lighter:       desaturate(lighten($color-3, 43%), 20%);
+$color-3-dark:          desaturate(darken($color-3, 10%), 20%);
+$color-4:               #4fbba2;
+$color-4-light:         lighten($color-4, 25%);
+$color-4-lighter:       desaturate(lighten($color-4, 40%), 20%);
+$color-4-dark:          desaturate(darken($color-4, 10%), 20%);
+$color-5:               #4f9827;
+$color-5-light:         lighten($color-5, 37%);
+$color-5-lighter:       desaturate(lighten($color-5, 57%), 20%);
+$color-5-dark:          desaturate(darken($color-5, 10%), 20%);
+
+$link-color:            $color-2;
+$link-hover-color:      darken($link-color, 8%);
+$link-hover-decoration: none;
+
+$transition-time:       0.3s;
+
+@import url('https://fonts.googleapis.com/css?family=Philosopher:400,700');
+
+@import
+  // fonts
+  "font-muli",
+  "font-awesome.min",
+  // libs
+  "bootstrap/bootstrap",
+  "syntax-highlighting",
+  // template
+  "layout",
+  "styles",
+  "header",
+  "onepage",
+  "publis-projects"
+;

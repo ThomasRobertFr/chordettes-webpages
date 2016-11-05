@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<article>
+    <header class="post-header {{ page.header-style | default: site.header-default-style }}">
+        <div class="background" {% if page.header-style contains "cover-image" %}style="background-image: url('{% include url.html url=page.header-image %}')"{% endif %}></div>
+        <div class="container-fluid">
+            <h1 class="post-title">{{ page.title | escape }}</h1>
+            <div class="post-intro color-emph-light">
+                {{ page.intro }}
+            </div>
+        </div>
+    </header>
+
+    <div class="post-content">
+        <div class="container-fluid">
+            {{ content }}
+            {% if page.show-children %}
+            {% assign pages = site.pages | where: "parent", page.name | sort: "order", "last" %}
+            <h3>Pages in this section:</h3>
+            <ul>
+                {% for page in pages %}
+                <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+    </div>
+</article>

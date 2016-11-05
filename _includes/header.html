@@ -1,0 +1,46 @@
+<nav id="header" class="navbar navbar-fixed-side navbar-inverse navbar-fixed-top">
+  <div class="container">
+    {% if site.back-link %}
+      <div class="back-link hidden-xs">
+        <a href="{{ site.back-link.url }}"><i class="fa fa-arrow-left"></i> {{ site.back-link.title | default: "Multimedia team" }}</a>
+      </div>
+    {% endif %}
+    <div class="navbar-header">
+      <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{ "/" | prepend: site.baseurl }}">
+        <span class="navbar-brand-img"><img src="{{ site.author.photo | prepend: site.baseurl }}" alt="" /></span>
+        <span class="navbar-brand-title">{{ site.author.name }}</span>
+        <span class="navbar-brand-description">{{ site.author.description }}</span>
+      </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        {% if page.layout == "onepage" %}
+          {% assign onepageCollection = page.collection | default: site.onepage-default-collection %}
+          {% assign blocks = site[onepageCollection] | sort:"order", "last" %}
+          {% for block in blocks %}
+            {% if block.title != "" and block.no-navlink != true %}
+              <li><a href="#{{ block.title-short | default: block.title | slugify }}">{{ block.title-short | default: block.title }} <i class="fa fa-angle-right fa-lg fa-margin-left"></i></a></li>
+            {% endif %}
+          {% endfor %}
+          <li role="separator" class="divider"></li>
+        {% endif %}
+        {% assign pages = site.pages | sort:"order", "last" %}
+        {% for a_page in pages %}
+          {% if a_page.title and a_page.no-title != true and a_page.no-navlink != true %}
+            {% unless page.layout == "onepage" and page.url == a_page.url or a_page.parent %}
+            {% unless a_page.parent %}
+            <li {% if page.url == a_page.url %}class="active"{% endif %}><a href="{{ a_page.url | prepend: site.baseurl }}">{{ a_page.title | escape }} <i class="fa fa-angle-right fa-lg fa-margin-left"></i></a></li>
+            {% endunless %}
+            {% endunless %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</nav>

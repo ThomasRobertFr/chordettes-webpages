@@ -1,0 +1,144 @@
+.publication {
+    position: relative;
+    margin-bottom: 26px;
+
+    .icon {
+        position: absolute;
+        left: -27px;
+        top: -2px;
+    }
+
+    .pub-image {
+        float: right;
+        max-width: 20%;
+        img {
+            max-width: 100%;
+            max-height: 150px;
+            margin-left: 20px;
+        }
+    }
+
+    .pub-content {}
+
+    // normalize to smaller spacing
+    .pub-title, .pub-authors, .pub-in, .pub-urls {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+
+    .pub-in {
+        font-style: italic;
+    }
+
+
+    &.tidy {
+        font-size: 14px;
+        margin-bottom: 14px;
+
+        .icon {
+            left: -22px;
+        }
+
+        .pub-image {
+            width: 15%;
+            img {
+                max-height: 90px;
+            }
+        }
+
+        .pub-content {}
+
+        .pub-title {
+            font-size: 18px;
+            margin-bottom: 2px;
+        }
+
+        .pub-authors {
+            font-size: 15px;
+            margin-bottom: 3px;
+        }
+
+        .btn-xs {
+            padding-left: 9px;
+            padding-right: 9px;
+        }
+    }
+
+    &.pub-highlight {
+        .pub-title {
+            font-weight: 700;
+            text-shadow: 0 1px 0.7px rgba(0, 0, 0, .3);
+        }
+    }
+}
+
+.layout-publications {
+
+    // years title
+    h2 {
+        color: $color-1-dark;
+        margin: 35px 0 20px;
+        text-align: center;
+    }
+
+    .publication {
+        .icon {
+            color: $color-1;
+        }
+        .pub-title {
+            color: $color-1;
+        }
+
+        .color-emph-light {
+            color: $color-1-light;
+        }
+
+        .small {
+            color: $gray-light;
+        }
+    }
+
+    &.pub-highlight {
+        .pub-title {
+            font-weight: 700;
+            text-shadow: 0 1px 0.7px rgba($color-1-dark,.3);
+        }
+    }
+}
+
+.layout-projects {
+    .project {
+        margin: 0 0 30px;
+
+        .proj-image {
+            width: 20%;
+            float: left;
+        }
+
+        .proj-image img {
+            max-width: 100%;
+            max-height: 200px;
+        }
+
+        .proj-content {
+            margin-left: 22%;
+            width: 78%;
+            @media (min-width: 992px) {
+                width: 66%;
+                margin-right: 12%;
+            }
+
+        }
+
+        h2 {
+            color: $color-2;
+            margin: 0px 0 7px;
+        }
+
+        .proj-date {
+            color: $color-2-light;
+            font-size: 110%;
+        }
+
+    }
+}

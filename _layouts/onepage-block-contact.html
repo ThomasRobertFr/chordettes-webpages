@@ -1,0 +1,84 @@
+---
+layout: onepage-block
+---
+
+{% assign lastline2 = page.contacts | size | modulo: 2 %}
+{% assign lastline3 = page.contacts | size | modulo: 3 %}
+{% assign lastline2ind = page.contacts | size | minus: lastline2 | plus:1 %}
+{% assign lastline3ind = page.contacts | size | minus: lastline3 | plus:1 %}
+
+{% assign contactcount = 0 %}
+
+{% for contact in page.contacts %}
+
+    {% assign contactcount = contactcount | plus: 1 %}
+    {% assign marginClass = "" %}
+    {% if contactcount == lastline2ind %}
+        {% assign marginClass = marginClass | append: " col-xs-offset-3 " %}
+    {%endif%}
+    {% if contactcount == lastline3ind %}
+        {% if lastline3 == 1 %}
+            {% assign marginClass = marginClass | append: " col-lg-offset-4 " %}
+        {% else %}
+            {% assign marginClass = marginClass | append: " col-lg-offset-2 " %}
+        {% endif %}
+    {%endif%}
+
+    {% if contact.type == "email" %}
+        {% unless contact.not-hidden %}
+            <a class="contact-block color-emph-light col-lg-4 col-xs-6 {{ marginClass }} contact-show-email" href="#">
+                <i class="fa fa-at"></i> <button class="btn btn-default">Show my email address</button>
+                <span class="hidden">{% obfuscate_email site.author.email %}</span>
+            </a>
+        {% else %}
+            <a class="contact-block color-emph-light col-lg-4 col-xs-6 {{ marginClass }}" href="mailto:{{ site.author.email }}">
+                <i class="fa fa-at"></i> {{ site.author.email }}
+            </a>
+        {% endunless %}
+    {% elsif contact.type == "phone" %}
+        <div class="contact-block color-emph-light col-lg-4 col-xs-6 {{ marginClass }}">
+            <i class="fa fa-phone"></i> {{ site.author.phone }}
+        </div>
+    {% elsif contact.type == "address" %}
+        <div class="contact-block color-emph-light col-lg-4 col-xs-6 {{ marginClass }}">
+            <i class="fa fa-envelope"></i> {{ site.author.address | newline_to_br }}
+        </div>
+    {% elsif contact.type == "twitter" %}
+        <a class="contact-block color-emph-light col-lg-4 col-xs-6 {{ marginClass }}" href="https://www.twitter.com/{{ site.author.twitter }}">
+            <i class="fa fa-twitter"></i> @{{ site.author.twitter }}
+        </a>
+    {% elsif contact.type == "linkedin" %}
+        <a class="contact-block color-emph-light col-lg-4 col-xs-6 {{ marginClass }}" href="https://www.linkedin.com/in/{{ site.author.linkedin }}">
+            <i class="fa fa-linkedin"></i> {{ site.author.linkedin }}
+        </a>
+    {% elsif contact.type == "github" %}
+        <a class="contact-block color-emph-light col-lg-4 col-xs-6 {{ marginClass }}" href="https://www.github.com/{{ site.author.github }}">
+            <i class="fa fa-github"></i> {{ site.author.github }}
+        </a>
+    {% elsif contact.type == "google-plus" %}
+        <a class="contact-block color-emph-light col-lg-4 col-xs-6 {{ marginClass }}" href="https://plus.google.com/+{{ site.author.google-plus }}">
+            <i class="fa fa-google-plus"></i> +{{ site.author.google-plus }}
+        </a>
+    {% else %}
+        {% if contact.url %}
+        <a class="contact-block color-emph-light col-lg-4 col-xs-6 {{ marginClass }}" href="{% include url.html url=contact.url %}">
+        {%else%}
+        <div class="contact-block color-emph-light col-lg-4 col-xs-6 {{ marginClass }}">
+        {%endif%}
+            <i class="fa fa-{{ contact.icon }}"></i> {{ contact.text }}
+        {% if contact.url %}
+        </a>
+        {%else%}
+        </div>
+        {%endif%}
+    {% endif %}
+
+    {% assign countmod2 = contactcount | modulo:2 %}{% if countmod2 == 0 %}
+    <div class="clearfix visible-xs visible-sm visible-md"></div>
+    {% endif %}
+
+    {% assign countmod3 = contactcount | modulo:3 %}{% if countmod3 == 0 %}
+    <div class="clearfix visible-lg visible-"></div>
+    {% endif %}
+
+{% endfor %}

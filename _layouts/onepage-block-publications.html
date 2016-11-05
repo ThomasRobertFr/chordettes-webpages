@@ -1,0 +1,13 @@
+---
+layout: onepage-block
+---
+
+{% for publication in site.data[page.data-name] %}
+    {% include publication.html %}
+{% endfor %}
+
+{% if page.more-publications-url %}
+<p class="text-center clearfix">
+    <a href="{% include url.html url=page.more-publications-url %}" class="btn btn-primary">See all my publications <i class="fa fa-chevron-right fa-margin-left"></i></a>
+</p>
+{%endif%}

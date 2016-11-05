@@ -1,0 +1,13 @@
+<section
+    id="{{ page.title-short | default: page.title | slugify }}"
+    class="onepage-block {% if page.class %}{{ page.class }}{% endif %}"
+    {% if page.class contains "cover-image" %}style="background-image: url('{% include url.html url=page.bg-image %}')"{% endif %}>
+    <div class="container-fluid">
+        {% if page.no-title != true %}
+        <h2>{{ page.title }}</h2>
+        {% endif %}
+        <div class="content">
+            {{ content }}
+        </div>
+    </div>
+</section>

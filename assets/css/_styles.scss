@@ -1,0 +1,122 @@
+.color-emph-light {
+    color: $gray;
+}
+
+.trianglify {
+    background: #52b9ca url('../images/triangles.png');
+    background-size: cover;
+}
+
+.dark, .darker, .style-gray, .style-color-1, .style-color-2, .style-color-3, .style-color-4, .style-color-5 {
+    background-image: url(../images/overlay.png);
+}
+
+.dark {
+    color: #fff;
+    h1, h2, h3, h4, h5, .color-emph { color: lighten($gray-base, 85%); }
+    .color-emph-light { color: lighten(lighten($gray-base, 85%), 15%); }
+    a { color: lighten($link-color, 47%); }
+    a:hover { color: lighten($link-color, 42%); }
+}
+
+.darker {
+    color: $gray-lighter;
+    h1, h2, h3, h4, h5, .color-emph { color: lighten($gray-base, 60%); }
+    .color-emph-light { color: lighten(lighten($gray-base, 60%), 15%); }
+    a { color: lighten($link-color, 47%); }
+    a:hover { color: lighten($link-color, 42%); }
+}
+
+.style-gray {
+    background-color: $gray-lighter;
+    h1, h2, h3, h4, h5, .color-emph { color: $gray-dark; }
+    .color-emph-light { color: darken($gray-dark, 15%); }
+}
+
+.style-gray.darken {
+    background-color: $gray-light;
+    color: #fff;
+    h1, h2, h3, h4, h5, .color-emph { color: lighten($gray-base, 90%); }
+    .color-emph-light { color: lighten(lighten($gray-base, 90%), 15%); }
+    a { color: lighten($link-color, 55%); }
+    a:hover { color: lighten($link-color, 50%); }
+}
+
+.style-gray.dark {
+    background-color: $gray;
+    color: #fff;
+    h1, h2, h3, h4, h5, .color-emph { color: lighten($gray-base, 85%); }
+    .color-emph-light { color: lighten(lighten($gray-base, 85%), 15%); }
+}
+
+.style-gray.darker {
+    background-color: $gray-dark;
+    color: $gray-lighter;
+    h1, h2, h3, h4, h5, .color-emph { color: lighten($gray-base, 60%); }
+    .color-emph-light { color: lighten(lighten($gray-base, 60%), 15%); }
+}
+
+.style-color-1 {
+    background-color: $color-1-lighter;
+    h1, h2, h3, h4, h5, .color-emph { color: $color-1; }
+    .color-emph-light { color: darken($color-1, 15%); }
+}
+
+.style-color-1.dark {
+    background-color: $color-1-dark;
+    color: $color-1-lighter;
+    h1, h2, h3, h4, h5, .color-emph { color: $color-1-light; }
+    .color-emph-light { color: lighten($color-1-light, 15%); }
+}
+
+.style-color-2 {
+    background-color: $color-2-lighter;
+    h1, h2, h3, h4, h5, .color-emph { color: $color-2; }
+    .color-emph-light { color: darken($color-2, 15%); }
+}
+
+.style-color-2.dark {
+    background-color: $color-2-dark;
+    color: $color-2-lighter;
+    h1, h2, h3, h4, h5, .color-emph { color: $color-2-light; }
+    .color-emph-light { color: lighten($color-2-light, 15%); }
+}
+
+.style-color-3 {
+    background-color: $color-3-lighter;
+    h1, h2, h3, h4, h5, .color-emph { color: $color-3; }
+    .color-emph-light { color: darken($color-3, 15%); }
+}
+
+.style-color-3.dark {
+    background-color: $color-3-dark;
+    color: $color-3-lighter;
+    h1, h2, h3, h4, h5, .color-emph { color: $color-3-light; }
+    .color-emph-light { color: lighten($color-3-light, 15%); }
+}
+
+.style-color-4 {
+    background-color: $color-4-lighter;
+    h1, h2, h3, h4, h5, .color-emph { color: $color-4; }
+    .color-emph-light { color: darken($color-4, 15%); }
+}
+
+.style-color-4.dark {
+    background-color: $color-4-dark;
+    color: $color-4-lighter;
+    h1, h2, h3, h4, h5, .color-emph { color: $color-4-light; }
+    .color-emph-light { color: lighten($color-4-light, 15%); }
+}
+
+.style-color-5 {
+    background-color: $color-5-lighter;
+    h1, h2, h3, h4, h5, .color-emph { color: $color-5; }
+    .color-emph-light { color: darken($color-5, 15%); }
+}
+
+.style-color-5.dark {
+    background-color: $color-5-dark;
+    color: $color-5-lighter;
+    h1, h2, h3, h4, h5, .color-emph { color: $color-5-light; }
+    .color-emph-light { color: lighten($color-5-light, 15%); }
+}

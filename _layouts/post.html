@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <header class="post-header {{ page.header-style | default: site.header-default-style }} {% if page.header-image %}image-cover{% endif %}">
+        <div class="background" {% if page.header-image %}style="background-image: url('{% include url.html url=page.header-image %}')"{% endif %}></div>
+        <div class="container-fluid">
+            <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+            <p class="post-meta color-emph-light"><i class="fa fa-clock-o"></i> <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} <i class="fa fa-pencil margin-left"></i> <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+            <div class="post-intro color-emph-light">
+                {% if page.intro %}
+                    {{ page.intro }}
+                {% endif %}
+            </div>
+        </div>
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+        <div class="container-fluid">
+            {{ content }}
+        </div>
+    </div>
+
+</article>

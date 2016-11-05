@@ -1,0 +1,32 @@
+---
+layout: page
+---
+
+{% assign projects = site.data[page.data-name] %}
+{% for project in projects %}
+  <div class="project clearfix">
+    {% if project.image %}
+      <div class="proj-image"><img src="{% include url.html url=project.image %}" alt=""></div>
+    {% endif %}
+    <div class="proj-content">
+      <h2 class="proj-title">{{ project.title }}</h2>
+      {% if project.date %}
+      <p class="proj-date color-emph">{{ project.date }}</p>
+      {% endif %}
+      {% if project.desc %}
+        <p class="proj-desc">{{ project.desc }}</p>
+      {% endif %}
+      {% if project.urls or project.url %}
+        <p class="proj-urls">
+        {% if project.urls %}
+          {% for url in project.urls %}
+            <a class="btn btn-{{ url.style | default: "primary" }}" href="{% include url.html url=url.url %}">{{ url.title }}</a>
+          {% endfor %}
+        {% else %}
+          <a class="btn btn-primary" href="{{ project.url }}">Project page</a>
+        {% endif %}
+        </p>
+      {% endif %}
+    </div>
+  </div>
+{% endfor %}

@@ -1,0 +1,43 @@
+- title: "MANTRA: Minimum Maximum Latent Structural SVM for Image Classification and Ranking" # Titre (obligatoire)
+  authors: T. Durand, N. Thome, M. Cord # Auteurs (obligatoire)
+  year: 2015 # Année de publication (obligatoire)
+  type: conf # Type de papier (obligatoire), idéalement parmi [conf, workshop, journal, book, bookchapter], mais ajoutez votre propre type si besoin
+  in: ICCV # Nom de la conférence / du journal (optionnel)
+  additional: p. 123-234, chapter 12 # Infos additionnelles quelconques (pages, chapitre, IF, etc.) que vous voulez voir figurer après l'année de publication, en plus petit (optionnel)
+  # Entrée BibTex (optionnel)
+  bibtex: |
+    @inproceedings{mantraICCV15,
+      Author = {Thibaut Durand and Nicolas Thome and Matthieu Cord},
+      Title = {MANTRA: Minimum Maximum Latent Structural SVM for Image Classification and Ranking},
+      booktitle = {IEEE International Conference on Computer Vision (ICCV)},
+      Year = {2015}
+    }
+
+- title: "MANTRA: Minimum Maximum Latent Structural SVM for Image Classification and Ranking" # Titre (obligatoire)
+  authors: T. Durand, N. Thome, M. Cord # Auteurs (obligatoire)
+  year: 2015 # Année de publication (obligatoire)
+  type: journal # Type de papier (obligatoire), idéalement parmi [conf, workshop, journal, book, bookchapter], mais ajoutez votre propre type si besoin
+  in: ICCV # Nom de la conférence / du journal (optionnel)
+  additional: p. 123-234, chapter 12 # Infos additionnelles quelconques (pages, chapitre, IF, etc.) que vous voulez voir figurer après l'année de publication, en plus petit (optionnel)
+  # Entrée BibTex (optionnel)
+  bibtex: |
+    @inproceedings{mantraICCV15,
+      Author = {Thibaut Durand and Nicolas Thome and Matthieu Cord},
+      Title = {MANTRA: Minimum Maximum Latent Structural SVM for Image Classification and Ranking},
+      booktitle = {IEEE International Conference on Computer Vision (ICCV)},
+      Year = {2015}
+    }
+
+- title: "MANTRA: Minimum Maximum Latent Structural SVM for Image Classification and Ranking" # Titre (obligatoire)
+  authors: T. Durand, N. Thome, M. Cord # Auteurs (obligatoire)
+  year: 2015 # Année de publication (obligatoire)
+  type: book # Type de papier (obligatoire), idéalement parmi [conf, workshop, journal, book, bookchapter], mais ajoutez votre propre type si besoin
+  additional: p. 123-234, chapter 12 # Infos additionnelles quelconques (pages, chapitre, IF, etc.) que vous voulez voir figurer après l'année de publication, en plus petit (optionnel)
+  # Entrée BibTex (optionnel)
+  bibtex: |
+    @inproceedings{mantraICCV15,
+      Author = {Thibaut Durand and Nicolas Thome and Matthieu Cord},
+      Title = {MANTRA: Minimum Maximum Latent Structural SVM for Image Classification and Ranking},
+      booktitle = {IEEE International Conference on Computer Vision (ICCV)},
+      Year = {2015}
+    }

@@ -1,0 +1,11 @@
+{%
+if include.url contains '://'
+    %}{{ include.url }}{%
+else
+    %}{% assign firstChar = include.url | truncate: 1
+    %}{% if firstChar == '/'
+        %}{{ include.url | prepend: site.baseurl }}{%
+    else
+        %}{{ include.url | prepend: '/' | prepend: site.baseurl }}{%
+    endif
+%}{% endif %}

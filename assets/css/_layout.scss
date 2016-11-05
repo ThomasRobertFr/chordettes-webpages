@@ -1,0 +1,141 @@
+body {
+    text-align: justify;
+    position: relative;
+}
+
+a {
+    transition: all $transition-time ease-in-out;
+}
+
+@media (min-width: 768px) {
+    #main {
+        margin-left: 25%;
+        width: 75%;
+    }
+
+    #main .container-fluid {
+        margin-left: 30px;
+        margin-right: 30px;
+        max-width: 1170px;
+    }
+}
+
+#main .container-fluid {
+    @media (max-width: 767px) { padding: 0 25px; }
+    @media (min-width: 768px) { padding: 0 5%; }
+    @media (min-width: 1200px) { padding: 0 80px; }
+}
+
+
+.post-header {
+    @media (max-width: 767px) { padding: 25px 0; }
+    @media (min-width: 768px) { padding: 35px 0; }
+    @media (min-width: 1200px) { padding: 50px 0; }
+
+    &.large {
+        @media (max-width: 767px) { padding: 45px 0 65px; }
+        @media (min-width: 768px) { padding: 55px 0 75px; }
+        @media (min-width: 1200px) { padding: 70px 0 90px; }
+    }
+
+    h1, h2 {
+        text-align: center;
+        margin: 0 0 20px 0;
+
+        @media (min-width: 992px) { margin-bottom: 30px; }
+        @media (min-width: 1200px) { margin-bottom: 40px; }
+    }
+
+    .post-intro {
+        min-height: 20px;
+        padding: 0 30px;
+        @media (min-width: 992px) { min-height: 30px; padding: 0 50px; }
+        @media (min-width: 1200px) { min-height: 40px; padding: 0 70px; }
+    }
+
+    .post-meta {
+        text-align: center;
+        margin-top: -5px;
+        margin-bottom: 20px;
+
+        @media (min-width: 992px) { margin-top: -10px; margin-bottom: 30px; }
+        @media (min-width: 1200px) { margin-top: -20px; margin-bottom: 40px; }
+
+        font-family: $headings-font-family;
+
+        .margin-left {
+            margin-left: 15px;
+        }
+    }
+
+    // This is useful if we want a background div (that could contain a canvas for example)
+    position: relative;
+    overflow: hidden;
+
+    .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+
+        canvas {
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        z-index: 1;
+    }
+
+    .container-fluid {
+        position: relative;
+        z-index: 100;
+    }
+
+    &.cover-image {
+        .background {
+            background-size: cover;
+            background-position: center;
+        }
+
+        &.cover-image-process .background {
+            height: 108%;
+            width: 108%;
+            margin: -6px; // this is needed for the white blur at the border of the image to be hidden
+            filter: blur(3px) brightness(110%) contrast(70%);
+        }
+    }
+}
+
+.post-content {
+    padding: 20px 0;
+    @media (min-width: 768px) { padding: 25px 0; }
+    @media (min-width: 1200px) { padding: 35px 0; }
+
+}
+
+.post-excerpt-entry {
+    margin-bottom: 35px;
+    .post-meta {
+        color: $gray-light;
+    }
+    .margin-left {
+        margin-left: 15px;
+    }
+    .dots {
+        margin-top: -15px;
+        margin-bottom: 17px;
+    }
+}
+
+
+.btn {
+    border-width: 0 0 3px !important;
+    border-style: solid;
+    border-radius: 6px;
+    white-space: normal;
+}
+
+.fa-margin-left {
+    margin-left: 6px;
+}
