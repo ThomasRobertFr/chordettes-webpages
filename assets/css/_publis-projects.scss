@@ -40,7 +40,7 @@
         }
 
         .pub-image {
-            width: 15%;
+            max-width: 15%;
             img {
                 max-height: 90px;
             }
@@ -103,6 +103,10 @@
             font-weight: 700;
             text-shadow: 0 1px 0.7px rgba($color-1-dark,.3);
         }
+    }
+
+    .years, .types {
+        line-height: 45px;
     }
 }
 
