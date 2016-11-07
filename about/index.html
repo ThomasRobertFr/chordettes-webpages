@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>About</title>
+  <meta name="description" content="Write a short bio. The above &quot;&gt;&quot; allows to have multiple lines here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget dolor venenatis m...">
+
+  <link rel="stylesheet" href="/chordettes-webpages/assets/css/main.css">
+  <link rel="canonical" href="https://thomasrobertfr.github.io/chordettes-webpages/about/">
+  <link rel="alternate" type="application/rss+xml" title="Firstname Lastname" href="https://thomasrobertfr.github.io/chordettes-webpages/feed.xml">
+
+  <link rel="shortcut icon" href="/chordettes-webpages/images/favicon/favicon.ico" />
+  <link rel="icon" type="image/png" href="/chordettes-webpages/images/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/chordettes-webpages/images/favicon/favicon-16x16.png" sizes="16x16">
+</head>
+
+
+  <body data-spy="scroll" data-target="#header">
+
+    <nav id="header" class="navbar navbar-fixed-side navbar-inverse navbar-fixed-top">
+  <div class="container">
+    
+      <div class="back-link hidden-xs">
+        <a href="http://webia.lip6.fr/~cord"><i class="fa fa-arrow-left"></i> Multimedia team</a>
+      </div>
+    
+    <div class="navbar-header">
+      <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/chordettes-webpages/">
+        <span class="navbar-brand-img"><img src="/chordettes-webpages/images/photo.jpg" alt="" /></span>
+        <span class="navbar-brand-title">Firstname Lastname</span>
+        <span class="navbar-brand-description">Job title</span>
+      </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        
+        
+        
+          
+            
+            
+            <li ><a href="/chordettes-webpages/">Home <i class="fa fa-angle-right fa-lg fa-margin-left"></i></a></li>
+            
+            
+          
+        
+          
+            
+            
+            <li ><a href="/chordettes-webpages/teaching/">Teaching <i class="fa fa-angle-right fa-lg fa-margin-left"></i></a></li>
+            
+            
+          
+        
+          
+            
+            
+            <li ><a href="/chordettes-webpages/projects/">Projects <i class="fa fa-angle-right fa-lg fa-margin-left"></i></a></li>
+            
+            
+          
+        
+          
+            
+            
+            <li ><a href="/chordettes-webpages/publications/">Publications <i class="fa fa-angle-right fa-lg fa-margin-left"></i></a></li>
+            
+            
+          
+        
+          
+        
+          
+            
+            
+            <li ><a href="/chordettes-webpages/blog/">Blog <i class="fa fa-angle-right fa-lg fa-margin-left"></i></a></li>
+            
+            
+          
+        
+          
+            
+            
+            
+          
+        
+          
+            
+            
+            
+          
+        
+          
+            
+            
+            <li class="active"><a href="/chordettes-webpages/about/">About <i class="fa fa-angle-right fa-lg fa-margin-left"></i></a></li>
+            
+            
+          
+        
+          
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <main id="main" class="layout-page">
+        <article>
+    <header class="post-header style-color-1 dark">
+        <div class="background" ></div>
+        <div class="container-fluid">
+            <h1 class="post-title">About</h1>
+            <div class="post-intro color-emph-light">
+                Cette page présente comment utiliser ce template pour réaliser un site personnel à destination majoritairement d'un utilisateur de ce template, et pas de quelqu'un qui voudrait en modifier son cœur. Ce n'est donc pas une documentation technique mais bien une documentation d'utilisateur.
+            </div>
+        </div>
+    </header>
+
+    <div class="post-content">
+        <div class="container-fluid">
+            <ul id="markdown-toc">
+  <li><a href="#prsentation-gnrale-de-jekyll" id="markdown-toc-prsentation-gnrale-de-jekyll">Présentation générale de Jekyll</a>    <ul>
+      <li><a href="#organisation-des-fichiers" id="markdown-toc-organisation-des-fichiers">Organisation des fichiers</a></li>
+      <li><a href="#configuration-du-site-et-yaml" id="markdown-toc-configuration-du-site-et-yaml">Configuration du site et YAML</a></li>
+      <li><a href="#contenu-textuel" id="markdown-toc-contenu-textuel">Contenu textuel</a></li>
+      <li><a href="#donnes-structures" id="markdown-toc-donnes-structures">Données structurées</a></li>
+    </ul>
+  </li>
+  <li><a href="#utilisation-du-template" id="markdown-toc-utilisation-du-template">Utilisation du template</a>    <ul>
+      <li><a href="#installation-de-jekyll" id="markdown-toc-installation-de-jekyll">Installation de Jekyll</a></li>
+      <li><a href="#utilisation-de-jekyll" id="markdown-toc-utilisation-de-jekyll">Utilisation de Jekyll</a></li>
+      <li><a href="#tlchargement-du-template" id="markdown-toc-tlchargement-du-template">Téléchargement du template</a></li>
+      <li><a href="#usage-des-layouts-ou-templates" id="markdown-toc-usage-des-layouts-ou-templates">Usage des layouts (ou templates)</a></li>
+      <li><a href="#template-page-et-blog" id="markdown-toc-template-page-et-blog">Template <code class="highlighter-rouge">page</code> (et <code class="highlighter-rouge">blog</code>)</a></li>
+      <li><a href="#template-post" id="markdown-toc-template-post">Template <code class="highlighter-rouge">post</code></a></li>
+      <li><a href="#template-publications" id="markdown-toc-template-publications">Template <code class="highlighter-rouge">publications</code></a></li>
+      <li><a href="#template-publications-1" id="markdown-toc-template-publications-1">Template <code class="highlighter-rouge">publications</code></a></li>
+      <li><a href="#template-onepage" id="markdown-toc-template-onepage">Template <code class="highlighter-rouge">onepage</code></a></li>
+      <li><a href="#template-onepage-block" id="markdown-toc-template-onepage-block">Template <code class="highlighter-rouge">onepage-block</code></a></li>
+      <li><a href="#template-onepage-block-publications" id="markdown-toc-template-onepage-block-publications">Template <code class="highlighter-rouge">onepage-block-publications</code></a></li>
+      <li><a href="#template-onepage-block-contact" id="markdown-toc-template-onepage-block-contact">Template <code class="highlighter-rouge">onepage-block-contact</code></a></li>
+      <li><a href="#rsum-des-paramtres-des-templates" id="markdown-toc-rsum-des-paramtres-des-templates">Résumé des paramètres des templates</a></li>
+      <li><a href="#format-yaml-pour-les-publications" id="markdown-toc-format-yaml-pour-les-publications">Format YAML pour les publications</a></li>
+      <li><a href="#format-yaml-pour-les-projets" id="markdown-toc-format-yaml-pour-les-projets">Format YAML pour les projets</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p>Cette page présente comment utiliser ce template pour réaliser un site personnel à destination majoritairement d’un utilisateur de ce template, et pas de quelqu’un qui voudrait en modifier son cœur. Ce n’est donc pas une documentation technique mais bien une documentation d’utilisateur.</p>
+
+<p>La première partie de cette page décrit les motivations et principes assez généraux pour développer un site avec ce template, alors que la seconde partie se charge de détailler les spécificités de ce template.</p>
+
+<h2 id="prsentation-gnrale-de-jekyll">Présentation générale de Jekyll</h2>
+
+<p>Jekyll est un outil permettant de <strong>générer des sites statiques</strong> (c’est à dire en HTML / CSS / Javascript). C’est donc un intermédiaire intéressant entre un site purement statique (on écrit manuellement l’intégralité du site) et des sites dynamiques où on a généralement du contenu stocké en base de données qui peut être modifié via une interface d’administration et qui sert à faire un rendu du site à la demande du visiteur.</p>
+
+<p>Tout comme un site dynamique, Jekyll <strong>sépare le contenu du <em>template</em></strong>, cependant, ce contenu correspond à des fichiers dans divers formats (que l’on verra par la suite) plutôt qu’une base de données. Par ailleurs, il s’agit de contenu qui n’a donc pas vocation à être différent en fonction du visiteur, permettant donc de générer le site une fois plutôt que de devoir générer les pages à la demande pour chaque visiteur.</p>
+
+<p>Le rôle de Jekyll est de <strong>transformer et d’intégrer du contenu dans un template</strong>.</p>
+
+<p>Jekyll permet d’éditer différents <strong>types de contenus</strong> :</p>
+
+<ul>
+  <li>Du contenu textuel
+    <ul>
+      <li>Des pages quelconques (ex : présentation, CV, à propos, etc.)</li>
+      <li>Des billets de blog</li>
+      <li>Des collections, c’est à dire un ensemble de petites pages indépendantes et variées (ex : les divers blocs d’une page style <em>one page website</em>)</li>
+    </ul>
+  </li>
+  <li>Des données structurées (ex : liste de publications)</li>
+</ul>
+
+<h3 id="organisation-des-fichiers">Organisation des fichiers</h3>
+
+<p>Les fichiers du site sont organisés de la façon suivante :</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>.
+| ## CONFIGURATION
+|
+├── _config.yml            # Configuration du site
+|
+| ## TEMPLATE
+|
+├── _includes              # Fichiers de template pouvant être inclus
+|   ├── footer.html
+|   ├── header.html
+|   └── ...
+├── _layouts               # Modèles de présentation des contenus
+|   ├── default.html
+|   ├── page.html
+|   ├── multiblock.html
+|   └── ...
+├── assets                # CSS / JS / images du template
+|
+| ## CONTENU INTERPRETÉ
+|
+├── _pages                # Pages
+|   └── home.html
+|   ├── blog.html
+|   ├── publications.html
+|   ├── about.md
+|   └── ...
+├── _homepage             # Elements de la collection "homepage"
+|   ├── intro.md
+|   ├── research.md
+|   ├── news.md
+|   └── ...
+├── _posts                # Billets de blog
+|   ├── 2015-09-01-started-phd.md
+|   └── ...
+├── _data                 # Données structurées
+|   ├── publications.yml
+|   └── ...
+|
+| ## CONTENU STATIQUE (dossiers sans _), copié tel quel
+|
+├── images
+├── pdfs
+|
+| ## RESULTAT
+|
+└── _site                 # Site généré par Jekyll
+</code></pre>
+</div>
+
+<p>Ces divers éléments seront décris dans la suite de ce document.</p>
+
+<h3 id="configuration-du-site-et-yaml">Configuration du site et YAML</h3>
+
+<p>Le fichier <code class="highlighter-rouge">_config.yml</code> permet de configurer le site. <strong>Les explications concernant
+ce fichier se trouvent directement en commentaire dans le fichier.</strong></p>
+
+<p>Ce fichier s’écrit en YAML, comme l’intégralité des données structurées en Jekyll.
+YAML permet de structurer des données sous forme de dictionnaires et de listes
+grâce à l’indentation.</p>
+
+<p>Voici un exemple de fichier YAML décrivant la syntaxe :</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">clé</span><span class="pi">:</span> <span class="s">valeur</span>
+<span class="s">titre</span><span class="pi">:</span> <span class="s">Chaine de caractère</span>
+<span class="s">sous-titre</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Chaine</span><span class="nv"> </span><span class="s">avec</span><span class="nv"> </span><span class="s">quotes,</span><span class="nv"> </span><span class="s">notamment</span><span class="nv"> </span><span class="s">utile</span><span class="nv"> </span><span class="s">si</span><span class="nv"> </span><span class="s">elle</span><span class="nv"> </span><span class="s">contient</span><span class="nv"> </span><span class="s">le</span><span class="nv"> </span><span class="s">caractère</span><span class="nv"> </span><span class="s">:"</span>
+<span class="s">description</span><span class="pi">:</span> <span class="pi">&gt;</span>
+  <span class="no">Le chevron "&gt;" permet d'entrer plusieurs lignes de texte, il ignore les retours</span>
+  <span class="no">à la ligne. On peut aussi utiliser "|" à la place pour conserver les retours à</span>
+  <span class="no">la ligne.</span>
+<span class="c1"># Ceci est un commentaire, on peut aussi utiliser des booléens ou des nombres</span>
+<span class="s">affichage</span><span class="pi">:</span> <span class="s">true</span>
+<span class="s">year</span><span class="pi">:</span> <span class="s">2016</span>
+<span class="c1"># La valeur associée à une clé peut être un nouveau dictionnaire</span>
+<span class="s">auteur</span><span class="pi">:</span>
+  <span class="s">nom</span><span class="pi">:</span> <span class="s">Robert</span>
+  <span class="s">prenom</span><span class="pi">:</span> <span class="s">Thomas</span>
+<span class="c1"># Ci dessous une liste, chaque élément est indenté et précédé de -</span>
+<span class="s">pages</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">accueil</span>
+  <span class="pi">-</span> <span class="s">actualités</span>
+  <span class="pi">-</span> <span class="s">contact</span>
+<span class="c1"># Les éléments d'une liste peuvent être des dictionnaires :</span>
+<span class="s">urls</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">titre</span><span class="pi">:</span> <span class="s">labo</span>
+    <span class="s">url</span><span class="pi">:</span> <span class="s">http://www.lip6.fr</span>
+  <span class="pi">-</span> <span class="s">titre</span><span class="pi">:</span> <span class="s">université</span>
+    <span class="s">url</span><span class="pi">:</span> <span class="s">http://www.upmc.fr</span>
+</code></pre>
+</div>
+
+<h3 id="contenu-textuel">Contenu textuel</h3>
+
+<p>Un fichier de contenu textuel contient deux parties : le <em>front matter</em> qui est une sorte de préambule au fichier indiquant un certain nombre de métadonnées concernant le contenu (au format <strong>YAML</strong> vu précédemment), suivi par le contenu en tant que tel.</p>
+
+<p>Un fichier à donc le format suivant :</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>---
+key1: value1
+key2: value2
+...
+---
+
+Contenu du fichier...
+</code></pre>
+</div>
+
+<h4 id="front-matter"><em>Front matter</em></h4>
+
+<p>Le <em>front matter</em> est donc contenu entre les balises <code class="highlighter-rouge">---</code> au début du fichier. Voici un certain nombre de données que l’on peut indiquer dedans :</p>
+
+<ul>
+  <li><code class="highlighter-rouge">layout</code> (obligatoire) : <em>template</em> à utiliser pour afficher ce contenu (voir ci-dessous)</li>
+  <li><code class="highlighter-rouge">title</code> (~obligatoire) : titre du document</li>
+  <li><code class="highlighter-rouge">date</code> (obligatoire pour billets de blog) : date de rédaction (pour billets de blog), au format <code class="highlighter-rouge">YYYY-MM-DD HH:MM:SS TZ</code> (<code class="highlighter-rouge">TZ</code> = timezone, <em>e.g.</em> <code class="highlighter-rouge">+02</code> pour GMT+2), on peut ne pas mettre certaines infos, par exemple juste <code class="highlighter-rouge">YYYY-MM-DD</code> (l’heure sera a minuit) ou juste <code class="highlighter-rouge">YYYY-MM-DD HH:MM</code> (on peut ignorer la timezone et les secondes)</li>
+  <li><code class="highlighter-rouge">order</code> (optionnel) : ordre d’appartition du document dans les listes (par exemple ordre dans la liste des pages pour une page)</li>
+  <li>…</li>
+</ul>
+
+<p>En fait, il est possible d’indiquer tout ce que l’on veut, ces informations sont transmises au <em>template</em> chargé de faire le rendu du document (inutile d’indiquer des infos non prises en compte par le template donc).</p>
+
+<h4 id="templates"><em>Templates</em></h4>
+
+<p>Parlons des <em>templates</em> justement. Un fichier de contenu est supposé contenir uniquement le <em>contenu</em> de la page. Ce contenu devra donc être inclus dans un des <em>templates</em> disponibles dans le dossier <code class="highlighter-rouge">_layouts</code>. C’est donc en définissant la variable <code class="highlighter-rouge">layout</code> du <em>front matter</em> que l’on défini à quoi va ressembler une page.</p>
+
+<p>Ainsi dans certains cas on voudra une page simple et on pourra utiliser un template dont le seul rôle est de mettre notre contenu dans l’habillage habituel du site (<em>e.g.</em> <code class="highlighter-rouge">page</code>). Mais il est également possible d’appeler des templates plus “intelligents”, par exemple un template dont le rôle est de faire le rendu d’une liste de publications, dans ce cas le contenu du fichier n’est même pas utilisé, le fichier sert simplement à déclarer l’existence de la page.</p>
+
+<p>La liste des templates développés est disponible ci-dessous.</p>
+
+<h4 id="rdaction-du-contenu">Rédaction du contenu</h4>
+
+<p>Le front matter est bien sûr suivi du fichier en tant que tel (sauf si on utilise un template qui n’utilise pas de contenu). Ce contenu peut être rédigé dans de nombreux “langages”, mais les deux principaux sont le <strong>Markdown</strong> et le <strong>HTML</strong>, dont les usages sont différents :</p>
+
+<ul>
+  <li>Le <strong>Markdown</strong> (fichiers <code class="highlighter-rouge">.md</code>) est un langage de balisage léger qui permet d’écrire au format texte brut du contenu avec une mise en forme assez simple, mais qui suffit pour la plupart des documents. Jekyll se chargera de convenir le Markdown en HTML lors du rendu de la page. Voir ci-dessous pour une présentation plus complète du langage.</li>
+  <li>Le <strong>HTML</strong> (fichiers <code class="highlighter-rouge">.html</code>) est le langage permettant de structurer des pages web. Si on a besoin d’une mise en page plus riche, on peut directement taper du HTML. Dans ce cas, le contenu sera directement utilisé tel quel par Jekyll.</li>
+</ul>
+
+<p>En réalité, il est possible de taper un document en Markdown et de <strong>mettre des bouts de HTML au milieu du Markdown</strong> en cas de besoin.</p>
+
+<p>Par ailleurs, il faut également noter que les fichiers de contenu (qu’ils soient en HTML ou Markdown) peuvent également contenir des instructions programmatiques (conditions, boucles, usage de variables, etc.) en syntaxe <strong><em>Liquid template</em></strong>. Le plus utile étant de pouvoir utiliser les variables de configuration du site, par exemple le chemin vers la racine du site à insérer avant l’URL d’une image par exemple, ou pour faire des liens vers d’autres pages. Cette syntaxe sera détaillée davantage plus bas.</p>
+
+<p><strong>Markdown</strong></p>
+
+<p>Pour une description complète du Markdown, voir le <a href="https://daringfireball.net/projects/markdown/">site officiel</a> ou cette <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet"><em>cheatsheet</em></a>.</p>
+
+<p>En bref, la syntaxe est la suivante :</p>
+
+<div class="language-markdown highlighter-rouge"><pre class="highlight"><code><span class="gh"># Titre 1</span>
+<span class="gu">## Titre 2</span>
+
+Paragraphe 1. Texte en <span class="gs">**gras**</span>, __gras__, <span class="ge">*italique*</span>, _italique_,
+<span class="gs">**_gras italique_**</span>, ~~barré~~, <span class="sb">`texte préformatté (code)`</span>.
+Les retours à la ligne simple ne comptent pas, tout le texte ci-dessus forme un
+seul paragraphe sans retour à la ligne (comme en LaTeX).
+
+Paragraphe 2. <span class="p">[</span><span class="nv">Ceci est un lien</span><span class="p">](</span><span class="sx">http://www.lip6.fr</span><span class="p">)</span>.  
+La ligne du dessus fini par 2 espaces, indiquant qu'il faut ici mettre un retour
+à la ligne dans le paragraphe (equivalent <span class="sb">`&lt;br&gt;` en HTML, `\\`</span> en LaTeX).
+
+<span class="p">![</span><span class="nv">Image, ceci est la légende</span><span class="p">](</span><span class="sx">https://www.lip6.fr/images/logo/LIP6.png</span><span class="p">)</span>
+<span class="p">
+1.</span> Item 1 d'une liste numérotée
+<span class="p">3.</span> Item 2 d'une liste numérotée (les numéros n'ont pas besoin d'être corrects)
+<span class="p">    *</span> Item 1 sous-liste non numérotée
+<span class="p">    -</span> Item 2 sous-liste non numérotée (on peut aussi utiliser - et + pour les listes)
+<span class="p">3.</span> Suite de la liste
+
+<span class="se">\`</span><span class="sb">``</span>python
+<span class="gh"># Code sur plusieurs lignes, langage indiqué ci-dessus</span>
+<span class="gh"># Note: Ne pas include le \ avant les 3 back-quotes</span>
+for i in range(0,5):
+    print i
+<span class="se">\`</span><span class="sb">``</span>
+
+On peut également faire des tableaux, voir la doc ou la cheatsheet pour le détail :
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+</code></pre>
+</div>
+
+<p><strong>Syntaxe <em>Liquid template</em></strong></p>
+
+<p>La syntaxe <em>Liquid template</em> est particulièrement utile lors de la rédaction d’articles, notamment pour avoir accès aux variables de configuration du site. Pour afficher une variable, on utilise simplement deux accolades : <code class="highlighter-rouge"><span class="p">{</span><span class="err">{</span><span class="w"> </span><span class="err">variable</span><span class="w"> </span><span class="p">}</span><span class="err">}</span></code>. Les instructions plus complexes se placent entre les balises suivantes : <code class="highlighter-rouge"><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">commande</span><span class="w"> </span><span class="err">%</span><span class="p">}</span></code>.</p>
+
+<p class="bg-warning"><strong>Note importante concernant les URL:</strong> Avant d'expliquer davantage les fonctions les plus importantes de Liquid, sachez d'abord qu'il faut faire attention lorsque vous voulez mettre un lien vers quelque chose <strong>dans une page</strong> (pour les URL dans les données structurées (config, frontmatter, _data/*.yml, ...) il ne faut pas le faire).</p>
+
+<p>Pour un lien vers une ressource statique (PDF, image, etc.), il faut utiliser la syntaxe <code class="highlighter-rouge"><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">include</span><span class="w"> </span><span class="err">url.html</span><span class="w"> </span><span class="err">url=&lt;valeur&gt;</span><span class="w"> </span><span class="err">%</span><span class="p">}</span></code> par exemple dans un fichier markdown :</p>
+
+<div class="language-md highlighter-rouge"><pre class="highlight"><code><span class="p">![</span><span class="nv">Illustration de WELDON</span><span class="p">](</span><span class="sx">{%</span> include url.html url="images/publications/weldon.jpg" %})
+</code></pre>
+</div>
+
+<p>Pour un lien vers une page ou un billet de blog, utiliser respectivement <code class="highlighter-rouge"><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">link</span><span class="w"> </span><span class="err">&lt;filePath&gt;</span><span class="w"> </span><span class="err">%</span><span class="p">}</span></code> et <code class="highlighter-rouge"><span class="p">{</span><span class="err">{</span><span class="w"> </span><span class="err">site.baseurl</span><span class="w"> </span><span class="p">}</span><span class="err">}</span><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">post_url</span><span class="w"> </span><span class="err">&lt;postFilenameWithoutExt&gt;</span><span class="w"> </span><span class="err">%</span><span class="p">}</span></code>, par exemple en Markdown :</p>
+
+<div class="language-md highlighter-rouge"><pre class="highlight"><code>Voir <span class="p">[</span><span class="nv">la page du projet WELDON</span><span class="p">](</span><span class="sx">{%</span> link _pages/projects-mantra.md %}) et le <span class="p">[</span><span class="nv">billet de blog correspondant</span><span class="p">](</span><span class="sx">{{</span> site.baseurl }}{% post_url 2016-06-26-weldon-at-cvpr %}).
+</code></pre>
+</div>
+
+<p>Voyons maintenant les fonctionnalités les plus importantes de Liquid. Cette partie est assez optionnelle et vous pouvez passer à la section suivante si vous voulez.</p>
+
+<p>Les <em>variables</em> les plus utiles sont les suivantes :</p>
+
+<ul>
+  <li>Des variables “globales” au site dans <code class="highlighter-rouge">site</code>, notamment pour les plus utiles :
+    <ul>
+      <li><code class="highlighter-rouge">site.&lt;configurationKey&gt;</code> : valeur du paramètre de configuration <code class="highlighter-rouge">&lt;configurationKey&gt;</code> de <code class="highlighter-rouge">_config.yml</code> (ex : <code class="highlighter-rouge">site.baseurl</code> ou <code class="highlighter-rouge">site.author.name</code>)</li>
+      <li><code class="highlighter-rouge">site.data.&lt;dataFile&gt;</code> : fichier de données <code class="highlighter-rouge">&lt;dataFile&gt;.yml</code> (ex : <code class="highlighter-rouge">site.data.publications</code>)</li>
+    </ul>
+  </li>
+  <li>Des variables concernant la page en cours :
+    <ul>
+      <li><code class="highlighter-rouge">page.&lt;frontmatterKey&gt;</code> : valeur du paramètre <code class="highlighter-rouge">&lt;frontmatterKey&gt;</code> de la page en cours (ex : <code class="highlighter-rouge">page.title</code> ou <code class="highlighter-rouge">page.layout</code>)</li>
+      <li><code class="highlighter-rouge">page.url</code> : URL de la page (sans le <code class="highlighter-rouge">baseurl</code> à rajouter)</li>
+      <li><code class="highlighter-rouge">page.content</code> : contenu de la page généralement transformé en HTML</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Par ailleurs, <em>Liquid</em> propose des <em>filtres</em> c’est à dire des instructions qui transforment un objet en un autre. Ces filtres s’appliquent avec un pipe et peuvent avoir des paramètres. On citera par exemple :</p>
+
+<ul>
+  <li><code class="highlighter-rouge">slugify</code> transformer une chaine en une chaine <em>urlisé</em> (ex : <code class="highlighter-rouge"><span class="p">{</span><span class="err">{</span><span class="w"> </span><span class="nt">"The _config.yml file"</span><span class="w"> </span><span class="err">|</span><span class="w"> </span><span class="err">slugify</span><span class="w"> </span><span class="err">}}</span></code> produit <code class="highlighter-rouge">the-config-yml-file</code>)</li>
+  <li><code class="highlighter-rouge">sort</code> pour trier une liste (ex : <code class="highlighter-rouge"><span class="p">{</span><span class="err">{</span><span class="w"> </span><span class="err">page.tags</span><span class="w"> </span><span class="err">|</span><span class="w"> </span><span class="err">sort</span><span class="w"> </span><span class="p">}</span><span class="err">}</span></code> ou <code class="highlighter-rouge"><span class="p">{</span><span class="err">{</span><span class="w"> </span><span class="err">site.pages</span><span class="w"> </span><span class="err">|</span><span class="w"> </span><span class="err">sort:</span><span class="w"> </span><span class="nt">"order"</span><span class="w"> </span><span class="err">}}</span></code>)</li>
+</ul>
+
+<p>Enfin, <em>Liquid</em> propose des <em>tags</em> c’est à dire des instructions à appliquer selon des données, par exemple :</p>
+
+<ul>
+  <li><code class="highlighter-rouge"><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">assign</span><span class="w"> </span><span class="err">&lt;varName&gt;</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">&lt;operations&gt;</span><span class="w"> </span><span class="err">%</span><span class="p">}</span></code> pour definir une variable</li>
+  <li><code class="highlighter-rouge"><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">include</span><span class="w"> </span><span class="err">&lt;finename&gt;</span><span class="w"> </span><span class="err">&lt;paramName&gt;=&lt;paramVal&gt;</span><span class="w"> </span><span class="err">%</span><span class="p">}</span></code> pour inclure un fichier</li>
+  <li><code class="highlighter-rouge"><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">if</span><span class="w"> </span><span class="err">&lt;cond&gt;</span><span class="w"> </span><span class="err">%</span><span class="p">}</span><span class="w"> </span><span class="err">...</span><span class="w"> </span><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">elsif</span><span class="w"> </span><span class="err">&lt;cond&gt;</span><span class="w"> </span><span class="err">%</span><span class="p">}</span><span class="w"> </span><span class="err">...</span><span class="w"> </span><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">else</span><span class="w"> </span><span class="err">%</span><span class="p">}</span><span class="w"> </span><span class="err">...</span><span class="w"> </span><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">endif</span><span class="w"> </span><span class="err">%</span><span class="p">}</span></code></li>
+  <li><code class="highlighter-rouge"><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">for</span><span class="w"> </span><span class="err">var</span><span class="w"> </span><span class="err">in</span><span class="w"> </span><span class="err">array</span><span class="w"> </span><span class="err">%</span><span class="p">}</span><span class="w"> </span><span class="err">...</span><span class="w"> </span><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">endfor</span><span class="w"> </span><span class="err">%</span><span class="p">}</span></code></li>
+</ul>
+
+<p>Pour une documentation plus complète, voir le site de Jekyll (concernant les <a href="http://jekyllrb.com/docs/variables/">variables</a> et <a href="http://jekyllrb.com/docs/templates/">le langage de template</a>) et de <a href="https://github.com/Shopify/liquid/wiki/Liquid-for-Designers">Liquid</a>.</p>
+
+<h3 id="donnes-structures">Données structurées</h3>
+
+<p>Il est possible de stocker des données structurées qui pourront ensuite être réutilisées pour générer des pages. Typiquement dans notre cadre, une liste de publications ou une liste de projets. Ces données sont écrites en YAML que nous avons déjà vu. Le format à utiliser dépend du template qui se chargera de transformer les données et sera donc détaillé plus bas dans ce document.</p>
+
+<p>Voici un exemple de fichier de données que l’on sauvegarderait dans le fichier <code class="highlighter-rouge">_data/publications.yml</code> :</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="pi">-</span> <span class="s">type</span><span class="pi">:</span> <span class="s">conf</span>
+  <span class="s">in</span><span class="pi">:</span> <span class="s">IEEE ICIP</span>
+  <span class="s">year</span><span class="pi">:</span> <span class="s">2016</span>
+  <span class="s">title</span><span class="pi">:</span> <span class="s">Gaze latent SVM for image classification</span>
+  <span class="s">authors</span><span class="pi">:</span> <span class="s">X. Wang, N. Thome, M. Cord</span>
+  <span class="s">additional</span><span class="pi">:</span> <span class="s">DOI</span><span class="pi">:</span> <span class="s">10.1109/ICIP.2016.7532354</span>
+
+<span class="pi">-</span> <span class="s">type</span><span class="pi">:</span> <span class="s">conf</span>
+  <span class="s">in</span><span class="pi">:</span> <span class="s">ICCV</span>
+  <span class="s">year</span><span class="pi">:</span> <span class="s">2015</span>
+  <span class="s">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">MANTRA:</span><span class="nv"> </span><span class="s">Minimum</span><span class="nv"> </span><span class="s">Maximum</span><span class="nv"> </span><span class="s">Latent</span><span class="nv"> </span><span class="s">Structural</span><span class="nv"> </span><span class="s">SVM</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">Image</span><span class="nv"> </span><span class="s">Classification</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">Ranking"</span> <span class="c1"># need to use the quotes to escape ":"</span>
+  <span class="s">authors</span><span class="pi">:</span> <span class="s">T. Durand, N. Thome, M. Cord</span>
+  <span class="s">image</span><span class="pi">:</span> <span class="s">http://webia.lip6.fr/~durandt/papers/CVPR16/image2.png</span>
+  <span class="s">bibtex</span><span class="pi">:</span> <span class="pi">|</span>
+      <span class="no">@inproceedings{mantraICCV15,</span>
+        <span class="no">Author = {Thibaut Durand and Nicolas Thome and Matthieu Cord},</span>
+        <span class="no">Title = {MANTRA: Minimum Maximum Latent Structural SVM for Image Classification and Ranking},</span>
+        <span class="no">booktitle = {IEEE International Conference on Computer Vision (ICCV)},</span>
+        <span class="no">Year = {2015}</span>
+      <span class="no">}</span>
+
+<span class="pi">-</span> <span class="s">type</span><span class="pi">:</span> <span class="s">workshop</span>
+  <span class="s">in</span><span class="pi">:</span> <span class="s">Cooking and Eating Activities at IEEE ICME</span>
+  <span class="s">year</span><span class="pi">:</span> <span class="s">2015</span>
+  <span class="s">title</span><span class="pi">:</span> <span class="s">Recipe Recognition with Large Multimodal Food Dataset</span>
+  <span class="s">authors</span><span class="pi">:</span> <span class="s">X. Wang, D. Kumar, N. Thome, M. Cord, F. Precioso</span>
+
+<span class="c1"># [...]</span>
+</code></pre>
+</div>
+
+<h2 id="utilisation-du-template">Utilisation du template</h2>
+
+<p>Passons maintenant à l’utilisation concrète de ce template.</p>
+
+<h3 id="installation-de-jekyll">Installation de Jekyll</h3>
+
+<p>Sur macOS, il faut commencer par installer Xcode (depuis l’App Store) puis executer la commande <code class="highlighter-rouge">xcode-select --install</code>.</p>
+
+<p>Pour installer Jekyll, il suffit d’utiliser la commande <code class="highlighter-rouge">gem install jekyll</code>.</p>
+
+<p>Si vous ne disposez pas de droits <em>root</em> sur la machine, faites <code class="highlighter-rouge">gem install jekyll --user-install</code>. Dans ce cas il vous faudra ensuite ajouter le chemin dans le lequel Jekyll a été installé dans votre <code class="highlighter-rouge">$PATH</code> (ex : <code class="highlighter-rouge">/home/&lt;username&gt;/.gem/ruby/2.3.0/bin</code> sur les machines du labo normalement).</p>
+
+<h3 id="utilisation-de-jekyll">Utilisation de Jekyll</h3>
+
+<p>Une fois jekyll installé, depuis un dossier de site Jekyll, faites <code class="highlighter-rouge">jekyll serve --watch</code> pour lancer Jekyll en mode <code class="highlighter-rouge">serve</code>, c’est à dire qu’il va compiler le site à chaque modification (sauf <code class="highlighter-rouge">_config.yml</code> auquel cas il faut arrêter et relancer Jekyll) et fais tourner un petit serveur web vous permettant de consulter votre site. Il vous indique l’URL après lancement de la commande, ex :</p>
+
+<div class="language-terminal highlighter-rouge"><pre class="highlight"><code><span class="w">$ </span><span class="nc">jekyll</span><span class="kv"> serve --watch
+</span>Configuration file: /Users/thomas/Documents/Dev/chordettes-webpages/_config.yml
+            Source: /Users/thomas/Documents/Dev/chordettes-webpages
+       Destination: /Users/thomas/Documents/Dev/chordettes-webpages/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating...
+                    done in 1.675 seconds.
+ Auto-regeneration: enabled for '/Users/thomas/Documents/Dev/chordettes-webpages'
+Configuration file: /Users/thomas/Documents/Dev/chordettes-webpages/_config.yml
+    Server address: http://127.0.0.1:4000/~username/
+  Server running... press ctrl-c to stop.
+</code></pre>
+</div>
+
+<h3 id="tlchargement-du-template">Téléchargement du template</h3>
+
+<p>Pour utiliser ce template, placez vous dans le dossier dans lequel vous voulez développer faire</p>
+
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code>git clone git@github.com:ThomasRobertFr/chordettes-webpages.git .
+git branch <span class="nv">$USER</span>
+git checkout <span class="nv">$USER</span>
+</code></pre>
+</div>
+
+<p>Vous pouvez ensuite faire vos modifications. Pour tester et vous inspiré du site de démo, faites :</p>
+
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code>git clone git@github.com:ThomasRobertFr/chordettes-webpages.git demo
+<span class="nb">cd </span>demo
+git checkout demo
+</code></pre>
+</div>
+
+<h3 id="usage-des-layouts-ou-templates">Usage des layouts (ou templates)</h3>
+
+<p>Pour créer un site avec ce template, il vous suffit d’<strong>ajouter des fichiers</strong> dans les dossiers :</p>
+
+<ul>
+  <li><code class="highlighter-rouge">_pages</code> pour ajouter une page, et :
+    <ul>
+      <li><code class="highlighter-rouge">_homepage</code> pour ajouter des blocs à une page d’accueil de type <em>“onepage”</em></li>
+      <li><code class="highlighter-rouge">_data</code> pour ajouter des données structurées servant à certaines pages</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">_posts</code> pour ajouter un billet de blog</li>
+  <li><code class="highlighter-rouge">pdfs</code>, <code class="highlighter-rouge">images</code>, ou n’importe quel autre dossier que vous créez, pour vos fichiers statiques</li>
+</ul>
+
+<p>Nous allons par la suite nous intéresser particulièrement aux pages et pas aux billets de blog. Cependant, un billet de blog fonctionne globalement comme une page classique.</p>
+
+<p>Comme nous l’avons vu, un fichier de page peut être en HTML (<code class="highlighter-rouge">*.html</code>) ou en Markdown (<code class="highlighter-rouge">*.md</code>), et commence par un front matter. Outre le titre, <strong>l’information la plus importante du front matter est sans doute le template</strong> (<code class="highlighter-rouge">layout: ...</code>), qui va changer totalement le type de page à utiliser.</p>
+
+<p>Voyons les <strong>différents templates disponibles</strong>, détaillés par la suite :</p>
+
+<ul>
+  <li><code class="highlighter-rouge">page</code> permet de créer une page “de base”, avec la mise en page globale du site (menu à gauche), et un bloc de titre suivi par le contenu de votre page</li>
+  <li><code class="highlighter-rouge">post</code> permet d’afficher un billet de blog, il est très similaire à <code class="highlighter-rouge">page</code></li>
+  <li><code class="highlighter-rouge">blog</code> (*) permet d’afficher la liste des billets de blog</li>
+  <li><code class="highlighter-rouge">publications</code> (*) permet d’afficher une liste de publications d’un fichier de données YAML présent dans <code class="highlighter-rouge">_data</code></li>
+  <li><code class="highlighter-rouge">projects</code> (*) permet d’afficher une liste de projets d’un fichier de données YAML présent dans <code class="highlighter-rouge">_data</code></li>
+  <li><code class="highlighter-rouge">onepage</code> (*) permet de créer une page de type <em>“onepage”</em> càd une succession de blocs présentant différentes choses. Les blocs affichés sont ceux présents dans <code class="highlighter-rouge">_homepage</code> et doivent utiliser les templates suivants :
+    <ul>
+      <li><code class="highlighter-rouge">onepage-block</code> permet de créer un bloc “de base”, avec un titre et du contenu (equivalent de <code class="highlighter-rouge">page</code> au format <code class="highlighter-rouge">onepage</code>)</li>
+      <li><code class="highlighter-rouge">onepage-block-publications</code> (*) permet d’afficher une liste de publications à partir des données (équivalent de <code class="highlighter-rouge">publications</code> au format <code class="highlighter-rouge">onepage</code>)</li>
+      <li><code class="highlighter-rouge">onepage-block-contact</code> (*) permet d’afficher les divers moyens de vous contacter à partir des infos du <code class="highlighter-rouge">_config.yml</code></li>
+    </ul>
+  </li>
+</ul>
+
+<p>(*) Le fichier d’une page avec ce layout ne devrait contenir qu’un front matter suivi d’aucun contenu, car ce contenu sera totalement généré. Si le fichier contient tout de même du contenu, il sera de toute façon ignoré.</p>
+
+<p>Nous allons maintenant voir ces templates plus en détail, en particulier les paramètres disponibles pouvant être mis dans le front matter.</p>
+
+<h3 id="template-page-et-blog">Template <code class="highlighter-rouge">page</code> (et <code class="highlighter-rouge">blog</code>)</h3>
+
+<p>Les paramètres que vous pouvez mettre dans le front matter sont les suivants :</p>
+
+<h4 id="paramtres-de-titre-et-de-menu">Paramètres de titre et de menu</h4>
+
+<ul>
+  <li><code class="highlighter-rouge">title</code> <em>(obligatoire)</em> : Titre de la page, sera affiché dans un bloc d’en-tête en haut de page</li>
+  <li><code class="highlighter-rouge">title-short</code> <em>(optionnel)</em> : Titre qui sera utilisé dans le menu à gauche (prévu pour remplacer les titres longs par un titre court dans le menu)</li>
+  <li><code class="highlighter-rouge">no-navlink</code> <em>(optionnel, defaut : <code class="highlighter-rouge">false</code>)</em> : mettre à vrai pour que la page n’apparaisse pas dans le menu du site</li>
+  <li><code class="highlighter-rouge">order</code> <em>(optionnel, defaut : 50)</em> : Position de la page dans le menu du site, par défaut à 50, ainsi on peut forcer juste certaines page à être au début (avec une valeur &lt; 50) ou à la fin (valeur &gt; 50)</li>
+  <li><code class="highlighter-rouge">intro</code> <em>(optionnel)</em> : Introduction / Abstract de votre page, qui s’affiche dans le bloc d’en-tête sous le titre</li>
+</ul>
+
+<h4 id="paramtres-de-parente">Paramètres de parentée</h4>
+
+<p>Il est possible d’avoir des sous-pages à une page, par exemple avoir une page <em>Teaching</em> qui présente les cours que l’on donne, et des sous-pages pour chaque cours.</p>
+
+<p>Dans ce cas, on doit définir pour chaque sous page le paramètre <code class="highlighter-rouge">parent</code> en lui indiquant le nom du fichier de la page parente (ex : <code class="highlighter-rouge">parent: teaching.md</code>). La page fille n’apparaitra plus dans le menu du site.</p>
+
+<p>Dans une page parente, on peut définir le paramètre <code class="highlighter-rouge">show-children</code> à <code class="highlighter-rouge">true</code> ou <code class="highlighter-rouge">false</code> pour indiquer si on veut qu’une liste des pages enfants soient inclue à la fin de la page. Par défaut à <code class="highlighter-rouge">false</code>, auquel cas vous devriez inclure vous-même des liens vers les pages filles dans le contenu de votre page principale (attention aux liens, voir la partie sur la syntaxe Liquid).</p>
+
+<h4 id="style-den-tte">Style d’en-tête</h4>
+
+<p>Il est enfin possible de changer le style de l’en-tête de la page avec le paramètre <code class="highlighter-rouge">header-style</code>. Par defaut le style est celui indiqué dans <code class="highlighter-rouge">header-default-style</code> dans <code class="highlighter-rouge">_config.yml</code>, par défaut <code class="highlighter-rouge">trianglify</code>.</p>
+
+<p>On peut choisir parmi les styles suivants :</p>
+
+<ul>
+  <li><code class="highlighter-rouge">style-gray</code> pour un style gris (par défaut fond gris clair), suivi éventuellement des variateurs <code class="highlighter-rouge">darken</code> (fond gris un peu plus foncé), <code class="highlighter-rouge">dark</code> (fond sombre) ou <code class="highlighter-rouge">darker</code> (fond très sombre) (ex : <code class="highlighter-rouge">header-style: style-gray dark</code>)</li>
+  <li><code class="highlighter-rouge">style-color-&lt;X&gt;</code> pour un fond coloré (avec <code class="highlighter-rouge">&lt;X&gt;</code> entre <code class="highlighter-rouge">1</code> et <code class="highlighter-rouge">5</code>), par défaut le texte est foncé sur fond clair, on peut avoir l’inverse avec le variateur <code class="highlighter-rouge">dark</code> (ex : <code class="highlighter-rouge">header-style: style-color-2 dark</code>)</li>
+  <li><code class="highlighter-rouge">particles</code> pour avoir un nuage de particules animé</li>
+  <li><code class="highlighter-rouge">trianglify</code> pour avoir un fond constitué d’une sorte de dégradé de triangles, ce fond est généré aléatoirement et sera donc unique et différent pour chaque page</li>
+  <li><code class="highlighter-rouge">cover-image</code> pour indiquer que l’on veut mettre une image “de couverture” en fond du bloc d’en-tête, on peut ajouter le variateur <code class="highlighter-rouge">cover-image-process</code> pour que l’image indiquée soit traitée pour que le texte inscrit dessus soit plus lisible (flou, diminution du contraste, changement de luminosité). On peut ajouter le variateur <code class="highlighter-rouge">dark</code> pour que le texte soit clair dans le cas où l’image de fond est sombre. L’URL de l’image à utiliser en fond doit être indiqué dans le paramètre <code class="highlighter-rouge">header-image</code>. (ex : <code class="highlighter-rouge">header-style: cover-image dark</code> et <code class="highlighter-rouge">header-image: images/headers/supercomputer1.jpg</code>) <em>Note : des fonds vous sont proposés dans le dossier images/headers</em></li>
+  <li>On peut ajouter le variateur <code class="highlighter-rouge">large</code> pour avoir un en-tête avec plus de marge en haut et en bas, pratique si on veut mettre davantage en valeur une image de fond par exemple (ex : <code class="highlighter-rouge">cover-image dark large</code>)</li>
+</ul>
+
+<h3 id="template-post">Template <code class="highlighter-rouge">post</code></h3>
+
+<p>Similaire à <code class="highlighter-rouge">page</code>, sans <code class="highlighter-rouge">parent</code> et <code class="highlighter-rouge">show-children</code>, et avec le champ <code class="highlighter-rouge">date</code> à définir format <code class="highlighter-rouge">YYYY-MM-DD HH:MM:SS TZ</code> (<code class="highlighter-rouge">TZ</code> = timezone, <em>e.g.</em> <code class="highlighter-rouge">+02</code> pour GMT+2), on peut ne pas mettre certaines infos, par exemple juste <code class="highlighter-rouge">YYYY-MM-DD</code> (l’heure sera a minuit) ou juste <code class="highlighter-rouge">YYYY-MM-DD HH:MM</code> (on peut ignorer la timezone et les secondes)</p>
+
+<h3 id="template-publications">Template <code class="highlighter-rouge">publications</code></h3>
+
+<p>Même paramètres que <code class="highlighter-rouge">page</code> avec les paramètres suivants en plus :</p>
+
+<ul>
+  <li><code class="highlighter-rouge">publications</code> <em>(obligatoire)</em> : nom du fichier de données YAML contenant la liste des publications à afficher (ex : <code class="highlighter-rouge">publications: publications</code> pour afficher les publis du fichier <code class="highlighter-rouge">_data/publications.yml</code>)</li>
+  <li><code class="highlighter-rouge">groupyby</code> <em>(optionnel)</em> : par défaut les publis sont affichées à la suite. On peut les grouper par années ou par type (conf, journal, etc.) en définissant ce paramètre à <code class="highlighter-rouge">year</code> ou <code class="highlighter-rouge">type</code>. Dans ce cas des titres de groupes seront affichés, avec des liens en haut de la liste de publications.</li>
+  <li><code class="highlighter-rouge">tidy</code> <em>(optionnel, def <code class="highlighter-rouge">false</code>)</em> : si à <code class="highlighter-rouge">true</code>, le style utilisé pour afficher les publications sera un peu plus “serré” et le texte écrit moins gros. Un style alternatif si on trouve que l’original est trop aéré, surtout si la liste de publis est longue.</li>
+</ul>
+
+<p>Le format à utiliser dans le fichier de données est détaillé plus bas.</p>
+
+<p>Comme indiqué précédemment le contenu du fichier d’une page <code class="highlighter-rouge">publications</code> devrait être vide à part le front matter.</p>
+
+<h3 id="template-publications-1">Template <code class="highlighter-rouge">publications</code></h3>
+
+<p>Même paramètres que <code class="highlighter-rouge">page</code> avec le paramètre obligatoire <code class="highlighter-rouge">projects</code> contenant nom du fichier de données YAML contenant la liste des projets à afficher (ex : <code class="highlighter-rouge">projects: projects</code> pour afficher les publis du fichier <code class="highlighter-rouge">_data/projects.yml</code>)</p>
+
+<p>Le format à utiliser dans le fichier de données est détaillé plus bas.</p>
+
+<p>Comme indiqué précédemment le contenu du fichier d’une page <code class="highlighter-rouge">projects</code> devrait être vide à part le front matter.</p>
+
+<h3 id="template-onepage">Template <code class="highlighter-rouge">onepage</code></h3>
+
+<ul>
+  <li><code class="highlighter-rouge">title</code></li>
+  <li><code class="highlighter-rouge">collection</code> : optionnel et pour les utilisateurs confirmés, nom de la <a href="https://jekyllrb.com/docs/collections/">collection Jekyll</a> à utiliser, par défaut <code class="highlighter-rouge">homepage</code></li>
+</ul>
+
+<p>Comme indiqué précédemment le contenu du fichier d’une page <code class="highlighter-rouge">onepage</code> devrait être vide à part le front matter.</p>
+
+<h3 id="template-onepage-block">Template <code class="highlighter-rouge">onepage-block</code></h3>
+
+<ul>
+  <li><code class="highlighter-rouge">title</code></li>
+  <li><code class="highlighter-rouge">title-short</code> : Titre pour le menu</li>
+  <li><code class="highlighter-rouge">no-navlink</code> <em>(def : false)</em> : Ne pas afficher dans le menu</li>
+  <li><code class="highlighter-rouge">no-title</code> <em>(def : false)</em> : Ne page afficher le titre dans le bloc</li>
+  <li><code class="highlighter-rouge">class</code> <em>(optionnel)</em> : Style du bloc à utiliser, similaire au <code class="highlighter-rouge">header-style</code> du layout <code class="highlighter-rouge">page</code>, sauf qu’il s’agit ici du style de tout le bloc et pas juste du titre. Les styles sont les même que pour <code class="highlighter-rouge">page</code>, sauf <code class="highlighter-rouge">trianglify</code> et <code class="highlighter-rouge">particles</code> qui ne sont pas disponibles.<br />
+Pour le style <code class="highlighter-rouge">cover-image</code> l’URL de l’image est à indiquer dans le paramètre <code class="highlighter-rouge">bg-image</code> au lieu de <code class="highlighter-rouge">header-image</code>.<br />
+Par défaut il n’y a pas de style particulier donc le texte est noir sur fond blanc.<br />
+<strong>En bref styles possibles : (<code class="highlighter-rouge">style-gray + [ darken | dark | darker]</code>, <code class="highlighter-rouge">style-color-&lt;1-5&gt; + [dark]</code>, <code class="highlighter-rouge">cover-image</code>, <code class="highlighter-rouge">+ [large]</code>)</strong><br />
+<em>Note technique : ce paramètre peut également contenir vos classes CSS personnelles si vous voulez définir vos propres styles puisque ce paramètre sert en fait de classe CSS au bloc.</em></li>
+  <li><code class="highlighter-rouge">bg-image</code> : URL de l’image si <code class="highlighter-rouge">class</code> contient <code class="highlighter-rouge">cover-image</code></li>
+</ul>
+
+<h3 id="template-onepage-block-publications">Template <code class="highlighter-rouge">onepage-block-publications</code></h3>
+
+<p>Même paramètres que <code class="highlighter-rouge">onepage-block</code>, avec le paramètre obligatoire <code class="highlighter-rouge">publications</code> en plus, qui doit contenir le nom du fichier de données YAML contenant la liste des publications à afficher dans le bloc. (ex : <code class="highlighter-rouge">publications: publications-home</code> pour afficher les publis du fichier <code class="highlighter-rouge">_data/publications-home.yml</code>)</p>
+
+<p>Le format à utiliser dans le fichier de données est détaillé plus bas.</p>
+
+<p>Comme indiqué précédemment le contenu du fichier d’un bloc <code class="highlighter-rouge">onepage-block-publications</code> devrait être vide à part le front matter.</p>
+
+<h3 id="template-onepage-block-contact">Template <code class="highlighter-rouge">onepage-block-contact</code></h3>
+
+<p>Même paramètres que <code class="highlighter-rouge">onepage-block</code>, avec le paramètre obligatoire <code class="highlighter-rouge">contacts</code> en plus, qui doit contenir la liste ordonnée de contacts à afficher.</p>
+
+<p>Voici un exemple complet de contacts :</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="c1"># Front matter onepage-block-contact</span>
+<span class="s">contacts</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">type</span><span class="pi">:</span> <span class="s">email</span>
+  <span class="pi">-</span> <span class="s">type</span><span class="pi">:</span> <span class="s">phone</span>
+  <span class="pi">-</span> <span class="s">type</span><span class="pi">:</span> <span class="s">address</span>
+  <span class="pi">-</span> <span class="s">type</span><span class="pi">:</span> <span class="s">twitter</span>
+  <span class="pi">-</span> <span class="s">type</span><span class="pi">:</span> <span class="s">linkedin</span>
+  <span class="pi">-</span> <span class="s">type</span><span class="pi">:</span> <span class="s">github</span>
+  <span class="pi">-</span> <span class="s">type</span><span class="pi">:</span> <span class="s">google-plus</span>
+  <span class="pi">-</span> <span class="s">type</span><span class="pi">:</span> <span class="s">custom</span>
+    <span class="s">icon</span><span class="pi">:</span> <span class="s">soundcloud</span>
+    <span class="s">text</span><span class="pi">:</span> <span class="s">Soundcloud</span>
+    <span class="s">url</span><span class="pi">:</span> <span class="s">http://soundcloud.com/username</span>
+</code></pre>
+</div>
+
+<p>Chaque élément de la liste contient donc la valeur <code class="highlighter-rouge">type</code> qui indique le type de contact, si c’est un contact <code class="highlighter-rouge">email</code>, <code class="highlighter-rouge">phone</code>, <code class="highlighter-rouge">address</code>, <code class="highlighter-rouge">twitter</code>, <code class="highlighter-rouge">linkedin</code>, <code class="highlighter-rouge">github</code> ou <code class="highlighter-rouge">google-plus</code> les infos seront cherchées dans le dictionnaire <code class="highlighter-rouge">author</code> du fichier <code class="highlighter-rouge">_config.yml</code> qui doit avoir le format suivant :</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="c1"># Portion fichier _config.yml</span>
+<span class="s">author</span><span class="pi">:</span>
+  <span class="c1"># [...]</span>
+  <span class="s">email</span><span class="pi">:</span> <span class="s">firstname.lastname@lip6.fr</span>
+  <span class="s">phone</span><span class="pi">:</span> <span class="s">01 23 45 67 89</span> <span class="c1"># Si fax, mettre "Tel: 01 23 45 67 89 \n Fax: 01 23 45 67 89"</span>
+  <span class="s">address</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Couloir</span><span class="nv"> </span><span class="s">26-00,</span><span class="nv"> </span><span class="s">Bureau</span><span class="nv"> </span><span class="s">525</span><span class="nv"> </span><span class="se">\n</span><span class="nv"> </span><span class="s">4,</span><span class="nv"> </span><span class="s">place</span><span class="nv"> </span><span class="s">Jussieu</span><span class="nv"> </span><span class="se">\n</span><span class="nv"> </span><span class="s">75005</span><span class="nv"> </span><span class="s">Paris</span><span class="nv"> </span><span class="se">\n</span><span class="nv"> </span><span class="s">France"</span>
+  <span class="s">twitter</span><span class="pi">:</span> <span class="s">username</span>
+  <span class="s">linkedin</span><span class="pi">:</span> <span class="s">username</span>
+  <span class="s">github</span><span class="pi">:</span> <span class="s">username</span>
+  <span class="s">google-plus</span><span class="pi">:</span> <span class="s">username</span>
+</code></pre>
+</div>
+
+<p>Vous pouvez ajouter des contacts à la main comme indiqué dans l’exemple ci dessus :</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">contacts</span><span class="pi">:</span>
+  <span class="c1"># [...]</span>
+  <span class="pi">-</span> <span class="s">type</span><span class="pi">:</span> <span class="s">custom</span>
+    <span class="s">icon</span><span class="pi">:</span> <span class="s">soundcloud</span>
+    <span class="s">text</span><span class="pi">:</span> <span class="s">Soundcloud</span>
+    <span class="s">url</span><span class="pi">:</span> <span class="s">http://soundcloud.com/username</span>
+</code></pre>
+</div>
+
+<p>Il faut indiquer <code class="highlighter-rouge">type: custom</code>, vous pouvez alors choisir l’icone à utiliser parmi les icones <a href="http://fontawesome.io/icons/">FontAwesome</a> (version 4.7) et indiquer son nom dans le paramètre <code class="highlighter-rouge">icon</code>, <code class="highlighter-rouge">text</code> sera affiché en dessous, et vous pouvez si vous voulez indiquer une URL dans <code class="highlighter-rouge">url</code>.</p>
+
+<p>Comme indiqué précédemment le contenu du fichier d’un bloc <code class="highlighter-rouge">onepage-block-contact</code> devrait être vide à part le front matter, il sera généré à partir de la liste ci-dessus.</p>
+
+<h3 id="rsum-des-paramtres-des-templates">Résumé des paramètres des templates</h3>
+
+<p><em>(*) : Le fichier d’une page avec ce layout ne devrait contenir qu’un front matter suivi d’aucun contenu, car ce contenu sera totalement généré. Si le fichier contient tout de même du contenu, il sera de toute façon ignoré.</em><br />
+<em>”&lt;” : indique qu’un template “hérite” les paramètres d’un autre</em></p>
+
+<ul>
+  <li><strong>page</strong>
+    <ul>
+      <li><code class="highlighter-rouge">title</code></li>
+      <li><code class="highlighter-rouge">title-short</code>: Titre pour le menu</li>
+      <li><code class="highlighter-rouge">no-navlink</code> <em>(def : false)</em> : Ne pas afficher dans le menu</li>
+      <li><code class="highlighter-rouge">order</code> <em>(def : 50)</em> : Ordre dans le menu</li>
+      <li><code class="highlighter-rouge">intro</code> : Abstract</li>
+      <li><code class="highlighter-rouge">parent</code> : Nom du fichier de la page parent</li>
+      <li><code class="highlighter-rouge">show-children</code> <em>(def : false)</em> : Afficher la liste des pages enfants</li>
+      <li><code class="highlighter-rouge">header-style</code>  <em>(def : trianglify sauf si changé dans config)</em> : Style de l’en-tête (<code class="highlighter-rouge">style-gray + [ darken | dark | darker]</code>, <code class="highlighter-rouge">style-color-&lt;1-5&gt; + [dark]</code>, <code class="highlighter-rouge">cover-image</code>, <code class="highlighter-rouge">trianglify</code>, <code class="highlighter-rouge">particles</code>, <code class="highlighter-rouge">+ [large]</code>)</li>
+      <li><code class="highlighter-rouge">header-image</code> si <code class="highlighter-rouge">header-style: cover-image</code> : URL de l’image, cf <code class="highlighter-rouge">images/headers</code> pour des suggestions</li>
+    </ul>
+  </li>
+  <li><strong>post</strong> &lt; <strong>page</strong>
+    <ul>
+      <li><code class="highlighter-rouge">date</code> : format <code class="highlighter-rouge">YYYY-MM-DD HH:MM:SS ±TZ</code> ou <code class="highlighter-rouge">YYYY-MM-DD HH:MM</code> ou <code class="highlighter-rouge">YYYY-MM-DD</code></li>
+    </ul>
+  </li>
+  <li><strong>blog</strong> &lt; <strong>page</strong> (*)</li>
+  <li><strong>publications</strong> &lt; <strong>page</strong> (*)
+    <ul>
+      <li><code class="highlighter-rouge">publications</code> : Fichier YAML de publications</li>
+    </ul>
+  </li>
+  <li><strong>projects</strong> &lt; <strong>page</strong> (*)
+    <ul>
+      <li><code class="highlighter-rouge">projects</code> : Fichier YAML de projets</li>
+    </ul>
+  </li>
+  <li><strong>onepage</strong>
+    <ul>
+      <li><code class="highlighter-rouge">collection</code> : Collection de blocs</li>
+    </ul>
+  </li>
+  <li><strong>onepage-block</strong>
+    <ul>
+      <li><code class="highlighter-rouge">title</code></li>
+      <li><code class="highlighter-rouge">title-short</code>: Titre pour le menu</li>
+      <li><code class="highlighter-rouge">no-navlink</code> <em>(def : false)</em> : Ne pas afficher dans le menu</li>
+      <li><code class="highlighter-rouge">no-title</code> <em>(def : false)</em> : Ne pas afficher le titre du bloc</li>
+      <li><code class="highlighter-rouge">order</code> <em>(def : 50)</em> : Ordre dans le menu</li>
+      <li><code class="highlighter-rouge">class</code> : Style de l’en-tête (<code class="highlighter-rouge">style-gray + [ darken | dark | darker]</code>, <code class="highlighter-rouge">style-color-&lt;1-5&gt; + [dark]</code>, <code class="highlighter-rouge">cover-image</code>, <code class="highlighter-rouge">+ [large]</code>)</li>
+      <li><code class="highlighter-rouge">bg-image</code> si <code class="highlighter-rouge">class</code> contient <code class="highlighter-rouge">cover-image</code> : URL de l’image, cf <code class="highlighter-rouge">images/headers</code> pour des suggestions</li>
+    </ul>
+  </li>
+  <li><strong>onepage-block-publications</strong> &lt; <strong>onepage-block</strong> (*)
+    <ul>
+      <li><code class="highlighter-rouge">publications</code> : Fichier YAML de publications</li>
+    </ul>
+  </li>
+  <li><strong>onepage-block-contact</strong> &lt; <strong>onepage-block</strong> (*)
+    <ul>
+      <li><code class="highlighter-rouge">contacts</code> : Liste de contacts à afficher</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="format-yaml-pour-les-publications">Format YAML pour les publications</h3>
+
+<p>Les fichiers de données YAML contenant les publications doivent contenir une liste de publications où chaque entrée sera structurée comme suit (l’ordre des infos dans l’entrée est libre) :</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="pi">-</span> <span class="s">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">MANTRA:</span><span class="nv"> </span><span class="s">Minimum</span><span class="nv"> </span><span class="s">Maximum</span><span class="nv"> </span><span class="s">Latent</span><span class="nv"> </span><span class="s">Structural</span><span class="nv"> </span><span class="s">SVM</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">Image</span><span class="nv"> </span><span class="s">Classification</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">Ranking"</span> <span class="c1"># Titre (obligatoire)</span>
+  <span class="s">authors</span><span class="pi">:</span> <span class="s">T. Durand, N. Thome, M. Cord</span> <span class="c1"># Auteurs (obligatoire)</span>
+  <span class="s">year</span><span class="pi">:</span> <span class="s">2015</span> <span class="c1"># Année de publication (obligatoire)</span>
+  <span class="s">type</span><span class="pi">:</span> <span class="s">conf</span> <span class="c1"># Type de papier (obligatoire), idéalement parmi [conf, workshop, journal, book, bookchapter], mais ajoutez votre propre type si besoin</span>
+  <span class="s">in</span><span class="pi">:</span> <span class="s">ICCV</span> <span class="c1"># Nom de la conférence / du journal (optionnel)</span>
+  <span class="s">additional</span><span class="pi">:</span> <span class="s">p. 123-234, chapter 12</span> <span class="c1"># Infos additionnelles quelconques (pages, chapitre, IF, etc.) que vous voulez voir figurer après l'année de publication, en plus petit (optionnel)</span>
+  <span class="s">image</span><span class="pi">:</span> <span class="s">images/publications/mantra.png</span> <span class="c1"># URL de l'image de description (optionnel)</span>
+  <span class="s">highlight</span><span class="pi">:</span> <span class="s">true</span> <span class="c1"># Mise en valeur du papier dans la liste (optionnel, defaut : false)</span>
+  <span class="c1"># Entrée BibTex (optionnel)</span>
+  <span class="s">bibtex</span><span class="pi">:</span> <span class="pi">|</span>
+    <span class="no">@inproceedings{mantraICCV15,</span>
+      <span class="no">Author = {Thibaut Durand and Nicolas Thome and Matthieu Cord},</span>
+      <span class="no">Title = {MANTRA: Minimum Maximum Latent Structural SVM for Image Classification and Ranking},</span>
+      <span class="no">booktitle = {IEEE International Conference on Computer Vision (ICCV)},</span>
+      <span class="no">Year = {2015}</span>
+    <span class="no">}</span>
+  <span class="c1"># Descriptions manuelles (optionnelles et remplace infos ci-dessus):</span>
+  <span class="c1"># Description manuelle complète de la publication, si indiqué, seul le titre est affiché suivi de cette description en HTML (optionnel)</span>
+  <span class="s">full-raw-desc</span><span class="pi">:</span> <span class="pi">&gt;</span>
+    <span class="no">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a nulla faucibus, efficitur dolor non, sollicitudin justo. Aliquam a sem nec diam faucibus vulputate quis lacinia justo. Proin vestibulum fermentum sapien, quis convallis nibh condimentum ut. Vivamus laoreet lorem vel lorem gravida tempus. In hac habitasse platea dictumst.</span>
+  <span class="c1"># Description manuelle de la publication, si indiqué, seul le titre et l'auteur sont affichés suivi de cette description en HTML (optionnel)</span>
+  <span class="s">raw-desc</span><span class="pi">:</span> <span class="pi">&gt;</span>
+    <span class="no">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a nulla faucibus, efficitur dolor non, sollicitudin justo. Aliquam a sem nec diam faucibus vulputate quis lacinia justo. Proin vestibulum fermentum sapien, quis convallis nibh condimentum ut. Vivamus laoreet lorem vel lorem gravida tempus. In hac habitasse platea dictumst.</span>
+</code></pre>
+</div>
+
+<h3 id="format-yaml-pour-les-projets">Format YAML pour les projets</h3>
+
+<p>Les fichiers de données YAML contenant les projets doivent contenir une liste de projets où chaque entrée sera structurée comme suit :</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="pi">-</span> <span class="s">title</span><span class="pi">:</span> <span class="s">VISIIR</span>
+  <span class="s">date</span><span class="pi">:</span> <span class="s">2013/01/10</span>
+  <span class="c1"># Texte de description du projet en HTML si besoin de mise en forme</span>
+  <span class="s">desc</span><span class="pi">:</span> <span class="s">VIsual Seek for Interactive Image Retrieval (VISIIR) is a project aiming at exploring new methods for semantic image annotation.</span>
+  <span class="c1"># URL de l'image de description du projet (optionnel mais conseillé)</span>
+  <span class="s">image</span><span class="pi">:</span> <span class="s">images/projects/visiir.png</span>
+  <span class="c1"># URLs du projet (optionnel), avec au choix :</span>
+  <span class="c1"># - Une URL seule direct :</span>
+  <span class="s">url</span><span class="pi">:</span> <span class="s">http://visiir.lip6.fr</span>
+  <span class="c1"># - Une liste d'URLs (éventuellement une seule) avec plus de contrôle sur le titre et la couleur du bouton de lien :</span>
+  <span class="s">urls</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">url</span><span class="pi">:</span> <span class="s">http://...</span> <span class="c1"># URL du lien</span>
+      <span class="s">title</span><span class="pi">:</span> <span class="s">Site du projet</span> <span class="c1"># Titre du lien</span>
+      <span class="s">style</span><span class="pi">:</span> <span class="s">default</span> <span class="c1"># Style bootstrap du bouton (default : gris, primary (par defaut) : bleu foncé, info : bleu clair, success: vert, warning : orange, danger : rouge)</span>
+    <span class="pi">-</span> <span class="s">url</span><span class="pi">:</span> <span class="s">http://...</span> <span class="c1"># URL du lien</span>
+      <span class="s">title</span><span class="pi">:</span> <span class="s">Site du projet</span> <span class="c1"># Titre du lien</span>
+      <span class="s">style</span><span class="pi">:</span> <span class="s">default</span> <span class="c1"># Style bootstrap du bouton (default : gris, primary (par defaut) : bleu foncé, info : bleu clair, success: vert, warning : orange, danger : rouge)</span>
+    <span class="c1"># ...</span>
+</code></pre>
+</div>
+
+            
+        </div>
+    </div>
+</article>
+
+    </main>
+
+    <script src="/chordettes-webpages/assets/js/jquery.min.js"></script>
+<script src="/chordettes-webpages/assets/js/bootstrap.min.js"></script>
+<script src="/chordettes-webpages/assets/js/trianglify.min.js"></script>
+<script src="/chordettes-webpages/assets/js/particles.min.js"></script>
+<script src="/chordettes-webpages/assets/js/main.js"></script>
+
+
+
+  </body>
+
+</html>

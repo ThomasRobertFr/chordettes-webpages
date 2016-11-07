@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Firstname Lastname</title>
+    <description>Write a short bio. The above &quot;&gt;&quot; allows to have multiple lines here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget dolor venenatis massa sodales tincidunt ac nec erat. Aenean fermentum erat eget dapibus pulvinar. Mauris diam odio, sagittis ut odio eget.
+</description>
+    <link>https://thomasrobertfr.github.io/chordettes-webpages/</link>
+    <atom:link href="https://thomasrobertfr.github.io/chordettes-webpages/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 07 Nov 2016 10:44:27 +0100</pubDate>
+    <lastBuildDate>Mon, 07 Nov 2016 10:44:27 +0100</lastBuildDate>
+    <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Started my PhD</title>
+        <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at metus interdum, pretium tortor tristique, tristique lectus. Ut vestibulum vulputate dolor, eget interdum nisl interdum quis. Sed lorem sapien, iaculis nec feugiat vel, euismod vel urna. Praesent ut dui laoreet, euismod augue in, laoreet diam. Fusce ac neque ante. Integer porta tellus eu nunc lacinia convallis. Nunc auctor arcu at orci congue pellentesque. Praesent laoreet diam sit amet neque consectetur, quis rutrum augue elementum. Morbi sodales fermentum tortor quis pulvinar. Nullam convallis lobortis risus, et eleifend libero posuere eget. Cras et nulla ut ex malesuada ultricies ut sed libero. Nunc at sem id quam maximus gravida. Etiam id sagittis nibh, quis placerat nunc. Cras eget diam gravida, fringilla mi quis, elementum neque. Vivamus ornare leo sit amet nibh iaculis tempus.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/headers/upmc2.jpg&quot; alt=&quot;View of the UPMC&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Aenean cursus mi sed faucibus efficitur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas mattis vestibulum nisi, nec volutpat massa faucibus quis. Phasellus sodales, mi sed semper vulputate, erat velit mattis ante, in luctus lectus nisl sed sem. Aliquam vel ullamcorper est. Ut eu quam bibendum, fermentum nunc eget, mollis turpis. Etiam metus leo, elementum et feugiat non, dictum ac nisi. Maecenas condimentum, libero sed aliquam faucibus, enim nibh dapibus dui, a bibendum dui tortor nec mi. Maecenas lobortis pharetra eros, eu lacinia nulla gravida vel. Nullam ornare, mi eget ornare posuere, ante velit molestie nisl, id blandit purus dui ut neque. In sollicitudin tincidunt lorem non aliquam. Donec a accumsan nisi. Cras dignissim posuere metus sed consectetur.&lt;/p&gt;
+
+&lt;p&gt;Suspendisse convallis arcu orci, cursus vestibulum lacus varius ut. Aliquam id augue sagittis massa suscipit consectetur. Duis enim dolor, vestibulum at metus sodales, blandit volutpat dolor. Duis elit neque, scelerisque hendrerit convallis nec, porta id nulla. Maecenas imperdiet arcu id vehicula consequat. Praesent nec fringilla mauris, id luctus mauris. Ut ac elit eget ipsum pellentesque lobortis non ut nulla.&lt;/p&gt;
+
+&lt;p&gt;Praesent condimentum volutpat suscipit. Nulla et semper sem. Sed ipsum tortor, molestie sit amet velit non, sollicitudin ultricies odio. Cras eget rhoncus lorem, ut pulvinar orci. Fusce vitae ipsum sed risus blandit eleifend ac eget turpis. Integer vestibulum enim ac nulla imperdiet porta. Curabitur nec lobortis nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+
+&lt;p&gt;Nulla cursus massa nec interdum ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur id ex et metus blandit porta quis vel neque. Proin pellentesque, massa et egestas tincidunt, risus diam faucibus diam, nec condimentum erat ipsum sit amet massa. Nam blandit risus ac mauris tristique suscipit a nec libero. Sed fermentum sapien quam. Ut venenatis libero a felis viverra, ut varius ipsum vulputate. Cras dignissim metus quis sollicitudin dignissim. Sed maximus venenatis sapien, in dignissim ligula mattis quis. Sed vitae ligula ut ex ullamcorper suscipit vel eget sem. Integer hendrerit est nulla, dignissim tincidunt elit ullamcorper quis. Integer ut dui tincidunt, efficitur metus sed, dictum quam. Aliquam sit amet orci et ex laoreet mollis sed non magna. Duis sed nibh velit. Suspendisse non laoreet est. Praesent quis felis odio.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 01 Nov 2016 00:00:00 +0100</pubDate>
+        <link>https://thomasrobertfr.github.io/chordettes-webpages/started-phd/</link>
+        <guid isPermaLink="true">https://thomasrobertfr.github.io/chordettes-webpages/started-phd/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Welcome to Jekyll!</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 29 Oct 2016 18:17:00 +0200</pubDate>
+        <link>https://thomasrobertfr.github.io/chordettes-webpages/welcome-to-jekyll/</link>
+        <guid isPermaLink="true">https://thomasrobertfr.github.io/chordettes-webpages/welcome-to-jekyll/</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+  </channel>
+</rss>
