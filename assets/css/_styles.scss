@@ -15,16 +15,16 @@
     color: #fff;
     h1, h2, h3, h4, h5, .color-emph { color: lighten($gray-base, 85%); }
     .color-emph-light { color: lighten(lighten($gray-base, 85%), 15%); }
-    a { color: lighten($link-color, 47%); }
-    a:hover { color: lighten($link-color, 42%); }
+    a:not(.btn) { color: lighten($link-color, 47%); }
+    a:not(.btn):hover { color: lighten($link-color, 42%); }
 }
 
 .darker {
     color: $gray-lighter;
     h1, h2, h3, h4, h5, .color-emph { color: lighten($gray-base, 60%); }
     .color-emph-light { color: lighten(lighten($gray-base, 60%), 15%); }
-    a { color: lighten($link-color, 47%); }
-    a:hover { color: lighten($link-color, 42%); }
+    a:not(.btn) { color: lighten($link-color, 47%); }
+    a:not(.btn):hover { color: lighten($link-color, 42%); }
 }
 
 .style-gray {
@@ -38,8 +38,8 @@
     color: #fff;
     h1, h2, h3, h4, h5, .color-emph { color: lighten($gray-base, 90%); }
     .color-emph-light { color: lighten(lighten($gray-base, 90%), 15%); }
-    a { color: lighten($link-color, 55%); }
-    a:hover { color: lighten($link-color, 50%); }
+    a:not(.btn) { color: lighten($link-color, 55%); }
+    a:not(.btn):hover { color: lighten($link-color, 50%); }
 }
 
 .style-gray.dark {
