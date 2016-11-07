@@ -136,7 +136,7 @@ key2: value2
 Contenu du fichier...
 ```
 
-#### _Front matter_
+#### _front matter_
 
 Le _front matter_ est donc contenu entre les balises `---` au début du fichier. Voici un certain nombre de données que l'on peut indiquer dedans :
 
@@ -159,7 +159,7 @@ La liste des templates développés est disponible ci-dessous.
 
 #### Rédaction du contenu
 
-Le front matter est bien sûr suivi du fichier en tant que tel (sauf si on utilise un template qui n'utilise pas de contenu). Ce contenu peut être rédigé dans de nombreux "langages", mais les deux principaux sont le **Markdown** et le **HTML**, dont les usages sont différents :
+Le _front matter_ est bien sûr suivi du fichier en tant que tel (sauf si on utilise un template qui n'utilise pas de contenu). Ce contenu peut être rédigé dans de nombreux "langages", mais les deux principaux sont le **Markdown** et le **HTML**, dont les usages sont différents :
 
 * Le **Markdown** (fichiers `.md`) est un langage de balisage léger qui permet d'écrire au format texte brut du contenu avec une mise en forme assez simple, mais qui suffit pour la plupart des documents. Jekyll se chargera de convenir le Markdown en HTML lors du rendu de la page. Voir ci-dessous pour une présentation plus complète du langage.
 * Le **HTML** (fichiers `.html`) est le langage permettant de structurer des pages web. Si on a besoin d'une mise en page plus riche, on peut directement taper du HTML. Dans ce cas, le contenu sera directement utilisé tel quel par Jekyll.
@@ -322,6 +322,10 @@ Configuration file: /Users/thomas/Documents/Dev/chordettes-webpages/_config.yml
   Server running... press ctrl-c to stop.
 ```
 
+Le site final généré par Jekyll est créé dans le dossier `_site`. Ainsi, une fois que le site vous convient, il suffit de récupérer le contenu du dossier `_site` et de le placer dans le placer (pour le labo) dans votre dossier `/web/<username>/public_html`.
+
+Notez que pour compiler le site une fois avec Jekyll (sans que Jekyll lance un serveur web et relance la compilation à chaque modification), vous pouvez faire `jekyll build`
+
 ### Téléchargement du template
 
 Pour utiliser ce template, placez vous dans le dossier dans lequel vous voulez développer faire
@@ -353,7 +357,7 @@ Pour créer un site avec ce template, il vous suffit d'**ajouter des fichiers** 
 
 Nous allons par la suite nous intéresser particulièrement aux pages et pas aux billets de blog. Cependant, un billet de blog fonctionne globalement comme une page classique.
 
-Comme nous l'avons vu, un fichier de page peut être en HTML (`*.html`) ou en Markdown (`*.md`), et commence par un front matter. Outre le titre, **l'information la plus importante du front matter est sans doute le template** (`layout: ...`), qui va changer totalement le type de page à utiliser.
+Comme nous l'avons vu, un fichier de page peut être en HTML (`*.html`) ou en Markdown (`*.md`), et commence par un _front matter_. Outre le titre, **l'information la plus importante du _front matter_ est sans doute le template** (`layout: ...`), qui va changer totalement le type de page à utiliser.
 
 Voyons les **différents templates disponibles**, détaillés par la suite :
 
@@ -367,13 +371,13 @@ Voyons les **différents templates disponibles**, détaillés par la suite :
     * `onepage-block-publications` (\*) permet d'afficher une liste de publications à partir des données (équivalent de `publications` au format `onepage`)
     * `onepage-block-contact` (\*) permet d'afficher les divers moyens de vous contacter à partir des infos du `_config.yml`
 
-(\*) Le fichier d'une page avec ce layout ne devrait contenir qu'un front matter suivi d'aucun contenu, car ce contenu sera totalement généré. Si le fichier contient tout de même du contenu, il sera de toute façon ignoré.
+(\*) Le fichier d'une page avec ce layout ne devrait contenir qu'un _front matter_ suivi d'aucun contenu, car ce contenu sera totalement généré. Si le fichier contient tout de même du contenu, il sera de toute façon ignoré.
 
-Nous allons maintenant voir ces templates plus en détail, en particulier les paramètres disponibles pouvant être mis dans le front matter.
+Nous allons maintenant voir ces templates plus en détail, en particulier les paramètres disponibles pouvant être mis dans le _front matter_.
 
 ### Template `page` (et `blog`)
 
-Les paramètres que vous pouvez mettre dans le front matter sont les suivants :
+Les paramètres que vous pouvez mettre dans le _front matter_ sont les suivants :
 
 #### Paramètres de titre et de menu
 
@@ -418,7 +422,7 @@ Même paramètres que `page` avec les paramètres suivants en plus :
 
 Le format à utiliser dans le fichier de données est détaillé plus bas.
 
-Comme indiqué précédemment le contenu du fichier d'une page `publications` devrait être vide à part le front matter.
+Comme indiqué précédemment le contenu du fichier d'une page `publications` devrait être vide à part le _front matter_.
 
 ### Template `publications`
 
@@ -426,14 +430,14 @@ Même paramètres que `page` avec le paramètre obligatoire `projects` contenant
 
 Le format à utiliser dans le fichier de données est détaillé plus bas.
 
-Comme indiqué précédemment le contenu du fichier d'une page `projects` devrait être vide à part le front matter.
+Comme indiqué précédemment le contenu du fichier d'une page `projects` devrait être vide à part le _front matter_.
 
 ### Template `onepage`
 
 * `title`
 * `collection` : optionnel et pour les utilisateurs confirmés, nom de la [collection Jekyll](https://jekyllrb.com/docs/collections/) à utiliser, par défaut `homepage`
 
-Comme indiqué précédemment le contenu du fichier d'une page `onepage` devrait être vide à part le front matter.
+Comme indiqué précédemment le contenu du fichier d'une page `onepage` devrait être vide à part le _front matter_.
 
 ### Template `onepage-block`
 
@@ -454,7 +458,7 @@ Même paramètres que `onepage-block`, avec le paramètre obligatoire `publicati
 
 Le format à utiliser dans le fichier de données est détaillé plus bas.
 
-Comme indiqué précédemment le contenu du fichier d'un bloc `onepage-block-publications` devrait être vide à part le front matter.
+Comme indiqué précédemment le contenu du fichier d'un bloc `onepage-block-publications` devrait être vide à part le _front matter_.
 
 ### Template `onepage-block-contact`
 
@@ -463,7 +467,7 @@ Même paramètres que `onepage-block`, avec le paramètre obligatoire `contacts`
 Voici un exemple complet de contacts :
 
 ```yaml
-# Front matter onepage-block-contact
+# _front matter_ onepage-block-contact
 contacts:
   - type: email
   - type: phone
@@ -506,11 +510,11 @@ contacts:
 
 Il faut indiquer `type: custom`, vous pouvez alors choisir l'icone à utiliser parmi les icones [FontAwesome](http://fontawesome.io/icons/) (version 4.7) et indiquer son nom dans le paramètre `icon`, `text` sera affiché en dessous, et vous pouvez si vous voulez indiquer une URL dans `url`.
 
-Comme indiqué précédemment le contenu du fichier d'un bloc `onepage-block-contact` devrait être vide à part le front matter, il sera généré à partir de la liste ci-dessus.
+Comme indiqué précédemment le contenu du fichier d'un bloc `onepage-block-contact` devrait être vide à part le _front matter_, il sera généré à partir de la liste ci-dessus.
 
 ### Résumé des paramètres des templates
 
-_(\*) : Le fichier d'une page avec ce layout ne devrait contenir qu'un front matter suivi d'aucun contenu, car ce contenu sera totalement généré. Si le fichier contient tout de même du contenu, il sera de toute façon ignoré._  
+_(\*) : Le fichier d'une page avec ce layout ne devrait contenir qu'un _front matter_ suivi d'aucun contenu, car ce contenu sera totalement généré. Si le fichier contient tout de même du contenu, il sera de toute façon ignoré._  
 _"<" : indique qu'un template "hérite" les paramètres d'un autre_
 
 * **page**
