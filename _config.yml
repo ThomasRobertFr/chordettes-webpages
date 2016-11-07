@@ -30,8 +30,8 @@ back-link:
 
 
 # Technical infos
-baseurl: "/~username" # url of your webpage if not at the root of the domain (leading /, no trailing /)
-url: "http://webia.lip6.fr" # the base hostname & protocol for your site (no trailing /)
+baseurl: "/chordettes-webpages" # url of your webpage if not at the root of the domain (leading /, no trailing /)
+url: "https://thomasrobertfr.github.io" # the base hostname & protocol for your site (no trailing /)
 header-default-style: trianglify # default page header style (see styles in user documentation)
 # google-analytics: UA-XXXXXXX-X # your google analytics code if you want visit stats (uncomment to enter)
 

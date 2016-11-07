@@ -1,0 +1,9 @@
+- title: Deep Vision
+  date: 2016/01/10
+  desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin vestibulum mauris, et venenatis dui vulputate id. Morbi eget tincidunt odio.
+
+- title: VISIIR
+  date: 2013/01/10
+  desc: VIsual Seek for Interactive Image Retrieval (VISIIR) is a project aiming at exploring new methods for semantic image annotation.
+  image: images/projects/visiir.png
+  url: http://visiir.lip6.fr

@@ -1,0 +1,78 @@
+- type: conf
+  in: IEEE ICIP
+  year: 2016
+  title: Gaze latent SVM for image classification
+  authors: X. Wang, N. Thome, M. Cord
+  additional: p. 2212-2225, vol 12
+
+- type: journal
+  in: IEEE ICIP
+  year: 2016
+  title: Max-Min convolutional neural networks for image classification
+  authors: M. Blot, M. Cord,  N. Thome
+
+- type: conf
+  in: ICCV
+  year: 2015
+  title: "MANTRA: Minimum Maximum Latent Structural SVM for Image Classification and Ranking" # need to use the quotes to escape ":"
+  authors: T. Durand, N. Thome, M. Cord
+  image: http://webia.lip6.fr/~durandt/papers/CVPR16/image2.png
+  bibtex: |
+      @article { Bolanos2016,
+          url = {http://arxiv.org/pdf/1604.07953v1},
+          eprint = {1604.07953},
+          arxivid = {1604.07953},
+          archiveprefix = {arXiv},
+          month = {Apr},
+          year = {2016},
+          booktitle = {arXiv},
+          title = {Simultaneous Food Localization and Recognition},
+          author = {Marc Bolaños and Petia Radeva}
+      }
+  highlight: true
+
+- type: workshop
+  in: Cooking and Eating Activities at IEEE ICME
+  year: 2015
+  title: Recipe Recognition with Large Multimodal Food Dataset
+  authors: X. Wang, D. Kumar, N. Thome, M. Cord, F. Precioso
+
+- type: conf
+  in: IEEE ICIP
+  year: 2015
+  title: LR-CNN For Fine-grained Classification with Varying Resolution
+  authors: M. Chevalier, N. Thome, M. Cord, J. Fournier, G. Henaff, E. Dutch
+  urls:
+     - url: http://webia.lip6.fr/~cord/Publications_files/cordDeepLearningICIP2015.pdf
+       title: Paper
+     - url: http://webia.lip6.fr/~cord/Publications_files/cordDeepLearningICIP2015.pdf
+       title: Supplementary
+       style: default
+
+- type: conf
+  in: IEEE ICIP
+  year: 2015
+  title: Exemplar Based Metric Learning For Robust Visual Localization
+  authors: C. Le Barz, N. Thome, M. Cord, M. Sanfourche, S. Herbin
+  url: http://webia.lip6.fr/~cord/Publications_files/cordMetricLearnICIP2015.pdf
+  highlight: true
+
+- type: conf
+  in: ICIP
+  year: 2014
+  title: Incremental Learning of Latent Structural SVM for Weakly Supervised Image Classification
+  authors: T. Durand, N. Thome, M. Cord, D. Picard
+  highlight: true
+
+- type: conf
+  in: ICIP
+  year: 2014
+  title: Semantic Pooling for Image Categorization using Multiple Kernel Learning
+  authors: T. Durand, D. Picard, N. Thome, M. Cord
+
+- type: book
+  title: Machine Learning Techniques for Multimedia
+  image: images/publis/book-cord.png
+  raw-desc: "<p class=\"color-emph-light\">M. Cord, P. Cunningham (Eds.) (2008)</p>
+            <p>Case Studies on Organization and Retrieval. Series: Cognitive Technologies</p>
+             <p class='small'>Processing multimedia content has emerged as a key area for the application of machine learning techniques, where the objectives are to provide insight into the domain from which the data is drawn, and to organize that data and improve the performance of the processes manipulating it.</p>"
