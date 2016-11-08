@@ -331,7 +331,7 @@ Notez que pour compiler le site une fois avec Jekyll (sans que Jekyll lance un s
 Pour utiliser ce template, placez vous dans le dossier dans lequel vous voulez développer faire
 
 ```sh
-git clone git@github.com:ThomasRobertFr/chordettes-webpages.git .
+git clone https://github.com/ThomasRobertFr/chordettes-webpages.git
 git branch $USER
 git checkout $USER
 ```
@@ -339,7 +339,7 @@ git checkout $USER
 Vous pouvez ensuite faire vos modifications. Pour tester et vous inspiré du site de démo, faites :
 
 ```sh
-git clone git@github.com:ThomasRobertFr/chordettes-webpages.git demo
+git clone https://github.com/ThomasRobertFr/chordettes-webpages.git demo
 cd demo
 git checkout demo
 ```
@@ -416,7 +416,7 @@ Similaire à `page`, sans `parent` et `show-children`, et avec le champ `date` �
 
 Même paramètres que `page` avec les paramètres suivants en plus :
 
-* `publications` _(obligatoire)_ : nom du fichier de données YAML contenant la liste des publications à afficher (ex : `publications: publications` pour afficher les publis du fichier `_data/publications.yml`)
+* `data-name` _(obligatoire)_ : nom du fichier de données YAML contenant la liste des publications à afficher (ex : `data-name: publications` pour afficher les publis du fichier `_data/publications.yml`)
 * `groupyby` _(optionnel)_ : par défaut les publis sont affichées à la suite. On peut les grouper par années ou par type (conf, journal, etc.) en définissant ce paramètre à `year` ou `type`. Dans ce cas des titres de groupes seront affichés, avec des liens en haut de la liste de publications.
 * `tidy` _(optionnel, def `false`)_ : si à `true`, le style utilisé pour afficher les publications sera un peu plus "serré" et le texte écrit moins gros. Un style alternatif si on trouve que l'original est trop aéré, surtout si la liste de publis est longue.
 
@@ -426,7 +426,7 @@ Comme indiqué précédemment le contenu du fichier d'une page `publications` de
 
 ### Template `publications`
 
-Même paramètres que `page` avec le paramètre obligatoire `projects` contenant nom du fichier de données YAML contenant la liste des projets à afficher (ex : `projects: projects` pour afficher les publis du fichier `_data/projects.yml`)
+Même paramètres que `page` avec le paramètre obligatoire `data0-name` contenant nom du fichier de données YAML contenant la liste des projets à afficher (ex : `data-name: projects` pour afficher les publis du fichier `_data/projects.yml`)
 
 Le format à utiliser dans le fichier de données est détaillé plus bas.
 
@@ -454,7 +454,9 @@ Comme indiqué précédemment le contenu du fichier d'une page `onepage` devrait
 
 ### Template `onepage-block-publications`
 
-Même paramètres que `onepage-block`, avec le paramètre obligatoire `publications` en plus, qui doit contenir le nom du fichier de données YAML contenant la liste des publications à afficher dans le bloc. (ex : `publications: publications-home` pour afficher les publis du fichier `_data/publications-home.yml`)
+Même paramètres que `onepage-block`, avec le paramètre obligatoire `data-name` en plus, qui doit contenir le nom du fichier de données YAML contenant la liste des publications à afficher dans le bloc. (ex : `data-name: publications-home` pour afficher les publis du fichier `_data/publications-home.yml`)
+
+Le paramètre optionnel `more-publications-page` est le chemin du fichier de la page listant l'intégralité des publications (ex : `more-publications-page: _pages/publications.md`), dans le cas où on ne voudrait qu'un sous-ensemble des publications sur la page d'accueil. Si ce paramètre est défini, un bouton vers la page des publcations sera ajouté à la fin du bloc.
 
 Le format à utiliser dans le fichier de données est détaillé plus bas.
 
@@ -509,6 +511,17 @@ contacts:
 ```
 
 Il faut indiquer `type: custom`, vous pouvez alors choisir l'icone à utiliser parmi les icones [FontAwesome](http://fontawesome.io/icons/) (version 4.7) et indiquer son nom dans le paramètre `icon`, `text` sera affiché en dessous, et vous pouvez si vous voulez indiquer une URL dans `url`.
+
+
+Par ailleurs, on peut assigner la valeur `true` à la clé `not-hidden` pour l'élément de type `email` si on veut que l'adresse email ne soit pas masquée par un bouton (permettant d'éviter que le mail soit crawlé par des bots pour limiter le spam). Ex :
+
+```yaml
+contacts:
+  # [...]
+  - type: email
+    not-hidden: true
+  # [...]
+```
 
 Comme indiqué précédemment le contenu du fichier d'un bloc `onepage-block-contact` devrait être vide à part le _front matter_, il sera généré à partir de la liste ci-dessus.
 
