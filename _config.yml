@@ -1,36 +1,23 @@
 # Website title & description (the description is used in the HTML <head>, read by Google and co)
-title: Firstname Lastname
+title: Matthieu Cord
 description: >
-  Write a short bio. The above ">" allows to have multiple lines here.
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget dolor
-  venenatis massa sodales tincidunt ac nec erat. Aenean fermentum erat eget
-  dapibus pulvinar. Mauris diam odio, sagittis ut odio eget.
+  Professor at UPMC-Sorbonnes Universités. Researcher at LIP6 on Image Processing, Computer Vision, Deep Learning, Pattern Recognition and Computational Cooking
 
 
 # Your personal infos (used for the sidebar)
 author:
   # Site title
-  name: Firstname Lastname
-  description: Job title
-  photo: /images/photo.jpg
+  name: Matthieu Cord
+  description: Professor at UPMC - Sorbonne Universities, Researcher at LIP6 UPMC & CNRS
+  photo: /images/photo.png
   # Contacts (will be used by the contact block, you can enter everything here and choose which one should appear there)
-  email: firstname.lastname@lip6.fr
-  phone: 01 23 45 67 89
-  address: "Couloir 26-00, Bureau 525 \n 4, place Jussieu \n 75005 Paris \n France"
-  twitter: username
-  linkedin: username
-  github: username
-  google-plus: username
-
-
-# Link that appear at the top of the sidebar to return to the "main" site of the team, remove lines below to remove link
-back-link:
-  url: http://webia.lip6.fr/~cord
-  title: Multimedia team
+  email: matthieu.cord@lip6.fr
+  phone: "(+33) 1 44 27 71 39 \n <small>Fax: (+33) 1 44 27 70 00</small>"
+  address: "LIP6 / UPMC \n 4, place Jussieu \n 75005 Paris, France \n <a class=\"btn btn-default\" href=\"https://www.lip6.fr/informations/comment.php?LANG=en\">Directions</a>"
 
 
 # Technical infos
-baseurl: "/~username" # url of your webpage if not at the root of the domain (leading /, no trailing /)
+baseurl: "/~robert/cord" # url of your webpage if not at the root of the domain (leading /, no trailing /)
 url: "http://webia.lip6.fr" # the base hostname & protocol for your site (no trailing /)
 header-default-style: trianglify # default page header style (see styles in user documentation)
 # google-analytics: UA-XXXXXXX-X # your google analytics code if you want visit stats (uncomment to enter)
@@ -39,7 +26,7 @@ header-default-style: trianglify # default page header style (see styles in user
 # "Very" technical infos (modify only if you know what you're doing)
 sass:
   sass_dir: /assets/css/
-  style: compressed
+  #style: compressed
 timezone: Europe/Paris
 include: ['_pages']
 permalink: /:title/

@@ -1,0 +1,884 @@
+# 2016
+
+- type: journal
+  year: 2016
+  in: IJCV International Journal of Computer Vision
+  title: Learning a Distance Metric from Relative Comparisons between Quadruplets of Images
+  authors: M.T. Law, N. Thome, M. Cord
+  additionals: 2014 IF 3.8
+
+- type: conf
+  year: 2016
+  in: CVPR
+  url: pdfs/publis/main.pdf
+  title: "WELDON: Weakly Supervised Learning of Deep Convolutional Neural Networks"
+  authors: T. Durand, N. Thome, M. Cord
+
+- type: conf
+  year: 2016
+  in: CVPR (oral)
+  url: pdfs/publis/cvpr2Cord2016.pdf
+  title: Closed-Form Training of Mahalanobis Distance for Supervised Clustering
+  authors: M.T. Law, Y Yu, M. Cord, E.P Xing
+
+- type: conf
+  year: 2016
+  in: IEEE ICIP
+  title: Deep neural networks under stress
+  authors: M. Carvalho, M. Cord, S. Avila, N. Thome, E. Valle
+
+- type: conf
+  year: 2016
+  in: IEEE ICIP
+  title: Gaze latent SVM for image classification
+  authors: X. Wang, N. Thome, M. Cord
+
+- type: conf
+  year: 2016
+  in: IEEE ICIP
+  title: Max-Min convolutional neural networks for image classification
+  authors: M. Blot, M. Cord, N. Thome
+
+# 2015
+
+- type: conf
+  year: 2015
+  in: ICCV
+  url: pdfs/publis/final.pdf
+  title: "MANTRA: Minimum Maximum Latent Structural SVM for Image Classification and Ranking"
+  authors: T. Durand, N. Thome, M. Cord
+
+- type: workshop
+  year: 2015
+  in: Cooking and Eating Activities in IEEE ICME
+  url: pdfs/publis/CordCooking2015icme.pdf
+  title: Recipe Recognition with Large Multimodal Food Dataset
+  authors: X. Wang, D. Kumar, N. Thome, M. Cord, F. Precioso
+
+- type: conf
+  year: 2015
+  in: IEEE ICIP
+  url: pdfs/publis/cordDeepLearningICIP2015.pdf
+  title: LR-CNN For Fine-grained Classification with Varying Resolution
+  authors: M. Chevalier, N. Thome, M. Cord, J. Fournier, G. Henaff, E. Dusch
+
+- type: conf
+  year: 2015
+  in: IEEE ICIP
+  url: pdfs/publis/cordMetricLearnICIP2015.pdf
+  title: Exemplar Based Metric Learning For Robust Visual Localization
+  authors: C. Le Barz, N. Thome, M. Cord, M. Sanfourche, S. Herbin
+
+## 2014
+
+- type: conf
+  year: 2014
+  in: IEEE ICIP
+  url: "http://webia.lip6.fr/~thomen/papers/Durand_ICIP_2014.pdf"
+  title: Incremental Learning of Latent Structural SVM for Weakly Supervised Image Classification
+  authors: T. Durand, N. Thome, M. Cord, D. Picard
+
+- type: conf
+  year: 2014
+  in: IEEE ICIP
+  url: "http://webia.lip6.fr/~thomen/papers/Durand_Picard_ICIP_2014.pdf"
+  title: Semantic Pooling for Image Categorization using Multiple Kernel Learning
+  authors: T. Durand, D. Picard, N. Thome, M. Cord
+
+- type: conf
+  year: 2014
+  in: CVPR
+  url: "http://www.cv-foundation.org/openaccess/content_cvpr_2014/papers/Law_Fantope_Regularization_in_2014_CVPR_paper.pdf"
+  title: Fantope Regularization in Metric Learning
+  authors: M.T. Law, N. Thome, M. Cord
+
+
+- type: conf
+  year: 2014
+  in: ICLR
+  urls:
+    - url: pdfs/publis/ICLRcord.pdf
+      title: Paper
+    - url: https://www.youtube.com/watch?v=w5S8LuLhmmc
+      title: Video
+      style: info
+  title: Sequentially Generated Instance-Dependent Image Representations for Classification
+  authors: G. Dulac-Arnold, L. Denoyer, N. Thome, M. Cord, P. Gallinari
+  additionals: Banff, Canada
+
+- type: workshop
+  year: 2014
+  in: IROS
+  url: "http://ppniv14.irccyn.ec-nantes.fr/final/session4_Lebarz.pdf"
+  title: Global Robot Ego-localization Combining Image Retrieval and HMM-based Filtering
+  authors: Cedric Le Barz, N. Thome, M. Cord, S. Herbin, M. Sanfourche
+
+- type: journal
+  year: 2014
+  in: IEEE Journal of Selected Topics in Signal Processing
+  additionals: IF 3.2
+  title: Perceptual principles for video classification with Slow Feature Analysis
+  authors: C. Thériault, N. Thome, M. Cord, P. Perez
+
+- type: journal
+  year: 2014
+  in: IEEE Transactions on Neural Networks and Learning Systems
+  url: pdfs/publis/TNNLSCord2014.pdf
+  additionals: IF 3.7
+  title: Learning Deep Hierarchical Visual Feature Coding
+  authors: H. Goh, N. Thome, M. Cord, J.H. Lim
+
+- type: journal
+  year: 2014
+  in: CVIU
+  url: pdfs/publis/SnooperTextCVIU13cord.pdf
+  title: "SnooperText: A Text Detection System for Automatic Indexing of Urban Scenes"
+  authors: R. Minetto, N. Thome, M. Cord, N. Leite, J. Stolfi
+
+- type: journal
+  year: 2014
+  in: TGARS
+  additionals: Vol 52, Issue 2, Feb 2014
+  url: pdfs/publis/TGARScord.pdf
+  title: Model-Based Analysis-Synthesis for Realistic Tree Reconstruction and Growth Simulation
+  authors: C. Iovan, PH. Cournede, T. Guyard, B. Bayol, D. Boldo, M. Cord
+
+# 2013
+
+- type: conf
+  year: 2013
+  in: NIPS
+  url: pdfs/publis/TopDownDBN.pdf
+  title: Top-Down Regularization of Deep Belief Networks
+  authors: H. Goh, , N. Thome, M. Cord, JH. Lim
+
+- type: conf
+  year: 2013
+  in: ICCV
+  url: pdfs/publis/cordiccv2013.pdf
+  title: Quadruplet-wise Image Similarity Learning
+  authors: M.T. Law, N. Thome, M. Cord
+
+- type: conf
+  year: 2013
+  in: IEEE ICIP
+  url: pdfs/publis/ICIP13cord.pdf
+  title: Image Classification using Object Detectors
+  authors: T. Durand, N. Thome, M. Cord, S. Avila
+
+- type: conf
+  year: 2013
+  in: CVPR
+  url: pdfs/publis/cvpr.pdf
+  title: "Dynamic Scene Classification: Learning Motion Descriptors with Slow Features Analysis"
+  authors: C. Thériault, N. Thome, M. Cord
+
+- type: journal
+  year: 2013
+  in: CVIU (Vol 117, Issue 5, May 2013)
+  urls:
+    - url: "https://sites.google.com/site/bossanovasite/"
+      title: Project
+    - url: pdfs/publis/BossaNova.pdf
+      title: Paper
+  title: "Pooling in Image Representation: the Visual Codeword Point of View"
+  authors: S. Avila, N. Thome, M. Cord, E. Valle, A. Araujo
+
+- type: journal
+  year: 2013
+  in: IEEE Transactions on Image Processing (Vol 22, Issue 2, Feb 2013)
+  url: pdfs/publis/06324437.pdf
+  title: Extended coding and pooling in the HMAX model
+  authors: C. Thériault, N. Thome, M. Cord
+
+- type: journal
+  year: 2013
+  in: Pattern Recognition (Vol 46, Issue 3, March 2013)
+  url: pdfs/publis/Minetto_PR_T-HOG_draft-1.pdf
+  title: "T-HOG: an Effective Gradient-Based Descriptor for Single Line Text Regions"
+  authors: R. Minetto, N. Thome, M. Cord, N. Leite , J. Stolfi
+
+- type: journal
+  year: 2013
+  in: JMLR (May 2013) in JMLR Track for Machine Learning Open Source Software
+  url: pdfs/publis/picard11jmlr.pdf
+  url: "https://mloss.org/software/view/409/"
+  title: "JKernelMachines: A simple framework for Kernel Machines"
+  authors: D. Picard, N. Thome, M. Cord
+
+# 2012
+
+- type: journal
+  year: 2012
+  in: IEEE PAMI (Vol 34 (2) Feb. 2012 p402-410)
+  url: pdfs/publis/pami11cord.pdf
+  title: Locality-sensitive hashing for chi2 distance
+  authors: D. Gorisse, M. Cord, F. Precioso
+
+- type: journal
+  year: 2012
+  in: Information Sciences (IF 3.6) (Vol 192, June 2012)
+  url: pdfs/publis/INS8601.pdf
+  title: An Application of Swarm Intelligence to Distributed Image Retrieval
+  authors: D. Picard, A. Revel, M. Cord
+
+- type: conf
+  year: 2012
+  in: ECCV
+  urls:
+    - url: pdfs/publis/ECCV2012cord.pdf
+      title: Paper
+    - url: pdfs/publis/PosterCordECCV12.pdf
+      title: Poster
+      style: info
+  title: Unsupervised and supervised visual codes with Restricted Boltzmann Machines
+  authors: H. Goh, , N. Thome, M. Cord, JH. Lim
+
+- type: workshop
+  year: 2012
+  in: ECCV
+  url: pdfs/publis/ECCVworkshop2012cord.pdf
+  title: Hybrid Pooling Fusion in the BoW Pipeline
+  authors: M. Law, N. Thome, M. Cord
+
+- type: book
+  year: 2012
+  title: Visual Indexing and Retrieval
+  authors: J. Benois-Pineau, F. Precioso, M. Cord
+  in: "Series: SpringerBriefs in Computer Science, ISBN 978-1-4614-3587-7"
+
+- type: conf
+  year: 2012
+  in: IEEE ICIP
+  url: pdfs/publis/ICIP2012cord.pdf
+  title: Contextual detection of drawn symbols in old maps
+  authors: J. Guyomard, N. Thome, M. Cord, T. Artières
+
+- type: workshop
+  year: 2012
+  in: CBMI
+  url: pdfs/publis/vraie_version_finale.pdf
+  title: Structural and Visual Similarity Learning for Web Page Archiving
+  authors: M. Teva Law, C. Sureda, N. Thome, S. Gançarski, M. Cord
+
+- type: conf
+  year: 2012
+  in: ESANN 2012
+  url: pdfs/publis/esann12cord.pdf
+  title: Learning geometric combinations of Gaussian kernels with alternating Quasi-Newton algorithm
+  authors: D. Picard, N. Thome, M. Cord, A. Rakotomamonjy
+
+- type: workshop
+  year: 2012
+  title: BossaNova at ImageCLEF 2012 Flickr Photo Annotation Task.
+  in: Working Notes of the Conference and Labs of the Evaluation Forum (CLEF)
+  authors: S.AVILA, N. THOME, M. CORD, E. VALLE and A. de A. ARAÚJO.
+
+- type: conf
+  year: 2012
+  in: ACM Symposium on Document Engineering (12th DocEng)
+  title: Structural and Visual Comparisons for Web Page Archiving
+  authors: M. Teva Law, N. Thome, S. Gançarski, M. Cord
+
+# 2011
+
+- type: workshop
+  year: 2011
+  in: TREC Video Retrieval Evaluation 2011
+  title: "IRIM at TRECVID 2011: Semantic Indexing and Instance Search"
+  authors: B. Delazoide & Co
+  url: pdfs/publis/IRIM_tv11.pdf
+
+- type: workshop
+  year: 2011
+  in: ICCV on Computer Vision for Remote Sensing of the Environment
+  title: Text Detection and Recognition in Urban Scenes
+  url: pdfs/publis/ICCV2011wcord.pdf
+  authors: R. Minetto, N. Thome, M. Cord, F. Precioso, J. Guyomard, J. Stolfi, N. Leite
+
+- type: workshop
+  year: 2011
+  in: ICCV on Kernels and Distances for Computer Vision
+  title: Combining complementary kernels in complex visual categorization
+  url: pdfs/publis/cordWshopIccv.pdf
+  authors: N. Thome, D. Picard, M. Cord
+
+- type: conf
+  year: 2011
+  in: IEEE ICIP
+  url: pdfs/publis/icip11cordhmax.pdf
+  title: "Hmax-s: deep scale representation for biologically inspired image categorization"
+  authors: C. Thériault, N. Thome, M. Cord
+
+- type: conf
+  year: 2011
+  in: IEEE ICIP
+  url: pdfs/publis/icip11cordtext.pdf
+  title: "Snoopertrack: text detection and tracking for outdoor videos"
+  authors: R. Minetto, N. Thome, M. Cord, N. Leite, J. Stolfi
+
+- type: conf
+  year: 2011
+  in: IEEE ICIP
+  url: pdfs/publis/icip11cordindex.pdf
+  title: Efficient bag-of-feature kernel representation for image similarity search
+  authors: F. Precioso, M. Cord, D. Gorisse, N. Thome
+
+- type: conf
+  year: 2011
+  in: IEEE ICIP
+  url: pdfs/publis/icip11cordbossa.pdf
+  title: "Bossa: extended bow formalism for image classification"
+  authors: S.Avila, N. Thome, M. Cord, E. Valle, A. araujo
+
+- type: conf
+  year: 2011
+  in: IEEE ICIP
+  url: pdfs/publis/icip11cordtopocolor.pdf
+  title: Learning invariant color features with sparse topographic restricted boltzmann machines
+  authors: H. Goh, , N. Thome, M. Cord, L. Kusmierz, JH. Lim
+
+- type: workshop
+  year: 2011
+  in: CBMI
+  title: Using LIDO to handle 3D Cultural Heritage Documentation Data Provenance
+  authors: D. Pitzalis, M. Cord, F. Niccolucci
+
+# 2010
+
+- type: journal
+  year: 2010
+  in: Pattern Recognition
+  url: pdfs/publis/publiPRcord2010.pdf
+  title: "SALSAS: Sub-linear Active Learning Strategy with Approximate k-NN Search"
+  authors: D. Gorisse, M. Cord, F. Precioso
+
+- type: journal
+  year: 2010
+  in: MTAP
+  url: pdfs/publis/KernelVideo.pdf
+  title: Spatio-Temporal Tube data representation and Kernel design for SVM-based video object retrieval system
+  authors: S. Zhao, F. Precioso, M. Cord
+
+- type: journal
+  year: 2010
+  in: IEEE trans on Consumer Electronics
+  url: pdfs/publis/Indexing%20Personal_Valle.pdf
+  title: "Indexing personal image collections: A flexible, scalable solution"
+  authors: E. Valle, M. Cord, S. Philipp-Foliguet, D. Gorisse
+
+- type: workshop
+  year: 2010
+  in: NIPS
+  url: pdfs/publis/NIPS2010_Goh.pdf
+  title: Biasing Restricted Boltzmann Machines to Manipulate Latent Selectivity and Sparsity
+  authors: H. Goh, N. Thome, M. Cord
+
+- type: conf
+  year: 2010
+  in: IEEE ICIP
+  url: pdfs/publis/ScalableActive.pdf
+  title: Scalable Active learning strategy for object category retrieval
+  authors: D. Gorisse M. Cord, F. Precioso
+
+- type: conf
+  year: 2010
+  in: IEEE ICIP
+  url: pdfs/publis/TextDetection.pdf
+  title: "SnooperText: A Multiresolution System for Text Detection in Complex Visual Scenes"
+  authors: R. Minetto, N. Thome, M. Cord, J. Fabrizio, B. Marcotegui
+
+- type: conf
+  year: 2010
+  in: IEEE ICIP
+  url: pdfs/publis/VideoOrecognition.pdf
+  title: STTK-Based Video Object Recognition
+  authors: S. Zhao, F. Precioso, M. Cord
+
+- type: conf
+  year: 2010
+  in: IEEE ICIP
+  url: pdfs/publis/L1mkl.pdf
+  title: An efficient System for combining complementary kernels in complex visual categorization tasks
+  authors: D. Picard, N. Thome, M. Cord
+
+## 2009
+
+- type: workshop
+  year: 2009
+  in: ACM Sympo DocEng
+  title: Geometric Consistency Checking for Local-Descriptor Based Document Retrieval
+  authors: D. Picard, M. Cord, E. Valle
+
+- type: tuto
+  year: 2009
+  title: "Advanced Techniques in CBIR: Local Descriptors, Visual Dictionaries and Bags of Features"
+  in: ACM Symposium on Document Engineering
+  authors: Valle, Eduardo and Cord, Matthieu
+  additionals: Rio de Janeiro – RJ, Brazil, October 11–14, 2009
+
+- type: tuto
+  year: 2009
+  title: Similarity Search and Indexing for High-Dimensional Data
+  in: ACM Symposium on Document Engineering
+  authors: Valle, Eduardo and Cord, Matthieu
+  additionals: Fortaleza – CE, Brazil. p. 263. October 5–9, 2009
+
+- type: conf
+  year: 2009
+  in: IEEE ICIP
+  url: pdfs/publis/FastActivecord09.pdf
+  title: Optimization on active learning strategy for object category retrieval
+  authors: D. Gorisse M. Cord, F. Precioso
+
+- type: conf
+  year: 2009
+  in: IEEE ICIP
+  url: pdfs/publis/TextSegmcord09.pdf
+  title: Text segmentation in natural scenes using toggle-mapping
+  authors: J. Fabrizio, B. Marcotegui, M. Cord
+
+- type: conf
+  year: 2009
+  in: IEEE ICIP
+  url: pdfs/publis/ActorRetrievalcord09.pdf
+  title: Spatio-temporal tube kernel for actor retrieval
+  authors: S. Zhao, F. Precioso, M. Cord
+
+- type: workshop
+  year: 2009
+  in: CMRT
+  url: pdfs/publis/SiftUrbancord09.pdf
+  title: Study of sift descriptors for image matching based localization in urban street view context
+  authors: D. Picard, M. Cord, E. Valle
+
+## 2008
+
+- type: book
+  year: 2008
+  title: Machine Learning Techniques for Multimedia
+  authors: M. Cord, P. Cunningham (Eds.)
+  image: images/publis/book-cord.png
+  raw-desc: "<p>Case Studies on Organization and Retrieval. Series: Cognitive Technologies</p>
+             <p class='small'>Processing multimedia content has emerged as a key area for the application of machine learning techniques, where the objectives are to provide insight into the domain from which the data is drawn, and to organize that data and improve the performance of the processes manipulating it.</p>"
+
+
+- type: journal
+  year: 2008
+  in: IEEE Transactions on Image Processing
+  url: pdfs/publis/IEEEip08cord.pdf
+  title: Active learning methods for Interactive Image Retrieval
+  authors: P.H. Gosselin, M. Cord
+  additionals: "Volume: 17, Issue: 7, Pages 1200-1211, ISSN: 1057-7149, 2008"
+
+
+- type: journal
+  year: 2008
+  in: IEEE Transactions on Multimedia
+  url: pdfs/publis/double.pdf
+  title: "Image Retrieval over Networks : Active Learning using Ant Algorithm"
+  authors: D. Picard, M. Cord, A. Revel
+  additionals: vol. 10, no. 7, pp. 1356--1365 - nov 2008
+
+
+- type: journal
+  year: 2008
+  in: CVIU
+  url: pdfs/publis/VIsualDictonaryKernel.pdf
+  title: Combining visual dictionary, kernel-based similarity and learning strategy for image category retrieval
+  authors: P.H. Gosselin, M. Cord, Sylvie Philipp-Foliguet
+  additionals: "Volume 110, Issue 3, Pages 403-417, ISSN:1077-3142, 2008"
+
+
+- type: journal
+  year: 2008
+  in: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+  url: pdfs/publis/jstar_iovan_vfinale.pdf
+  title: Detection, Characterization and Modeling Vegetation in Urban Areas from High Resolution Aerial Imagery
+  authors: C. Iovan, D. Boldo, M. Cord
+  additionals: vol. 1(3), September 2008
+
+
+- type: conf
+  year: 2008
+  in: ICPR
+  url: pdfs/publis/fastKernel.pdf
+  title: Fast approximate kernel-based similarity search for image retrieval task
+
+- type: conf
+  year: 2008
+  in: DocEng
+  url: pdfs/publis/valle08doceng.pdf
+  title: Fast Identification of Visual Documents Using Local Descriptors
+
+- type: conf
+  year: 2008
+  in: CIKM
+  url: pdfs/publis/valle03descriptorIndexingCIKM.pdf
+  title: High-Dimensional Descriptor Indexing for Large Multimedia Databases
+
+- type: conf
+  year: 2008
+  in: ICIP
+  url: pdfs/publis/ICIPcord08.pdf
+  title: Long term learning for image retrieval over networks
+
+- type: conf
+  year: 2008
+  in: EUSIPCO
+  url: pdfs/publis/zhao08eusipco.pdf
+  title: Actor retrieval system based on kernels on bags of bags
+
+- type: workshop
+  year: 2008
+  in: TRECVID Video Sum (ACM multimedia)
+  url: pdfs/publis/BBCRush_TRECVID2008_ETIS.pdf
+  title: Summarization scheme based on near-duplicate analysis
+
+- type: workshop
+  year: 2008
+  in: CBMI
+  url: pdfs/publis/CBMIpicard.pdf
+  title: "Image retrieval over networks: ant algorithm for long term active learning"
+
+- type: conf
+  year: 2008
+  in: ISPRS
+  url: pdfs/publis/isprs_2008.pdf
+  title: Detection, segmentation and characterisation of vegetation in high-resolution aerial images for 3d city modelling
+
+- type: conf
+  year: 2008
+  in: IWSSIP
+  title: An interactive video content-based retrieval system
+  authors: G. Cámara-Chávez, F. Precioso, M. Cord, S. Phillip-Foliguet, A. de A. Araújo
+
+## 2007
+
+- type: journal
+  year: 2007
+  in: Image and Vision Computing
+  url: pdfs/publis/ARTICLE_IVC.pdf
+  title: Stochastic exploration and active learning for image retrieval
+  authors: M. Cord, P.H. Gosselin, Sylvie Philipp-Foliguet
+  additionals: Volume 25, Issue 1, Pages 14-23
+
+
+- type: conf
+  year: 2007
+  in: ACM International Conference on Image and Video Retrieval
+  url: pdfs/publis/civr07cord.pdf
+  title: Kernel on Bags for multi-object database retrieval
+  authors: P.H. Gosselin, M. Cord and S. Philipp-Foliguet
+  additionals: Amsterdam, The Netherlands, July 2007
+
+
+- type: conf
+  year: 2007
+  in: IEEE International Conference on Image Processing
+  url: pdfs/publis/icip07cordEd.pdf
+  title: Descriptor matching for image identificationon cultural databases
+  authors: E. Valle, M. Cord, S. Philipp-Foliguet
+  additionals: San Antonio, Texas, USA, September 2007
+
+
+- type: conf
+  year: 2007
+  in: ICDAR
+  title: Matching High-Dimensional Local Descriptors for Image Identification on Cultural Databases
+  authors: E. Valle, M. Cord, S. Philipp-Foliguet
+
+- type: conf
+  year: 2007
+  in: ICIP
+  url: pdfs/publis/icip07cord.pdf
+  title: Kernel on Bags of Fuzzy Regions for fast object retrieval
+  authors: P.H. Gosselin, M. Cord and S. Philipp-Foliguet
+  additionals: San Antonio, Texas, USA, September 2007
+
+
+- type: conf
+  year: 2007
+  in: 3DTV Conference
+  title: 3D Content-based retrieval in artwork databases
+  authors: Gorisse, M. Cord, M. Jordan, S. Philipp-Foliguet, F. Precioso
+
+- type: conf
+  year: 2007
+  in: In SCIA conference, 2007
+  title: Automatic Extraction and Classification of Vegetation Areas from High Resolution Images in Urban Areas
+  authors: C. Iovan, D. Boldo, M. Cord and M. Erikson
+
+- type: conf
+  year: 2007
+  in: In Urban remote sensing joint event, Paris, 2007
+  title: Automatic Extraction of urban vegetation structures from High Resolution Imagery and digital elevation models
+  authors: C. Iovan, D. Boldo, M. Cord
+
+# 2006
+
+- type: journal
+  year: 2006
+  in: Pattern Recognition
+  url: pdfs/publis/PR06CORD.pdf
+  title: Feature-based approach to semi-supervised similarity learning
+  authors: PH. Gosselin, M. Cord
+
+- type: conf
+  year: 2006
+  in: IEEE ICIP
+  url: pdfs/publis/distributedCBIR.pdf
+  title: CBIR in distributed databases using a multi-agent system
+  authors: D. Picard, M. Cord, A. Revel
+
+- type: conf
+  year: 2006
+  in: IEEE ICIP
+  url: pdfs/publis/semanticLearning.pdf
+  title: Image retrieval using long-term semantic learning
+  authors: M. Cord, PH. Gosselin
+
+- type: conf
+  year: 2006
+  in: IEEE ICIP
+  url: pdfs/publis/ActiveLearningCBIR.pdf
+  title: Precision-Oriented Active Selection for Interactive Image Retrieval
+  authors: PH. Gosselin, M. Cord
+
+- type: conf
+  year: 2006
+  in: EUSIPCO
+  title: Robust Scene Cut Detection by Supervised Learning
+  authors: PH. Chavez, M. Cord, S. Philipp, A. de Araujo
+
+## 2005
+
+- type: journal
+  year: 2005
+  in: EURASIP on Applied Signal Processing
+  url: "http://webia.lip6.fr/~cord/OLDsite/publi/JASPcord2005.pdf"
+  title: Interactive exploration for image retrieval
+  authors: M. Cord, S. Philipp-Foliguet, J. Fournier, P. Gosselin
+  additionals: "(special issue: Advances in Intelligent Vision Systems) n 14, p. 2173-2186, 2005"
+
+
+- type: conf
+  year: 2005
+  in: IEEE International Conference on Image Processing
+  url: pdfs/publis/icip05Cord.pdf
+  title: Semantic kernel learning for interactive image retrieval
+  authors: P.H. Gosselin and M. Cord
+  additionals: Genova, Italy, September 2005
+
+
+- type: workshop
+  year: 2005
+  in: ICML Workshop on Machine Learning techniques for processing
+  url: pdfs/publis/icmlW05Cord.pdf
+  title: "Active learning techniques for user interactive systems: application to image retrieval"
+  authors: P.H. Gosselin and M. Cord
+  additionals: MMC, Bonn, Germany, August 2005
+
+
+## 2004
+
+- type: conf
+  year: 2004
+  in: IEEE International Conference on Image Processing (ICIP), Singapore, October 2004
+  url: pdfs/publis/cordICIP04.pdf
+  title: "RETIN AL: An Active Learning Strategy for Image Category Retrieval"
+  authors: P.H. Gosselin and M. Cord
+
+- type: conf
+  year: 2004
+  in: In IEEE Advanced Concepts for Intelligent Vision Systems (ACIVS), Brussel, Belgium, September 2004
+  title: Discriminative Classification vs Modeling Methods in CBIR
+  authors: P.H. Gosselin and M. Najjar and M. Cord and C. Ambroise
+
+- type: conf
+  year: 2004
+  in: In International Workshop on Computer Vision meets Databases (CVDB), ACM Sigmod, Paris, France, June 2004
+  title:
+  url: pdfs/publis/acmCVDB2004.pdf
+  authors: A comparison of active classification methods for content-based image retrieval
+  additionals: P.H. Gosselin and M. Cord
+
+- type: journal
+  year: 2004
+  in: TSI
+  title: Approche interactive de la recherche d'images par le contenu
+  authors: M. Cord, J. Fournier, S. Philipp-Foliguet
+  additionals: vol. 23 n. 1, 2004
+
+- type: journal
+  year: 2004
+  in: International Journal of the Eurographics Association, Computer Graphics Forum, p. 813-823, 2004
+  url: pdfs/publis/cgv05Cord.pdf
+  title: Smooth surface reconstruction using tensor field as structuring elements
+  authors: M. B. Vieira, P. P. Martins jr, A. De A. Araujo, M. Cord, S.Philipp-Foliguet
+
+## 2002
+
+- type: conf
+  year: 2002
+  in: In IEEE International Conference on Image Processing (ICIP), Rochester, USA, Sept. 2002
+  url: pdfs/publis/icip02Cord.pdf
+  title: Long-term similarity learning in content-based image retrieval
+  authors: J. Fournier, M. Cord
+
+- type: journal
+  year: 2002
+  in:  Bulletin de la SFPT, n. 166, p. 34-43, 2002
+  title: Analyse d'images aeriennes haute resolution pour la reconstruction de scenes urbaines
+  authors: M. Cord, M. Jordan, T. Belli, M. Bernardes Vieira
+
+- type: conf
+  year: 2002
+  in: In IEEE International Conference on Image Processing (ICIP)
+  title: Terrain surface modeling from altimetric data
+  authors: M. Cord and T. Belli
+  additionals:  2002, WP-P4.1, Rochester, New York, September 2002
+
+- type: conf
+  year: 2002
+  in: In ISPRS Commission III, Symposium, p. B-96, Graz, Austria, 2002
+  title: Building Detection from High Resolution Digital Elevation Models in Urban Areas
+  authors: M. Jordan, M. Cord and T. Belli
+
+## 2001
+
+- type: journal
+  year: 2001
+  in: Pattern Analysis and Applications Journal, Vol. 4 (2/3), p 153-173, 2001
+  url: pdfs/publis/2001PAAcord.pdf
+  title: J. Fournier, M. Cord, S. Philipp-Foliguet
+  authors: "RETIN : A content-based image indexing and retrieval system"
+
+- type: conf
+  year: 2001
+  in: IEEE Trans. on Image Proessing, Vol. 10(5), p.715-723, Ma 2001
+  url: pdfs/publis/ip2000.pdf
+  title: Three-dimentional building and modeling using a statistical approach
+  authors: M. Cord and D. Declercq
+
+- type: conf
+  year: 2001
+  in: Computer Vision and Image Understanding, 82, p.138-173, 2001
+  title: Accurate building structure recovery from high resolution aerial imagery
+  authors: M. Cord, M. Jordan, J.P. Cocquerez
+
+- type: conf
+  year: 2001
+  in: In ICIP 2001, Thessaloniki, Greece, Octobre 2001
+  title: Back-propagation algorithm for relevance feedback in image retrieval
+  authors: J. Fournier, M. Cord, S. Philipp-Foliguet
+  url: "http://perso-etis.ensea.fr/~cord/perso/icip01Cord.ps.gz"
+
+# Before 2000
+
+- type: conf
+  authors: M. Cord, M. Declercq
+  title: "Bayesian model identification: application to building reconstruction in aerial imagery"
+  in: In IEEE International Conference on Image Processing (ICIP), Kobe, Japan, Oct.
+  year: 1999
+
+- type: journal
+  authors: N. Paparoditis, M. Cord, M. Jordan, and JP. Cocquerez
+  title: Building Detection and Restitution from High Resolution Aerial Imagery
+  in: Computer Vision and Image Understanding, 72(2) p.122-142
+  year: 1998
+
+- type: conf
+  authors: M. Cord, F. Huet, S. Philipp
+  title: Optimal Adjusting of Edge Detectors to Extract Close Contours
+  in: In SCIA 1997, Lappeenranta, Finland
+  year: 1997
+
+# Before 2000
+#
+# Others: books, seminars, reports:
+#
+# <a href="http://webia.lip6.fr/~cord/OLDsite/publi/icmlW05Cord.pdf" class="style_12">[icml.pdf]</a> M. Cord, P. Cunningham, R. Dahyot, T. Sziranyi (Eds.)
+# Proceedings of the International Workshop on Machine Learning Techniques for Processing Multimedia Content, ICML 2005
+# <a href="http://webia.lip6.fr/~cord/OLDsite/publi/phd05gosselin.pdf">[PhDgosselin.pdf]</a> P.H. Gosselin, rapport de thèse, décembre 2005
+# <a href="http://webia.lip6.fr/~cord/OLDsite/publi/hdr04Cord.pdf">[HDR.pdf]</a> M. Cord, rapport de HDR, décembre 2004
+# <a href="http://webia.lip6.fr/~cord/OLDsite/publi/projet15Cord.pdf">[Indexa.pdf]</a> M. Cord, C. Ambroise, rapport de projet Jeunes Chercheurs CNRS GdR ISIS, Techniques d'apprentissage pour l'indexation et la recherche d'images par le contenu , 2003
+# Chapter co-author of the book Image numérique couleur De l'acquisition au traitement Dunod, 2003 edited by Alain Trémeau , Christine Fernandez-Maloigne , Pierre Bonton
+# <a href="http://webia.lip6.fr/~cord/OLDsite/publi/phd02fournier.pdf">[PhDfournier.pdf]</a> J. Fournier, rapport de thèse, novembre 2002
+# <a href="http://webia.lip6.fr/~cord/OLDsite/publi/phd98cord.ps.gz">[PhDcord.ps.gz]</a> <a href="http://webia.lip6.fr/~cord/OLDsite/publi/phd98cord.pdf" class="style_12">[phd.pdf]</a> M. Cord, PhD thesis, UCP, décembre 1998
+#
+# old seminars, minicourses:
+# <a href="http://webia.lip6.fr/~cord/OLDsite/publi/semi05ariana.pdf">[ariana.pdf]</a> M. Cord seminar in ARIANA INRIA Sophia, december 05, 2005, title: Content-based image retrieval using machine learning, <a href="http://www-sop.inria.fr/ariana/fr/seminaires.php">http://www-sop.inria.fr/ariana/fr/seminaires.php</a>
+# <a href="http://webia.lip6.fr/~cord/OLDsite/publi/semi05bh1.pdf" href="http://webia.lip6.fr/~cord/OLDsite/publi/semi05bh2.pdf" class="style_12">bh2.pdf</a> M. Cord, minicourse in BH, Brazil, november 2005
+#
+#  Complementary list by year :
+#
+# 2004
+# P.H. Gosselin and M. Cord.
+# Semantic Kernel Updating for Content-Based Image Retrieval
+# In IEEE International Workshop on Multimedia Content-based Analysis and Retrieval
+# Miami, Florida, USA, December 2004
+#
+#  P.H. Gosselin and M. Najjar and M. Cord and C. Ambroise and S. Philipp-Foliguet.
+#  Méthodes d'Apprentissage pour la Recherche d'Images par le Contenu.
+#  In Proceedings of Reconnaissance des Formes et Intelligence Artificielle (RFIA), Toulouse, France, Juanary 2004
+#
+# < 2004
+# M. Cord, J. Fournier, S. Philipp-Foliguet,
+# <a href="http://perso-etis.ensea.fr/~cord/perso/sibgrapi03.pdf">Exploration and search-by-similarity in CBIR,</a>
+# IEEE SIBGRAPI03, Sao Carlos, Brasil, oct 2003
+#
+# M. Cord, J. Fournier, S. Philipp-Foliguet,
+# Strategie d'exploration en recherche d'images par similarite,
+# Gretsi, Paris,  sept 2003
+# M B Vieira, M Cord, P P Martins, Jr, S Philipp-Foliguet, and A de A Araujo,
+#  Reconstruction Using Surface DedicatedTensorial Fields,
+#  IEEE SIBGRAPI03, Sao Carlos, Brasil, oct 2003
+#  M. Vieira, M. Cord, P. Martins, A. de Albuquerque Araujo and S. Philipp-Foliguet,
+#  Fltering space data with 3D tensorial structuring elements,
+# IEEE SIBGRAPI02, p. 106-111, Fortaleza-ce, Brazil, October 2002
+# M. Jordan, M. Cord and T. Belli,
+#  Building Detection from High Resolution Digital Elevation Models in Urban Areas ,
+#  ISPRS Commission III, Symposium 2002, p. B-96 , September 9 - 13, 2002, Graz, Austria
+#  J. Fournier, M. Cord,
+#  <a href="http://perso-etis.ensea.fr/~cord/perso/cvpripCord.pdf" class="style_14">A flexible search-by-similarity algorithm for content-based image retrieval,</a>
+#  <a href="http://perso-etis.ensea.fr/~cord/perso/cvpripCord.pdf" class="style_14">In CVPRIP 2002, Durham, North Carolina, March 2002</a>
+#
+# Fournier, M. Cord, S. Philipp-Foliguet,
+# Strategie interactive d'exploration pour la recherche d'images par le contenu,
+# In RFIA 2002, volume 1, p. 211-220, Angers, France, Janv. 2002
+#
+# T. Belli, M. Cord and M. Jordan,
+#  3D data reconstruction and modeling for urban scene analysis,
+#  In Automatic Extraction of Man-Made objects from Aerial and Space Images, Birkhauser Verlag, Juin 2001 (invited paper)
+#  T. Belli, M. Cord, S. Philipp-Foliguet,
+#  Colour contribution for stereo image matching,
+#  In CGIP 2000, p. 317-322, Saint-Etienne, France, Oct. 2000
+#
+# Fournier, M. Cord,
+#  Evaluation et optimisation d'une chaine de stereo restitution par correlation adaptative
+#  In RFIA 2000, vol. 3, p. 315-324, Paris, France, Fev 2000
+#
+# J. Fournier, M. Cord, S. Philipp-Foliguet,
+# RETIN : Un systeme d'indexation et de recherche d'images basee sur le contenu
+# In COmpression et REpresentation des Signaux Audiovisuels, Poitier, France, Oct. 2000
+# M. Cord, M. Jordan, JP. Cocquerez, and N. Paparoditis, <a href="http://perso-etis.ensea.fr/~cord/perso/isprs99.ps.gz" class="style_14">isprs99.ps.gz</a>
+#  Automatic extraction and modelling of urban buildings from high resolution aerial images,
+#  In IAPRS 1999, MÃ¼nchen, Germany, Sept. 1999
+#  M. Cord,  N. Paparoditis, and M. Jordan, <a href="http://perso-etis.ensea.fr/~cord/perso/isprs98_dense.ps.gz" class="style_14">dense.ps.gz</a>
+# Dense reliable depth discontinuity preserving DSM reconstruction from very high resolution aerial urban images,
+# In ISPRS Symposium, Cambridge, England, July 1998
+# M. Cord, M. Jordan, and JP. Cocquerez,  <a href="http://perso-etis.ensea.fr/~cord/perso/isprs98_towards.ps.gz" class="style_14">towards.ps.gz</a>
+#  Towards semi-automatic control of topographic data bases from aerial images,
+# In ISPRS Symposium, Cambridge, England, July 1998
+# M. Cord, N. Paparoditis,
+# A New Multi-Scale and Edge Preserving Gradient Template Matching Technique,
+# In EUSIPCO 1998, Rhodes, Greece, Sept. 1998
+#  N. Paparoditis, M. Cord,
+#  Combining intensity and stereo data to improve satellite urban scenes modeling,
+# In EUSIPCO 1998, Rhodes, Greece, Sept. 1998
+# M. Cord, M. Jordan,
+# Analyse d'images aeriennes haute resolution pour l'extraction du bati,
+# In GRETSI 97, Grenoble, France, Sept. 1997
+#
+#

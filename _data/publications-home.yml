@@ -1,43 +1,61 @@
-- title: "MANTRA: Minimum Maximum Latent Structural SVM for Image Classification and Ranking" # Titre (obligatoire)
-  authors: T. Durand, N. Thome, M. Cord # Auteurs (obligatoire)
-  year: 2015 # Année de publication (obligatoire)
-  type: conf # Type de papier (obligatoire), idéalement parmi [conf, workshop, journal, book, bookchapter], mais ajoutez votre propre type si besoin
-  in: ICCV # Nom de la conférence / du journal (optionnel)
-  additional: p. 123-234, chapter 12 # Infos additionnelles quelconques (pages, chapitre, IF, etc.) que vous voulez voir figurer après l'année de publication, en plus petit (optionnel)
-  # Entrée BibTex (optionnel)
-  bibtex: |
-    @inproceedings{mantraICCV15,
-      Author = {Thibaut Durand and Nicolas Thome and Matthieu Cord},
-      Title = {MANTRA: Minimum Maximum Latent Structural SVM for Image Classification and Ranking},
-      booktitle = {IEEE International Conference on Computer Vision (ICCV)},
-      Year = {2015}
-    }
+- type: journal
+  year: 2016
+  in: IJCV International Journal of Computer Vision
+  title: Learning a Distance Metric from Relative Comparisons between Quadruplets of Images
+  authors: M.T. Law, N. Thome, M. Cord
+  additionals: 2014 IF 3.8
 
-- title: "MANTRA: Minimum Maximum Latent Structural SVM for Image Classification and Ranking" # Titre (obligatoire)
-  authors: T. Durand, N. Thome, M. Cord # Auteurs (obligatoire)
-  year: 2015 # Année de publication (obligatoire)
-  type: journal # Type de papier (obligatoire), idéalement parmi [conf, workshop, journal, book, bookchapter], mais ajoutez votre propre type si besoin
-  in: ICCV # Nom de la conférence / du journal (optionnel)
-  additional: p. 123-234, chapter 12 # Infos additionnelles quelconques (pages, chapitre, IF, etc.) que vous voulez voir figurer après l'année de publication, en plus petit (optionnel)
-  # Entrée BibTex (optionnel)
-  bibtex: |
-    @inproceedings{mantraICCV15,
-      Author = {Thibaut Durand and Nicolas Thome and Matthieu Cord},
-      Title = {MANTRA: Minimum Maximum Latent Structural SVM for Image Classification and Ranking},
-      booktitle = {IEEE International Conference on Computer Vision (ICCV)},
-      Year = {2015}
-    }
+- type: conf
+  year: 2016
+  in: CVPR
+  url: pdfs/publis/main.pdf
+  title: "WELDON: Weakly Supervised Learning of Deep Convolutional Neural Networks"
+  authors: T. Durand, N. Thome, M. Cord
 
-- title: "MANTRA: Minimum Maximum Latent Structural SVM for Image Classification and Ranking" # Titre (obligatoire)
-  authors: T. Durand, N. Thome, M. Cord # Auteurs (obligatoire)
-  year: 2015 # Année de publication (obligatoire)
-  type: book # Type de papier (obligatoire), idéalement parmi [conf, workshop, journal, book, bookchapter], mais ajoutez votre propre type si besoin
-  additional: p. 123-234, chapter 12 # Infos additionnelles quelconques (pages, chapitre, IF, etc.) que vous voulez voir figurer après l'année de publication, en plus petit (optionnel)
-  # Entrée BibTex (optionnel)
-  bibtex: |
-    @inproceedings{mantraICCV15,
-      Author = {Thibaut Durand and Nicolas Thome and Matthieu Cord},
-      Title = {MANTRA: Minimum Maximum Latent Structural SVM for Image Classification and Ranking},
-      booktitle = {IEEE International Conference on Computer Vision (ICCV)},
-      Year = {2015}
-    }
+- type: conf
+  year: 2016
+  in: CVPR (oral)
+  url: pdfs/publis/cvpr2Cord2016.pdf
+  title: Closed-Form Training of Mahalanobis Distance for Supervised Clustering
+  authors: M.T. Law, Y Yu, M. Cord, E.P Xing
+
+- type: conf
+  year: 2015
+  in: ICCV
+  url: pdfs/publis/final.pdf
+  title: "MANTRA: Minimum Maximum Latent Structural SVM for Image Classification and Ranking"
+  authors: T. Durand, N. Thome, M. Cord
+
+- type: workshop
+  year: 2015
+  in: Cooking and Eating Activities in IEEE ICME
+  url: pdfs/publis/CordCooking2015icme.pdf
+  title: Recipe Recognition with Large Multimodal Food Dataset
+  authors: X. Wang, D. Kumar, N. Thome, M. Cord, F. Precioso
+
+- type: conf
+  year: 2015
+  in: IEEE ICIP
+  url: pdfs/publis/cordDeepLearningICIP2015.pdf
+  title: LR-CNN For Fine-grained Classification with Varying Resolution
+  authors: M. Chevalier, N. Thome, M. Cord, J. Fournier, G. Henaff, E. Dusch
+
+- type: conf
+  year: 2014
+  in: ICLR
+  urls:
+    - url: pdfs/publis/ICLRcord.pdf
+      title: Paper
+    - url: https://www.youtube.com/watch?v=w5S8LuLhmmc
+      title: Video
+      style: info
+  title: Sequentially Generated Instance-Dependent Image Representations for Classification
+  authors: G. Dulac-Arnold, L. Denoyer, N. Thome, M. Cord, P. Gallinari
+  additionals: Banff, Canada
+
+- type: journal
+  year: 2014
+  in: IEEE Journal of Selected Topics in Signal Processing
+  additionals: IF 3.2
+  title: Perceptual principles for video classification with Slow Feature Analysis
+  authors: C. Thériault, N. Thome, M. Cord, P. Perez
