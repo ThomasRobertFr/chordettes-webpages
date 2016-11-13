@@ -140,8 +140,9 @@
   </li>
   <li><a href="#utilisation-du-template" id="markdown-toc-utilisation-du-template">Utilisation du template</a>    <ul>
       <li><a href="#installation-de-jekyll" id="markdown-toc-installation-de-jekyll">Installation de Jekyll</a></li>
-      <li><a href="#utilisation-de-jekyll" id="markdown-toc-utilisation-de-jekyll">Utilisation de Jekyll</a></li>
       <li><a href="#tlchargement-du-template" id="markdown-toc-tlchargement-du-template">Téléchargement du template</a></li>
+      <li><a href="#utilisation-de-jekyll-compilation-du-site" id="markdown-toc-utilisation-de-jekyll-compilation-du-site">Utilisation de Jekyll (compilation du site)</a></li>
+      <li><a href="#exemples-de-sites" id="markdown-toc-exemples-de-sites">Exemples de sites</a></li>
       <li><a href="#usage-des-layouts-ou-templates" id="markdown-toc-usage-des-layouts-ou-templates">Usage des layouts (ou templates)</a></li>
       <li><a href="#template-page-et-blog" id="markdown-toc-template-page-et-blog">Template <code class="highlighter-rouge">page</code> (et <code class="highlighter-rouge">blog</code>)</a></li>
       <li><a href="#template-post" id="markdown-toc-template-post">Template <code class="highlighter-rouge">post</code></a></li>
@@ -157,8 +158,6 @@
     </ul>
   </li>
 </ul>
-
-<p>Cette page présente comment utiliser ce template pour réaliser un site personnel à destination majoritairement d’un utilisateur de ce template, et pas de quelqu’un qui voudrait en modifier son cœur. Ce n’est donc pas une documentation technique mais bien une documentation d’utilisateur.</p>
 
 <p>La première partie de cette page décrit les motivations et principes assez généraux pour développer un site avec ce template, alors que la seconde partie se charge de détailler les spécificités de ce template.</p>
 
@@ -293,7 +292,7 @@ Contenu du fichier...
 </code></pre>
 </div>
 
-<h4 id="front-matter"><em>Front matter</em></h4>
+<h4 id="front-matter"><em>front matter</em></h4>
 
 <p>Le <em>front matter</em> est donc contenu entre les balises <code class="highlighter-rouge">---</code> au début du fichier. Voici un certain nombre de données que l’on peut indiquer dedans :</p>
 
@@ -317,7 +316,7 @@ Contenu du fichier...
 
 <h4 id="rdaction-du-contenu">Rédaction du contenu</h4>
 
-<p>Le front matter est bien sûr suivi du fichier en tant que tel (sauf si on utilise un template qui n’utilise pas de contenu). Ce contenu peut être rédigé dans de nombreux “langages”, mais les deux principaux sont le <strong>Markdown</strong> et le <strong>HTML</strong>, dont les usages sont différents :</p>
+<p>Le <em>front matter</em> est bien sûr suivi du fichier en tant que tel (sauf si on utilise un template qui n’utilise pas de contenu). Ce contenu peut être rédigé dans de nombreux “langages”, mais les deux principaux sont le <strong>Markdown</strong> et le <strong>HTML</strong>, dont les usages sont différents :</p>
 
 <ul>
   <li>Le <strong>Markdown</strong> (fichiers <code class="highlighter-rouge">.md</code>) est un langage de balisage léger qui permet d’écrire au format texte brut du contenu avec une mise en forme assez simple, mais qui suffit pour la plupart des documents. Jekyll se chargera de convenir le Markdown en HTML lors du rendu de la page. Voir ci-dessous pour une présentation plus complète du langage.</li>
@@ -471,11 +470,23 @@ On peut également faire des tableaux, voir la doc ou la cheatsheet pour le dét
 
 <p>Sur macOS, il faut commencer par installer Xcode (depuis l’App Store) puis executer la commande <code class="highlighter-rouge">xcode-select --install</code>.</p>
 
-<p>Pour installer Jekyll, il suffit d’utiliser la commande <code class="highlighter-rouge">gem install jekyll</code>.</p>
+<p>Pour installer Jekyll, il suffit d’utiliser la commande <code class="highlighter-rouge">sudo gem install jekyll</code>.</p>
 
 <p>Si vous ne disposez pas de droits <em>root</em> sur la machine, faites <code class="highlighter-rouge">gem install jekyll --user-install</code>. Dans ce cas il vous faudra ensuite ajouter le chemin dans le lequel Jekyll a été installé dans votre <code class="highlighter-rouge">$PATH</code> (ex : <code class="highlighter-rouge">/home/&lt;username&gt;/.gem/ruby/2.3.0/bin</code> sur les machines du labo normalement).</p>
 
-<h3 id="utilisation-de-jekyll">Utilisation de Jekyll</h3>
+<h3 id="tlchargement-du-template">Téléchargement du template</h3>
+
+<p>Pour utiliser ce template, placez vous dans le dossier dans lequel vous voulez développer et faites :</p>
+
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code>git clone https://github.com/ThomasRobertFr/chordettes-webpages.git .
+git branch <span class="nv">$USER</span>
+git checkout <span class="nv">$USER</span>
+</code></pre>
+</div>
+
+<h3 id="utilisation-de-jekyll-compilation-du-site">Utilisation de Jekyll (compilation du site)</h3>
+
+<h4 id="compilation-et-mode-serve">Compilation et mode <em>serve</em></h4>
 
 <p>Une fois jekyll installé, depuis un dossier de site Jekyll, faites <code class="highlighter-rouge">jekyll serve --watch</code> pour lancer Jekyll en mode <code class="highlighter-rouge">serve</code>, c’est à dire qu’il va compiler le site à chaque modification (sauf <code class="highlighter-rouge">_config.yml</code> auquel cas il faut arrêter et relancer Jekyll) et fais tourner un petit serveur web vous permettant de consulter votre site. Il vous indique l’URL après lancement de la commande, ex :</p>
 
@@ -493,23 +504,23 @@ Configuration file: /Users/thomas/Documents/Dev/chordettes-webpages/_config.yml
 </code></pre>
 </div>
 
-<h3 id="tlchargement-du-template">Téléchargement du template</h3>
+<p>Notez que pour compiler le site une fois avec Jekyll (sans que Jekyll lance un serveur web et relance la compilation à chaque modification), vous pouvez faire <code class="highlighter-rouge">jekyll build</code>.</p>
 
-<p>Pour utiliser ce template, placez vous dans le dossier dans lequel vous voulez développer faire</p>
+<h4 id="mise-en-ligne-de-votre-site">Mise en ligne de votre site</h4>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code>git clone git@github.com:ThomasRobertFr/chordettes-webpages.git .
-git branch <span class="nv">$USER</span>
-git checkout <span class="nv">$USER</span>
+<p>Le site final généré par Jekyll est créé dans le dossier <code class="highlighter-rouge">_site</code>. Ainsi, une fois que le site vous convient, il suffit de récupérer le contenu du dossier <code class="highlighter-rouge">_site</code> et de le placer (pour le labo) dans votre dossier <code class="highlighter-rouge">/web/&lt;username&gt;/public_html</code>.</p>
+
+<p>Pour simplifier la mise en ligne, vous pouvez créer un petit script bash qui appelle <code class="highlighter-rouge">rsync</code> afin d’envoyer la nouvelle version de votre site vers votre <code class="highlighter-rouge">public_html</code>. Pour cela, on vous conseille la commande <code class="highlighter-rouge">rsync</code> suivante :</p>
+
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code>rsync -e ssh -rlptgoDv --delete-after _site/ &lt;user&gt;@gate.lip6.fr:/web/&lt;user&gt;/public_html/
 </code></pre>
 </div>
 
-<p>Vous pouvez ensuite faire vos modifications. Pour tester et vous inspiré du site de démo, faites :</p>
+<p>Attention, dans la commande ci-dessus l’instruction <code class="highlighter-rouge">--delete-after</code> cause la suppression des fichiers présents dans votre <code class="highlighter-rouge">public_html</code> mais absent de <code class="highlighter-rouge">_site</code>. Si vous avez donc mis des fichiers manuellement dans votre <code class="highlighter-rouge">public_html</code> ils seront supprimés. Cependant, ne pas mettre cette option signifie que des pages supprimés de votre site resteront en ligne. Idéalement donc, il serait plutôt conseillé de laisser cette option et d’ajouter tous les fichiers statiques que vous voudriez voir sur votre site dans la version Jekyll de votre site (pas dans <code class="highlighter-rouge">_site</code> mais bien dans votre dossier de travail qui contient le dossier <code class="highlighter-rouge">_site</code>), en effet Jekyll copiera tel vers <code class="highlighter-rouge">_site</code> les fichiers et dossiers que vous ajoutez et qu’il n’a pas à interpreter.</p>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code>git clone git@github.com:ThomasRobertFr/chordettes-webpages.git demo
-<span class="nb">cd </span>demo
-git checkout demo
-</code></pre>
-</div>
+<h3 id="exemples-de-sites">Exemples de sites</h3>
+
+<p>Pour vous aider à mettre en place votre site, vous pouvez vous inspirer des sites déjà créés avec ce template dans les différentes branches du dépôt git du projet, notamment la <a href="https://github.com/ThomasRobertFr/chordettes-webpages/tree/demo">démo</a> ou le <a href="https://github.com/ThomasRobertFr/chordettes-webpages/tree/cord">site de Matthieu Cord</a>.</p>
 
 <h3 id="usage-des-layouts-ou-templates">Usage des layouts (ou templates)</h3>
 
@@ -528,7 +539,7 @@ git checkout demo
 
 <p>Nous allons par la suite nous intéresser particulièrement aux pages et pas aux billets de blog. Cependant, un billet de blog fonctionne globalement comme une page classique.</p>
 
-<p>Comme nous l’avons vu, un fichier de page peut être en HTML (<code class="highlighter-rouge">*.html</code>) ou en Markdown (<code class="highlighter-rouge">*.md</code>), et commence par un front matter. Outre le titre, <strong>l’information la plus importante du front matter est sans doute le template</strong> (<code class="highlighter-rouge">layout: ...</code>), qui va changer totalement le type de page à utiliser.</p>
+<p>Comme nous l’avons vu, un fichier de page peut être en HTML (<code class="highlighter-rouge">*.html</code>) ou en Markdown (<code class="highlighter-rouge">*.md</code>), et commence par un <em>front matter</em>. Outre le titre, <strong>l’information la plus importante du <em>front matter</em> est sans doute le template</strong> (<code class="highlighter-rouge">layout: ...</code>), qui va changer totalement le type de page à utiliser.</p>
 
 <p>Voyons les <strong>différents templates disponibles</strong>, détaillés par la suite :</p>
 
@@ -547,13 +558,13 @@ git checkout demo
   </li>
 </ul>
 
-<p>(*) Le fichier d’une page avec ce layout ne devrait contenir qu’un front matter suivi d’aucun contenu, car ce contenu sera totalement généré. Si le fichier contient tout de même du contenu, il sera de toute façon ignoré.</p>
+<p>(*) Le fichier d’une page avec ce layout ne devrait contenir qu’un <em>front matter</em> suivi d’aucun contenu, car ce contenu sera totalement généré. Si le fichier contient tout de même du contenu, il sera de toute façon ignoré.</p>
 
-<p>Nous allons maintenant voir ces templates plus en détail, en particulier les paramètres disponibles pouvant être mis dans le front matter.</p>
+<p>Nous allons maintenant voir ces templates plus en détail, en particulier les paramètres disponibles pouvant être mis dans le <em>front matter</em>.</p>
 
 <h3 id="template-page-et-blog">Template <code class="highlighter-rouge">page</code> (et <code class="highlighter-rouge">blog</code>)</h3>
 
-<p>Les paramètres que vous pouvez mettre dans le front matter sont les suivants :</p>
+<p>Les paramètres que vous pouvez mettre dans le <em>front matter</em> sont les suivants :</p>
 
 <h4 id="paramtres-de-titre-et-de-menu">Paramètres de titre et de menu</h4>
 
@@ -597,22 +608,22 @@ git checkout demo
 <p>Même paramètres que <code class="highlighter-rouge">page</code> avec les paramètres suivants en plus :</p>
 
 <ul>
-  <li><code class="highlighter-rouge">publications</code> <em>(obligatoire)</em> : nom du fichier de données YAML contenant la liste des publications à afficher (ex : <code class="highlighter-rouge">publications: publications</code> pour afficher les publis du fichier <code class="highlighter-rouge">_data/publications.yml</code>)</li>
-  <li><code class="highlighter-rouge">groupyby</code> <em>(optionnel)</em> : par défaut les publis sont affichées à la suite. On peut les grouper par années ou par type (conf, journal, etc.) en définissant ce paramètre à <code class="highlighter-rouge">year</code> ou <code class="highlighter-rouge">type</code>. Dans ce cas des titres de groupes seront affichés, avec des liens en haut de la liste de publications.</li>
+  <li><code class="highlighter-rouge">data-name</code> <em>(obligatoire)</em> : nom du fichier de données YAML contenant la liste des publications à afficher (ex : <code class="highlighter-rouge">data-name: publications</code> pour afficher les publis du fichier <code class="highlighter-rouge">_data/publications.yml</code>)</li>
+  <li><code class="highlighter-rouge">groupby</code> <em>(optionnel)</em> : par défaut les publis sont affichées à la suite. On peut les grouper par années ou par type (conf, journal, etc.) en définissant ce paramètre à <code class="highlighter-rouge">year</code> ou <code class="highlighter-rouge">type</code>. Dans ce cas des titres de groupes seront affichés, avec des liens en haut de la liste de publications.</li>
   <li><code class="highlighter-rouge">tidy</code> <em>(optionnel, def <code class="highlighter-rouge">false</code>)</em> : si à <code class="highlighter-rouge">true</code>, le style utilisé pour afficher les publications sera un peu plus “serré” et le texte écrit moins gros. Un style alternatif si on trouve que l’original est trop aéré, surtout si la liste de publis est longue.</li>
 </ul>
 
 <p>Le format à utiliser dans le fichier de données est détaillé plus bas.</p>
 
-<p>Comme indiqué précédemment le contenu du fichier d’une page <code class="highlighter-rouge">publications</code> devrait être vide à part le front matter.</p>
+<p>Comme indiqué précédemment le contenu du fichier d’une page <code class="highlighter-rouge">publications</code> devrait être vide à part le <em>front matter</em>.</p>
 
 <h3 id="template-publications-1">Template <code class="highlighter-rouge">publications</code></h3>
 
-<p>Même paramètres que <code class="highlighter-rouge">page</code> avec le paramètre obligatoire <code class="highlighter-rouge">projects</code> contenant nom du fichier de données YAML contenant la liste des projets à afficher (ex : <code class="highlighter-rouge">projects: projects</code> pour afficher les publis du fichier <code class="highlighter-rouge">_data/projects.yml</code>)</p>
+<p>Même paramètres que <code class="highlighter-rouge">page</code> avec le paramètre obligatoire <code class="highlighter-rouge">data-name</code> contenant nom du fichier de données YAML contenant la liste des projets à afficher (ex : <code class="highlighter-rouge">data-name: projects</code> pour afficher les publis du fichier <code class="highlighter-rouge">_data/projects.yml</code>)</p>
 
 <p>Le format à utiliser dans le fichier de données est détaillé plus bas.</p>
 
-<p>Comme indiqué précédemment le contenu du fichier d’une page <code class="highlighter-rouge">projects</code> devrait être vide à part le front matter.</p>
+<p>Comme indiqué précédemment le contenu du fichier d’une page <code class="highlighter-rouge">projects</code> devrait être vide à part le <em>front matter</em>.</p>
 
 <h3 id="template-onepage">Template <code class="highlighter-rouge">onepage</code></h3>
 
@@ -621,7 +632,7 @@ git checkout demo
   <li><code class="highlighter-rouge">collection</code> : optionnel et pour les utilisateurs confirmés, nom de la <a href="https://jekyllrb.com/docs/collections/">collection Jekyll</a> à utiliser, par défaut <code class="highlighter-rouge">homepage</code></li>
 </ul>
 
-<p>Comme indiqué précédemment le contenu du fichier d’une page <code class="highlighter-rouge">onepage</code> devrait être vide à part le front matter.</p>
+<p>Comme indiqué précédemment le contenu du fichier d’une page <code class="highlighter-rouge">onepage</code> devrait être vide à part le <em>front matter</em>.</p>
 
 <h3 id="template-onepage-block">Template <code class="highlighter-rouge">onepage-block</code></h3>
 
@@ -640,11 +651,13 @@ Par défaut il n’y a pas de style particulier donc le texte est noir sur fond 
 
 <h3 id="template-onepage-block-publications">Template <code class="highlighter-rouge">onepage-block-publications</code></h3>
 
-<p>Même paramètres que <code class="highlighter-rouge">onepage-block</code>, avec le paramètre obligatoire <code class="highlighter-rouge">publications</code> en plus, qui doit contenir le nom du fichier de données YAML contenant la liste des publications à afficher dans le bloc. (ex : <code class="highlighter-rouge">publications: publications-home</code> pour afficher les publis du fichier <code class="highlighter-rouge">_data/publications-home.yml</code>)</p>
+<p>Même paramètres que <code class="highlighter-rouge">onepage-block</code>, avec le paramètre obligatoire <code class="highlighter-rouge">data-name</code> en plus, qui doit contenir le nom du fichier de données YAML contenant la liste des publications à afficher dans le bloc. (ex : <code class="highlighter-rouge">data-name: publications-home</code> pour afficher les publis du fichier <code class="highlighter-rouge">_data/publications-home.yml</code>)</p>
+
+<p>Le paramètre optionnel <code class="highlighter-rouge">more-publications-page</code> est le chemin du fichier de la page listant l’intégralité des publications (ex : <code class="highlighter-rouge">more-publications-page: _pages/publications.md</code>), dans le cas où on ne voudrait qu’un sous-ensemble des publications sur la page d’accueil. Si ce paramètre est défini, un bouton vers la page des publcations sera ajouté à la fin du bloc.</p>
 
 <p>Le format à utiliser dans le fichier de données est détaillé plus bas.</p>
 
-<p>Comme indiqué précédemment le contenu du fichier d’un bloc <code class="highlighter-rouge">onepage-block-publications</code> devrait être vide à part le front matter.</p>
+<p>Comme indiqué précédemment le contenu du fichier d’un bloc <code class="highlighter-rouge">onepage-block-publications</code> devrait être vide à part le <em>front matter</em>.</p>
 
 <h3 id="template-onepage-block-contact">Template <code class="highlighter-rouge">onepage-block-contact</code></h3>
 
@@ -652,7 +665,7 @@ Par défaut il n’y a pas de style particulier donc le texte est noir sur fond 
 
 <p>Voici un exemple complet de contacts :</p>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="c1"># Front matter onepage-block-contact</span>
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="c1"># _front matter_ onepage-block-contact</span>
 <span class="s">contacts</span><span class="pi">:</span>
   <span class="pi">-</span> <span class="s">type</span><span class="pi">:</span> <span class="s">email</span>
   <span class="pi">-</span> <span class="s">type</span><span class="pi">:</span> <span class="s">phone</span>
@@ -696,11 +709,21 @@ Par défaut il n’y a pas de style particulier donc le texte est noir sur fond 
 
 <p>Il faut indiquer <code class="highlighter-rouge">type: custom</code>, vous pouvez alors choisir l’icone à utiliser parmi les icones <a href="http://fontawesome.io/icons/">FontAwesome</a> (version 4.7) et indiquer son nom dans le paramètre <code class="highlighter-rouge">icon</code>, <code class="highlighter-rouge">text</code> sera affiché en dessous, et vous pouvez si vous voulez indiquer une URL dans <code class="highlighter-rouge">url</code>.</p>
 
-<p>Comme indiqué précédemment le contenu du fichier d’un bloc <code class="highlighter-rouge">onepage-block-contact</code> devrait être vide à part le front matter, il sera généré à partir de la liste ci-dessus.</p>
+<p>Par ailleurs, on peut assigner la valeur <code class="highlighter-rouge">true</code> à la clé <code class="highlighter-rouge">not-hidden</code> pour l’élément de type <code class="highlighter-rouge">email</code> si on veut que l’adresse email ne soit pas masquée par un bouton (permettant d’éviter que le mail soit crawlé par des bots pour limiter le spam). Ex :</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">contacts</span><span class="pi">:</span>
+  <span class="c1"># [...]</span>
+  <span class="pi">-</span> <span class="s">type</span><span class="pi">:</span> <span class="s">email</span>
+    <span class="s">not-hidden</span><span class="pi">:</span> <span class="s">true</span>
+  <span class="c1"># [...]</span>
+</code></pre>
+</div>
+
+<p>Comme indiqué précédemment le contenu du fichier d’un bloc <code class="highlighter-rouge">onepage-block-contact</code> devrait être vide à part le <em>front matter</em>, il sera généré à partir de la liste ci-dessus.</p>
 
 <h3 id="rsum-des-paramtres-des-templates">Résumé des paramètres des templates</h3>
 
-<p><em>(*) : Le fichier d’une page avec ce layout ne devrait contenir qu’un front matter suivi d’aucun contenu, car ce contenu sera totalement généré. Si le fichier contient tout de même du contenu, il sera de toute façon ignoré.</em><br />
+<p><em>(*) : Le fichier d’une page avec ce layout ne devrait contenir qu’un _front matter</em> suivi d’aucun contenu, car ce contenu sera totalement généré. Si le fichier contient tout de même du contenu, il sera de toute façon ignoré._<br />
 <em>”&lt;” : indique qu’un template “hérite” les paramètres d’un autre</em></p>
 
 <ul>
@@ -773,6 +796,18 @@ Par défaut il n’y a pas de style particulier donc le texte est noir sur fond 
   <span class="s">additional</span><span class="pi">:</span> <span class="s">p. 123-234, chapter 12</span> <span class="c1"># Infos additionnelles quelconques (pages, chapitre, IF, etc.) que vous voulez voir figurer après l'année de publication, en plus petit (optionnel)</span>
   <span class="s">image</span><span class="pi">:</span> <span class="s">images/publications/mantra.png</span> <span class="c1"># URL de l'image de description (optionnel)</span>
   <span class="s">highlight</span><span class="pi">:</span> <span class="s">true</span> <span class="c1"># Mise en valeur du papier dans la liste (optionnel, defaut : false)</span>
+  <span class="c1"># URLs du papier (optionnel), avec au choix :</span>
+  <span class="c1"># - Une URL seule direct :</span>
+  <span class="s">url</span><span class="pi">:</span> <span class="s">/pdfs/publis/mantra.pdf</span>
+  <span class="c1"># - Une liste d'URLs (éventuellement une seule) avec plus de contrôle sur le titre et la couleur du bouton de lien :</span>
+  <span class="s">urls</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">url</span><span class="pi">:</span> <span class="s">/pdfs/publis/mantra.pdf</span> <span class="c1"># URL du lien</span>
+      <span class="s">title</span><span class="pi">:</span> <span class="s">Papier</span> <span class="c1"># Titre du lien</span>
+      <span class="s">style</span><span class="pi">:</span> <span class="s">primary</span> <span class="c1"># Style bootstrap du bouton (default : gris, primary (par defaut) : bleu foncé, info : bleu clair, success: vert, warning : orange, danger : rouge)</span>
+    <span class="pi">-</span> <span class="s">url</span><span class="pi">:</span> <span class="s">http://...</span> <span class="c1"># URL du lien</span>
+      <span class="s">title</span><span class="pi">:</span> <span class="s">Demo video</span> <span class="c1"># Titre du lien</span>
+      <span class="s">style</span><span class="pi">:</span> <span class="s">info</span> <span class="c1"># Style bootstrap du bouton (default : gris, primary (par defaut) : bleu foncé, info : bleu clair, success: vert, warning : orange, danger : rouge)</span>
+    <span class="c1"># ...</span>
   <span class="c1"># Entrée BibTex (optionnel)</span>
   <span class="s">bibtex</span><span class="pi">:</span> <span class="pi">|</span>
     <span class="no">@inproceedings{mantraICCV15,</span>

@@ -136,7 +136,7 @@ key2: value2
 Contenu du fichier...
 ```
 
-#### _Front matter_
+#### _front matter_
 
 Le _front matter_ est donc contenu entre les balises `---` au début du fichier. Voici un certain nombre de données que l'on peut indiquer dedans :
 
@@ -159,7 +159,7 @@ La liste des templates développés est disponible ci-dessous.
 
 #### Rédaction du contenu
 
-Le front matter est bien sûr suivi du fichier en tant que tel (sauf si on utilise un template qui n'utilise pas de contenu). Ce contenu peut être rédigé dans de nombreux "langages", mais les deux principaux sont le **Markdown** et le **HTML**, dont les usages sont différents :
+Le _front matter_ est bien sûr suivi du fichier en tant que tel (sauf si on utilise un template qui n'utilise pas de contenu). Ce contenu peut être rédigé dans de nombreux "langages", mais les deux principaux sont le **Markdown** et le **HTML**, dont les usages sont différents :
 
 * Le **Markdown** (fichiers `.md`) est un langage de balisage léger qui permet d'écrire au format texte brut du contenu avec une mise en forme assez simple, mais qui suffit pour la plupart des documents. Jekyll se chargera de convenir le Markdown en HTML lors du rendu de la page. Voir ci-dessous pour une présentation plus complète du langage.
 * Le **HTML** (fichiers `.html`) est le langage permettant de structurer des pages web. Si on a besoin d'une mise en page plus riche, on peut directement taper du HTML. Dans ce cas, le contenu sera directement utilisé tel quel par Jekyll.
@@ -300,11 +300,23 @@ Passons maintenant à l'utilisation concrète de ce template.
 
 Sur macOS, il faut commencer par installer Xcode (depuis l'App Store) puis executer la commande `xcode-select --install`.
 
-Pour installer Jekyll, il suffit d'utiliser la commande `gem install jekyll`.
+Pour installer Jekyll, il suffit d'utiliser la commande `sudo gem install jekyll`.
 
 Si vous ne disposez pas de droits _root_ sur la machine, faites `gem install jekyll --user-install`. Dans ce cas il vous faudra ensuite ajouter le chemin dans le lequel Jekyll a été installé dans votre `$PATH` (ex : `/home/<username>/.gem/ruby/2.3.0/bin` sur les machines du labo normalement).
 
-### Utilisation de Jekyll
+### Téléchargement du template
+
+Pour utiliser ce template, placez vous dans le dossier dans lequel vous voulez développer et faites :
+
+```sh
+git clone https://github.com/ThomasRobertFr/chordettes-webpages.git .
+git branch $USER
+git checkout $USER
+```
+
+### Utilisation de Jekyll (compilation du site)
+
+#### Compilation et mode _serve_
 
 Une fois jekyll installé, depuis un dossier de site Jekyll, faites `jekyll serve --watch` pour lancer Jekyll en mode `serve`, c'est à dire qu'il va compiler le site à chaque modification (sauf `_config.yml` auquel cas il faut arrêter et relancer Jekyll) et fais tourner un petit serveur web vous permettant de consulter votre site. Il vous indique l'URL après lancement de la commande, ex :
 
@@ -322,24 +334,23 @@ Configuration file: /Users/thomas/Documents/Dev/chordettes-webpages/_config.yml
   Server running... press ctrl-c to stop.
 ```
 
-### Téléchargement du template
+Notez que pour compiler le site une fois avec Jekyll (sans que Jekyll lance un serveur web et relance la compilation à chaque modification), vous pouvez faire `jekyll build`.
 
-Pour utiliser ce template, placez vous dans le dossier dans lequel vous voulez développer faire
+#### Mise en ligne de votre site
 
-```sh
-git clone git@github.com:ThomasRobertFr/chordettes-webpages.git .
-git branch $USER
-git checkout $USER
-```
+Le site final généré par Jekyll est créé dans le dossier `_site`. Ainsi, une fois que le site vous convient, il suffit de récupérer le contenu du dossier `_site` et de le placer (pour le labo) dans votre dossier `/web/<username>/public_html`.
 
-Vous pouvez ensuite faire vos modifications. Pour tester et vous inspiré du site de démo, faites :
+Pour simplifier la mise en ligne, vous pouvez créer un petit script bash qui appelle `rsync` afin d'envoyer la nouvelle version de votre site vers votre `public_html`. Pour cela, on vous conseille la commande `rsync` suivante :
 
 ```sh
-git clone git@github.com:ThomasRobertFr/chordettes-webpages.git demo
-cd demo
-git checkout demo
+rsync -e ssh -rlptgoDv --delete-after _site/ <user>@gate.lip6.fr:/web/<user>/public_html/
 ```
 
+Attention, dans la commande ci-dessus l'instruction `--delete-after` cause la suppression des fichiers présents dans votre `public_html` mais absent de `_site`. Si vous avez donc mis des fichiers manuellement dans votre `public_html` ils seront supprimés. Cependant, ne pas mettre cette option signifie que des pages supprimés de votre site resteront en ligne. Idéalement donc, il serait plutôt conseillé de laisser cette option et d'ajouter tous les fichiers statiques que vous voudriez voir sur votre site dans la version Jekyll de votre site (pas dans `_site` mais bien dans votre dossier de travail qui contient le dossier `_site`), en effet Jekyll copiera tel vers `_site` les fichiers et dossiers que vous ajoutez et qu'il n'a pas à interpreter.
+
+### Exemples de sites
+
+Pour vous aider à mettre en place votre site, vous pouvez vous inspirer des sites déjà créés avec ce template dans les différentes branches du dépôt git du projet, notamment la [démo](https://github.com/ThomasRobertFr/chordettes-webpages/tree/demo) ou le [site de Matthieu Cord](https://github.com/ThomasRobertFr/chordettes-webpages/tree/cord).
 
 ### Usage des layouts (ou templates)
 
@@ -353,7 +364,7 @@ Pour créer un site avec ce template, il vous suffit d'**ajouter des fichiers** 
 
 Nous allons par la suite nous intéresser particulièrement aux pages et pas aux billets de blog. Cependant, un billet de blog fonctionne globalement comme une page classique.
 
-Comme nous l'avons vu, un fichier de page peut être en HTML (`*.html`) ou en Markdown (`*.md`), et commence par un front matter. Outre le titre, **l'information la plus importante du front matter est sans doute le template** (`layout: ...`), qui va changer totalement le type de page à utiliser.
+Comme nous l'avons vu, un fichier de page peut être en HTML (`*.html`) ou en Markdown (`*.md`), et commence par un _front matter_. Outre le titre, **l'information la plus importante du _front matter_ est sans doute le template** (`layout: ...`), qui va changer totalement le type de page à utiliser.
 
 Voyons les **différents templates disponibles**, détaillés par la suite :
 
@@ -367,13 +378,13 @@ Voyons les **différents templates disponibles**, détaillés par la suite :
     * `onepage-block-publications` (\*) permet d'afficher une liste de publications à partir des données (équivalent de `publications` au format `onepage`)
     * `onepage-block-contact` (\*) permet d'afficher les divers moyens de vous contacter à partir des infos du `_config.yml`
 
-(\*) Le fichier d'une page avec ce layout ne devrait contenir qu'un front matter suivi d'aucun contenu, car ce contenu sera totalement généré. Si le fichier contient tout de même du contenu, il sera de toute façon ignoré.
+(\*) Le fichier d'une page avec ce layout ne devrait contenir qu'un _front matter_ suivi d'aucun contenu, car ce contenu sera totalement généré. Si le fichier contient tout de même du contenu, il sera de toute façon ignoré.
 
-Nous allons maintenant voir ces templates plus en détail, en particulier les paramètres disponibles pouvant être mis dans le front matter.
+Nous allons maintenant voir ces templates plus en détail, en particulier les paramètres disponibles pouvant être mis dans le _front matter_.
 
 ### Template `page` (et `blog`)
 
-Les paramètres que vous pouvez mettre dans le front matter sont les suivants :
+Les paramètres que vous pouvez mettre dans le _front matter_ sont les suivants :
 
 #### Paramètres de titre et de menu
 
@@ -412,28 +423,28 @@ Similaire à `page`, sans `parent` et `show-children`, et avec le champ `date` �
 
 Même paramètres que `page` avec les paramètres suivants en plus :
 
-* `publications` _(obligatoire)_ : nom du fichier de données YAML contenant la liste des publications à afficher (ex : `publications: publications` pour afficher les publis du fichier `_data/publications.yml`)
-* `groupyby` _(optionnel)_ : par défaut les publis sont affichées à la suite. On peut les grouper par années ou par type (conf, journal, etc.) en définissant ce paramètre à `year` ou `type`. Dans ce cas des titres de groupes seront affichés, avec des liens en haut de la liste de publications.
+* `data-name` _(obligatoire)_ : nom du fichier de données YAML contenant la liste des publications à afficher (ex : `data-name: publications` pour afficher les publis du fichier `_data/publications.yml`)
+* `groupby` _(optionnel)_ : par défaut les publis sont affichées à la suite. On peut les grouper par années ou par type (conf, journal, etc.) en définissant ce paramètre à `year` ou `type`. Dans ce cas des titres de groupes seront affichés, avec des liens en haut de la liste de publications.
 * `tidy` _(optionnel, def `false`)_ : si à `true`, le style utilisé pour afficher les publications sera un peu plus "serré" et le texte écrit moins gros. Un style alternatif si on trouve que l'original est trop aéré, surtout si la liste de publis est longue.
 
 Le format à utiliser dans le fichier de données est détaillé plus bas.
 
-Comme indiqué précédemment le contenu du fichier d'une page `publications` devrait être vide à part le front matter.
+Comme indiqué précédemment le contenu du fichier d'une page `publications` devrait être vide à part le _front matter_.
 
 ### Template `publications`
 
-Même paramètres que `page` avec le paramètre obligatoire `projects` contenant nom du fichier de données YAML contenant la liste des projets à afficher (ex : `projects: projects` pour afficher les publis du fichier `_data/projects.yml`)
+Même paramètres que `page` avec le paramètre obligatoire `data-name` contenant nom du fichier de données YAML contenant la liste des projets à afficher (ex : `data-name: projects` pour afficher les publis du fichier `_data/projects.yml`)
 
 Le format à utiliser dans le fichier de données est détaillé plus bas.
 
-Comme indiqué précédemment le contenu du fichier d'une page `projects` devrait être vide à part le front matter.
+Comme indiqué précédemment le contenu du fichier d'une page `projects` devrait être vide à part le _front matter_.
 
 ### Template `onepage`
 
 * `title`
 * `collection` : optionnel et pour les utilisateurs confirmés, nom de la [collection Jekyll](https://jekyllrb.com/docs/collections/) à utiliser, par défaut `homepage`
 
-Comme indiqué précédemment le contenu du fichier d'une page `onepage` devrait être vide à part le front matter.
+Comme indiqué précédemment le contenu du fichier d'une page `onepage` devrait être vide à part le _front matter_.
 
 ### Template `onepage-block`
 
@@ -450,11 +461,13 @@ Comme indiqué précédemment le contenu du fichier d'une page `onepage` devrait
 
 ### Template `onepage-block-publications`
 
-Même paramètres que `onepage-block`, avec le paramètre obligatoire `publications` en plus, qui doit contenir le nom du fichier de données YAML contenant la liste des publications à afficher dans le bloc. (ex : `publications: publications-home` pour afficher les publis du fichier `_data/publications-home.yml`)
+Même paramètres que `onepage-block`, avec le paramètre obligatoire `data-name` en plus, qui doit contenir le nom du fichier de données YAML contenant la liste des publications à afficher dans le bloc. (ex : `data-name: publications-home` pour afficher les publis du fichier `_data/publications-home.yml`)
+
+Le paramètre optionnel `more-publications-page` est le chemin du fichier de la page listant l'intégralité des publications (ex : `more-publications-page: _pages/publications.md`), dans le cas où on ne voudrait qu'un sous-ensemble des publications sur la page d'accueil. Si ce paramètre est défini, un bouton vers la page des publcations sera ajouté à la fin du bloc.
 
 Le format à utiliser dans le fichier de données est détaillé plus bas.
 
-Comme indiqué précédemment le contenu du fichier d'un bloc `onepage-block-publications` devrait être vide à part le front matter.
+Comme indiqué précédemment le contenu du fichier d'un bloc `onepage-block-publications` devrait être vide à part le _front matter_.
 
 ### Template `onepage-block-contact`
 
@@ -463,7 +476,7 @@ Même paramètres que `onepage-block`, avec le paramètre obligatoire `contacts`
 Voici un exemple complet de contacts :
 
 ```yaml
-# Front matter onepage-block-contact
+# _front matter_ onepage-block-contact
 contacts:
   - type: email
   - type: phone
@@ -506,11 +519,22 @@ contacts:
 
 Il faut indiquer `type: custom`, vous pouvez alors choisir l'icone à utiliser parmi les icones [FontAwesome](http://fontawesome.io/icons/) (version 4.7) et indiquer son nom dans le paramètre `icon`, `text` sera affiché en dessous, et vous pouvez si vous voulez indiquer une URL dans `url`.
 
-Comme indiqué précédemment le contenu du fichier d'un bloc `onepage-block-contact` devrait être vide à part le front matter, il sera généré à partir de la liste ci-dessus.
+
+Par ailleurs, on peut assigner la valeur `true` à la clé `not-hidden` pour l'élément de type `email` si on veut que l'adresse email ne soit pas masquée par un bouton (permettant d'éviter que le mail soit crawlé par des bots pour limiter le spam). Ex :
+
+```yaml
+contacts:
+  # [...]
+  - type: email
+    not-hidden: true
+  # [...]
+```
+
+Comme indiqué précédemment le contenu du fichier d'un bloc `onepage-block-contact` devrait être vide à part le _front matter_, il sera généré à partir de la liste ci-dessus.
 
 ### Résumé des paramètres des templates
 
-_(\*) : Le fichier d'une page avec ce layout ne devrait contenir qu'un front matter suivi d'aucun contenu, car ce contenu sera totalement généré. Si le fichier contient tout de même du contenu, il sera de toute façon ignoré._  
+_(\*) : Le fichier d'une page avec ce layout ne devrait contenir qu'un _front matter_ suivi d'aucun contenu, car ce contenu sera totalement généré. Si le fichier contient tout de même du contenu, il sera de toute façon ignoré._  
 _"<" : indique qu'un template "hérite" les paramètres d'un autre_
 
 * **page**
@@ -558,6 +582,18 @@ Les fichiers de données YAML contenant les publications doivent contenir une li
   additional: p. 123-234, chapter 12 # Infos additionnelles quelconques (pages, chapitre, IF, etc.) que vous voulez voir figurer après l'année de publication, en plus petit (optionnel)
   image: images/publications/mantra.png # URL de l'image de description (optionnel)
   highlight: true # Mise en valeur du papier dans la liste (optionnel, defaut : false)
+  # URLs du papier (optionnel), avec au choix :
+  # - Une URL seule direct :
+  url: /pdfs/publis/mantra.pdf
+  # - Une liste d'URLs (éventuellement une seule) avec plus de contrôle sur le titre et la couleur du bouton de lien :
+  urls:
+    - url: /pdfs/publis/mantra.pdf # URL du lien
+      title: Papier # Titre du lien
+      style: primary # Style bootstrap du bouton (default : gris, primary (par defaut) : bleu foncé, info : bleu clair, success: vert, warning : orange, danger : rouge)
+    - url: http://... # URL du lien
+      title: Demo video # Titre du lien
+      style: info # Style bootstrap du bouton (default : gris, primary (par defaut) : bleu foncé, info : bleu clair, success: vert, warning : orange, danger : rouge)
+    # ...
   # Entrée BibTex (optionnel)
   bibtex: |
     @inproceedings{mantraICCV15,
