@@ -300,11 +300,23 @@ Passons maintenant à l'utilisation concrète de ce template.
 
 Sur macOS, il faut commencer par installer Xcode (depuis l'App Store) puis executer la commande `xcode-select --install`.
 
-Pour installer Jekyll, il suffit d'utiliser la commande `gem install jekyll`.
+Pour installer Jekyll, il suffit d'utiliser la commande `sudo gem install jekyll`.
 
 Si vous ne disposez pas de droits _root_ sur la machine, faites `gem install jekyll --user-install`. Dans ce cas il vous faudra ensuite ajouter le chemin dans le lequel Jekyll a été installé dans votre `$PATH` (ex : `/home/<username>/.gem/ruby/2.3.0/bin` sur les machines du labo normalement).
 
-### Utilisation de Jekyll
+### Téléchargement du template
+
+Pour utiliser ce template, placez vous dans le dossier dans lequel vous voulez développer et faites :
+
+```sh
+git clone https://github.com/ThomasRobertFr/chordettes-webpages.git .
+git branch $USER
+git checkout $USER
+```
+
+### Utilisation de Jekyll (compilation du site)
+
+#### Compilation et mode _serve_
 
 Une fois jekyll installé, depuis un dossier de site Jekyll, faites `jekyll serve --watch` pour lancer Jekyll en mode `serve`, c'est à dire qu'il va compiler le site à chaque modification (sauf `_config.yml` auquel cas il faut arrêter et relancer Jekyll) et fais tourner un petit serveur web vous permettant de consulter votre site. Il vous indique l'URL après lancement de la commande, ex :
 
@@ -322,28 +334,23 @@ Configuration file: /Users/thomas/Documents/Dev/chordettes-webpages/_config.yml
   Server running... press ctrl-c to stop.
 ```
 
-Le site final généré par Jekyll est créé dans le dossier `_site`. Ainsi, une fois que le site vous convient, il suffit de récupérer le contenu du dossier `_site` et de le placer dans le placer (pour le labo) dans votre dossier `/web/<username>/public_html`.
+Notez que pour compiler le site une fois avec Jekyll (sans que Jekyll lance un serveur web et relance la compilation à chaque modification), vous pouvez faire `jekyll build`.
 
-Notez que pour compiler le site une fois avec Jekyll (sans que Jekyll lance un serveur web et relance la compilation à chaque modification), vous pouvez faire `jekyll build`
+#### Mise en ligne de votre site
 
-### Téléchargement du template
+Le site final généré par Jekyll est créé dans le dossier `_site`. Ainsi, une fois que le site vous convient, il suffit de récupérer le contenu du dossier `_site` et de le placer (pour le labo) dans votre dossier `/web/<username>/public_html`.
 
-Pour utiliser ce template, placez vous dans le dossier dans lequel vous voulez développer faire
-
-```sh
-git clone https://github.com/ThomasRobertFr/chordettes-webpages.git
-git branch $USER
-git checkout $USER
-```
-
-Vous pouvez ensuite faire vos modifications. Pour tester et vous inspiré du site de démo, faites :
+Pour simplifier la mise en ligne, vous pouvez créer un petit script bash qui appelle `rsync` afin d'envoyer la nouvelle version de votre site vers votre `public_html`. Pour cela, on vous conseille la commande `rsync` suivante :
 
 ```sh
-git clone https://github.com/ThomasRobertFr/chordettes-webpages.git demo
-cd demo
-git checkout demo
+rsync -e ssh -rlptgoDv --delete-after _site/ <user>@gate.lip6.fr:/web/<user>/public_html/
 ```
 
+Attention, dans la commande ci-dessus l'instruction `--delete-after` cause la suppression des fichiers présents dans votre `public_html` mais absent de `_site`. Si vous avez donc mis des fichiers manuellement dans votre `public_html` ils seront supprimés. Cependant, ne pas mettre cette option signifie que des pages supprimés de votre site resteront en ligne. Idéalement donc, il serait plutôt conseillé de laisser cette option et d'ajouter tous les fichiers statiques que vous voudriez voir sur votre site dans la version Jekyll de votre site (pas dans `_site` mais bien dans votre dossier de travail qui contient le dossier `_site`), en effet Jekyll copiera tel vers `_site` les fichiers et dossiers que vous ajoutez et qu'il n'a pas à interpreter.
+
+### Exemples de sites
+
+Pour vous aider à mettre en place votre site, vous pouvez vous inspirer des sites déjà créés avec ce template dans les différentes branches du dépôt git du projet, notamment la [démo](https://github.com/ThomasRobertFr/chordettes-webpages/tree/demo) ou le [site de Matthieu Cord](https://github.com/ThomasRobertFr/chordettes-webpages/tree/cord).
 
 ### Usage des layouts (ou templates)
 
@@ -417,7 +424,7 @@ Similaire à `page`, sans `parent` et `show-children`, et avec le champ `date` �
 Même paramètres que `page` avec les paramètres suivants en plus :
 
 * `data-name` _(obligatoire)_ : nom du fichier de données YAML contenant la liste des publications à afficher (ex : `data-name: publications` pour afficher les publis du fichier `_data/publications.yml`)
-* `groupyby` _(optionnel)_ : par défaut les publis sont affichées à la suite. On peut les grouper par années ou par type (conf, journal, etc.) en définissant ce paramètre à `year` ou `type`. Dans ce cas des titres de groupes seront affichés, avec des liens en haut de la liste de publications.
+* `groupby` _(optionnel)_ : par défaut les publis sont affichées à la suite. On peut les grouper par années ou par type (conf, journal, etc.) en définissant ce paramètre à `year` ou `type`. Dans ce cas des titres de groupes seront affichés, avec des liens en haut de la liste de publications.
 * `tidy` _(optionnel, def `false`)_ : si à `true`, le style utilisé pour afficher les publications sera un peu plus "serré" et le texte écrit moins gros. Un style alternatif si on trouve que l'original est trop aéré, surtout si la liste de publis est longue.
 
 Le format à utiliser dans le fichier de données est détaillé plus bas.
@@ -426,7 +433,7 @@ Comme indiqué précédemment le contenu du fichier d'une page `publications` de
 
 ### Template `publications`
 
-Même paramètres que `page` avec le paramètre obligatoire `data0-name` contenant nom du fichier de données YAML contenant la liste des projets à afficher (ex : `data-name: projects` pour afficher les publis du fichier `_data/projects.yml`)
+Même paramètres que `page` avec le paramètre obligatoire `data-name` contenant nom du fichier de données YAML contenant la liste des projets à afficher (ex : `data-name: projects` pour afficher les publis du fichier `_data/projects.yml`)
 
 Le format à utiliser dans le fichier de données est détaillé plus bas.
 
@@ -575,6 +582,18 @@ Les fichiers de données YAML contenant les publications doivent contenir une li
   additional: p. 123-234, chapter 12 # Infos additionnelles quelconques (pages, chapitre, IF, etc.) que vous voulez voir figurer après l'année de publication, en plus petit (optionnel)
   image: images/publications/mantra.png # URL de l'image de description (optionnel)
   highlight: true # Mise en valeur du papier dans la liste (optionnel, defaut : false)
+  # URLs du papier (optionnel), avec au choix :
+  # - Une URL seule direct :
+  url: /pdfs/publis/mantra.pdf
+  # - Une liste d'URLs (éventuellement une seule) avec plus de contrôle sur le titre et la couleur du bouton de lien :
+  urls:
+    - url: /pdfs/publis/mantra.pdf # URL du lien
+      title: Papier # Titre du lien
+      style: primary # Style bootstrap du bouton (default : gris, primary (par defaut) : bleu foncé, info : bleu clair, success: vert, warning : orange, danger : rouge)
+    - url: http://... # URL du lien
+      title: Demo video # Titre du lien
+      style: info # Style bootstrap du bouton (default : gris, primary (par defaut) : bleu foncé, info : bleu clair, success: vert, warning : orange, danger : rouge)
+    # ...
   # Entrée BibTex (optionnel)
   bibtex: |
     @inproceedings{mantraICCV15,
