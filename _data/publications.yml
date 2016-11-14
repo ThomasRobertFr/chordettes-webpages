@@ -1,0 +1,128 @@
+# 2016
+
+- title: "WELDON: Weakly Supervised Learning of Deep Convolutional Neural Networks" # Titre (obligatoire)
+  authors: Thibaut Durand, Nicolas Thome, Matthieu Cord # Auteurs (obligatoire)
+  year: 2016 # Année de publication (obligatoire)
+  type: conf # Type de papier (obligatoire), idéalement parmi [conf, workshop, journal, book, bookchapter], mais ajoutez votre propre type si besoin
+  in: IEEE Conference on Computer Vision and Pattern Recognition # Nom de la conférence / du journal (optionnel)
+  additional: Las Vegas, USA # Infos additionnelles quelconques (pages, chapitre, IF, etc.) que vous voulez voir figurer après l'année de publication, en plus petit (optionnel)
+  image: images/publis/2016_cvpr_weldon_small.png
+  # Entrée BibTex (optionnel)
+  bibtex: |
+    @inproceedings{Durand_WELDON_CVPR_2016,
+    author = {Durand, Thibaut and Thome, Nicolas and Cord, Matthieu},
+    title = {{WELDON: Weakly Supervised Learning of Deep Convolutional Neural Networks}},
+    booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+    year = {2016}
+    }
+  urls:
+     - url: pdfs/2016_CVPR/Durand_WELDON_CVPR_2016.pdf
+       title: Paper
+     - url: pdfs/2016_CVPR/Durand_WELDON_CVPR_2016_supp.pdf
+       title: Supplementary
+       style: default
+     - url: pdfs/2016_CVPR/Durand_WELDON_CVPR_2016_poster.pdf
+       title: Poster
+       style: default
+  highlight: false
+
+# 2015
+
+- title: "MANTRA: Minimum Maximum Latent Structural SVM for Image Classification and Ranking" # Titre (obligatoire)
+  authors: Thibaut Durand, Nicolas Thome, Matthieu Cord # Auteurs (obligatoire)
+  year: 2015 # Année de publication (obligatoire)
+  type: conf # Type de papier (obligatoire), idéalement parmi [conf, workshop, journal, book, bookchapter], mais ajoutez votre propre type si besoin
+  in: IEEE International Conference on Computer Vision # Nom de la conférence / du journal (optionnel)
+  additional: Santiago, Chile # Infos additionnelles quelconques (pages, chapitre, IF, etc.) que vous voulez voir figurer après l'année de publication, en plus petit (optionnel)
+  image: images/publis/2015_iccv_mantra2.png
+  # Entrée BibTex (optionnel)
+  bibtex: |
+    @inproceedings{Durand_MANTRA_ICCV_2015,
+      Author = {Thibaut Durand and Nicolas Thome and Matthieu Cord},
+      Title = {{MANTRA: Minimum Maximum Latent Structural SVM for Image Classification and Ranking}},
+      booktitle = {IEEE International Conference on Computer Vision (ICCV)},
+      Year = {2015}
+    }
+  urls:
+     - url: pdfs/2015_ICCV/Durand_MANTRA_ICCV_2015.pdf
+       title: Paper
+     - url: pdfs/2015_ICCV/Durand_MANTRA_ICCV_2015_supp.pdf
+       title: Supplementary
+       style: default
+     - url: mantra/
+       title: Project page
+       style: success
+     - url: pdfs/2015_ICCV/Durand_MANTRA_ICCV_2015_poster.pdf
+       title: Poster
+       style: default
+
+# 2014
+
+- title: "Incremental Learning of Latent Structural SVM for Weakly Supervised Image Classification" # Titre (obligatoire)
+  authors: Thibaut Durand, Nicolas Thome, Matthieu Cord, David Picard # Auteurs (obligatoire)
+  year: 2014 # Année de publication (obligatoire)
+  type: conf # Type de papier (obligatoire), idéalement parmi [conf, workshop, journal, book, bookchapter], mais ajoutez votre propre type si besoin
+  in: IEEE International Conference on Image Processing # Nom de la conférence / du journal (optionnel)
+  additional: Paris, France # Infos additionnelles quelconques (pages, chapitre, IF, etc.) que vous voulez voir figurer après l'année de publication, en plus petit (optionnel)
+  image: images/publis/2014_icip_ilssvm2.png
+  # Entrée BibTex (optionnel)
+  bibtex: |
+    @inproceedings{Durand_ILSSVM_ICIP_2014,
+      TITLE = {{Incremental Learning of Latent Structural SVM for Weakly Supervised Image Classification}},
+      AUTHOR = {Durand, Thibaut and Thome, Nicolas and Cord, Matthieu and Picard, David},
+      BOOKTITLE = {IEEE International Conference on Image Processing (ICIP)},
+      YEAR = {2014},
+    }
+  urls:
+     - url: pdfs/2014_ICIP/Durand_ILSSVM_ICIP_2014.pdf
+       title: Paper
+     - url: pdfs/2014_ICIP/Durand_ILSSVM_ICIP_2014_slides.pdf
+       title: Slides
+       style: default
+
+- title: "Semantic Pooling for Image Categorization using Multiple Kernel Learning" # Titre (obligatoire)
+  authors: Thibaut Durand, David Picard, Nicolas Thome, Matthieu Cord # Auteurs (obligatoire)
+  year: 2014 # Année de publication (obligatoire)
+  type: conf # Type de papier (obligatoire), idéalement parmi [conf, workshop, journal, book, bookchapter], mais ajoutez votre propre type si besoin
+  in: IEEE International Conference on Image Processing # Nom de la conférence / du journal (optionnel)
+  additional: Paris, France # Infos additionnelles quelconques (pages, chapitre, IF, etc.) que vous voulez voir figurer après l'année de publication, en plus petit (optionnel)
+  image: images/publis/2014_icip_semanticMKL_small.png
+  # Entrée BibTex (optionnel)
+  bibtex: |
+    @inproceedings{Durand_SemanticMKL_ICIP_2014,
+      TITLE = {{Semantic Pooling for Image Categorization using Multiple Kernel Learning}},
+      AUTHOR = {Durand, Thibaut and Picard, David and Thome, Nicolas and Cord, Matthieu},
+      BOOKTITLE = {IEEE International Conference on Image Processing (ICIP)},
+      YEAR = {2014},
+    }
+  urls:
+     - url: pdfs/2014_ICIP/Durand_SemanticMKL_ICIP_2014.pdf
+       title: Paper
+     - url: pdfs/2014_ICIP/Durand_SemanticMKL_ICIP_2014_slides.pdf
+       title: Slides
+       style: default
+
+
+# 2013
+
+- title: "Image Classification using Object Detectors" # Titre (obligatoire)
+  authors: Thibaut Durand, Nicolas Thome, Matthieu Cord, Sandra Avila # Auteurs (obligatoire)
+  year: 2013 # Année de publication (obligatoire)
+  type: conf # Type de papier (obligatoire), idéalement parmi [conf, workshop, journal, book, bookchapter], mais ajoutez votre propre type si besoin
+  in: IEEE International Conference on Image Processing # Nom de la conférence / du journal (optionnel)
+  additional: Melbourne, Australia # Infos additionnelles quelconques (pages, chapitre, IF, etc.) que vous voulez voir figurer après l'année de publication, en plus petit (optionnel)
+  image: images/publis/2013_icip_small.png
+  # Entrée BibTex (optionnel)
+  bibtex: |
+    @inproceedings{Durand_ICIP_2013,
+      TITLE = {{Image Classification using Object Detectors}},
+      AUTHOR = {Durand, Thibaut and Thome, Nicolas and Cord, Matthieu and Avila, Sandra},
+      BOOKTITLE = {IEEE International Conference on Image Processing (ICIP)},
+      YEAR = {2013},
+    }
+  urls:
+     - url: pdfs/2013_ICIP/Durand_ICIP_2013.pdf
+       title: Paper
+     - url: pdfs/2013_ICIP/Durand_ICIP_2013_poster.pdf
+       title: Poster
+       style: default
