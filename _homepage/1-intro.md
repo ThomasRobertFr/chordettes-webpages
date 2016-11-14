@@ -1,8 +1,8 @@
 ---
 title-short: About me
-title: Hi! I'm Firstname Lastname
-bg-image: images/headers/paris2b.jpg
+title: Hi! I'm Thibaut Durand, PhD student in Computer Vision and Machine Learning.
+bg-image: images/headers/bg_paris_night_postprocessing2.jpg
 class: dark large cover-image
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in pellentesque nulla, nec aliquam lectus. Quisque lacinia quis diam a mattis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+I am advised by [Matthieu Cord](http://webia.lip6.fr/~cord/) and [Nicolas Thome](http://webia.lip6.fr/~thomen/) at the [LIP6 Lab](https://www.lip6.fr/?LANG=en) (UPMC Paris 6 / Sorbonne Universités).
