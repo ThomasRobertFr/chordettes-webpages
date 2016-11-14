@@ -1,5 +1,5 @@
 # Website title & description (the description is used in the HTML <head>, read by Google and co)
-title: Firstname Lastname
+title: Thomas Robert
 description: >
   Write a short bio. The above ">" allows to have multiple lines here.
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget dolor
@@ -10,17 +10,14 @@ description: >
 # Your personal infos (used for the sidebar)
 author:
   # Site title
-  name: Firstname Lastname
-  description: Job title
+  name: Thomas Robert
+  description: PhD Student in Deep Learning for Computer Vision
   photo: /images/photo.jpg
   # Contacts (will be used by the contact block, you can enter everything here and choose which one should appear there)
-  email: firstname.lastname@lip6.fr
-  phone: 01 23 45 67 89
-  address: "Couloir 26-00, Bureau 525 \n 4, place Jussieu \n 75005 Paris \n France"
-  twitter: username
-  linkedin: username
-  github: username
-  google-plus: username
+  email: thomas.robert@lip6.fr
+  twitter: ThomasR_Fr
+  linkedin: thomasrobertfr
+  github: ThomasRobertFr
 
 
 # Link that appear at the top of the sidebar to return to the "main" site of the team, remove lines below to remove link
@@ -30,7 +27,7 @@ back-link:
 
 
 # Technical infos
-baseurl: "/~username" # url of your webpage if not at the root of the domain (leading /, no trailing /)
+baseurl: "/~robert" # url of your webpage if not at the root of the domain (leading /, no trailing /)
 url: "http://webia.lip6.fr" # the base hostname & protocol for your site (no trailing /)
 header-default-style: trianglify # default page header style (see styles in user documentation)
 # google-analytics: UA-XXXXXXX-X # your google analytics code if you want visit stats (uncomment to enter)

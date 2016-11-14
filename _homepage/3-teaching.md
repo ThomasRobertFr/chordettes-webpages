@@ -1,0 +1,58 @@
+---
+title: Teaching
+layout: onepage-block
+bg-image: images/headers/code.jpg
+class: dark large style-color-2 cover-image parallax
+---
+
+During my PhD, I am teaching assistant on various classes at the University Pierre and Marie Curie (UPMC). I am teaching:
+<br><br>
+
+<div class="publication clearfix">
+  <div class="icon color-emph"><i class="fa fa-code"></i></div>
+  <div class="pub-image"><img src="{% include url.html url="images/teaching/java.png" %}" alt=""></div>
+  <div class="pub-content">
+    <h4 class="pub-title">Java and Object-Oriented Programming</h4>
+      <p class="pub-authors">2I002 Course, L2 students <span class="color-emph-light small">(30h)</span></p>
+      <p class="pub-urls">
+          <a class="btn btn-primary" href="http://www-connex.lip6.fr/~guigue/wikihomepage/pmwiki.php?n=Course.CourseLI230">Course page <i class="fa fa-external-link fa-margin-left"></i></a>
+      </p>
+  </div>
+</div>
+
+<div class="publication clearfix">
+  <div class="icon color-emph"><i class="fa fa-picture-o"></i></div>
+  <div class="pub-image"><img src="{% include url.html url="images/teaching/rdfia.png" %}" alt=""></div>
+  <div class="pub-content">
+    <h4 class="pub-title">Neural Networks and Deep Learning for Pattern Recognition</h4>
+      <p class="pub-authors">RDFIA Course, M2 students <span class="color-emph-light small">(10h)</span></p>
+      <p class="pub-urls">
+          <a class="btn btn-primary" href="{% link _pages/teaching-rdfia.md %}">Course page <i class="fa fa-chevron-right fa-margin-left"></i></a>
+      </p>
+  </div>
+</div>
+
+<div class="publication clearfix">
+  <div class="icon color-emph"><i class="fa fa-cog"></i></div>
+  <div class="pub-image"><img src="{% include url.html url="images/teaching/rdfia.png" %}" alt=""></div>
+  <div class="pub-content">
+    <h4 class="pub-title">Practical Introduction to Deep Learning for Image Classification</h4>
+      <p class="pub-authors">Multimedia Course, Polytech M2 students <span class="color-emph-light small">(8h)</span></p>
+      <p class="pub-urls">
+          <a class="btn btn-primary" href="http://webia.lip6.fr/~cord/teaching-multimedia/">Course page <i class="fa fa-external-link fa-margin-left"></i></a>
+      </p>
+  </div>
+</div>
+
+<div class="publication clearfix">
+  <div class="icon color-emph"><i class="fa fa-area-chart"></i></div>
+  <div class="pub-image"><img src="{% include url.html url="images/teaching/bima.png" %}" alt=""></div>
+  <div class="pub-content">
+    <h4 class="pub-title">Principal Component Analysis (PCA) and Linear Discriminant Analysis (LDA)</h4>
+      <p class="pub-authors">BIMA Course, M1 students <span class="color-emph-light small">(8h)</span></p>
+      <p class="pub-urls">
+          <a class="btn btn-primary" href="http://webia.lip6.fr/~thomen/Teaching/BIMA.html">Course page <i class="fa fa-external-link fa-margin-left"></i></a>
+          <a class="btn btn-default" href="{% include url.html url="cours/bima/data/YaleFaces.mat" %}">Data for practical session <i class="fa fa-database fa-margin-left"></i></a>
+      </p>
+  </div>
+</div>
