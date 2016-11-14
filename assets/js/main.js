@@ -29,6 +29,12 @@ $(document).ready(function () {
     }
   });
 
+  if ($(window).width() >= 768) {
+    $(".parallax").each(function(_, el) {
+      $(el).parallax("50%", 0.5);
+    });
+  }
+
   if ($('.trianglify .background').length) {
     var pattern = Trianglify({
       height: $('.trianglify').height()+250,

@@ -53,6 +53,10 @@
             filter: blur(3px) brightness(110%) contrast(70%);
         }
     }
+
+    &.cover-image.parallax {
+        background-attachment: fixed;
+    }
 }
 
 .contact-block {
