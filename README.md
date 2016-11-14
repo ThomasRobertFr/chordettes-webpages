@@ -393,6 +393,8 @@ Les paramètres que vous pouvez mettre dans le _front matter_ sont les suivants 
 * `no-navlink` _(optionnel, defaut : `false`)_ : mettre à vrai pour que la page n'apparaisse pas dans le menu du site
 * `order` _(optionnel, defaut : 50)_ : Position de la page dans le menu du site, par défaut à 50, ainsi on peut forcer juste certaines page à être au début (avec une valeur < 50) ou à la fin (valeur > 50)
 * `intro` _(optionnel)_ : Introduction / Abstract de votre page, qui s'affiche dans le bloc d'en-tête sous le titre
+* `head-title` _(optionnel)_ : Titre utilisé comme titre de l'onglet / de la fenêtre
+* `no-site-title`  _(optionnel, defaut : `false`)_ : Ne pas inclure le nom du site dans le titre de l'onglet / de la fenêtre
 
 #### Paramètres de parentée
 

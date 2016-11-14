@@ -3,7 +3,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <title>{% if page.head-title %}{{ page.head-title | escape }}{% unless page.no-site-title %} | {% endunless %}{% elsif page.title %}{% unless page.url == "/" or page.url == "/index.html" %}{{ page.title | escape }}{% unless page.no-site-title %} | {% endunless %}{% endunless %}{% endif %}{% unless page.no-site-title %}{{ site.title | escape }}{% endunless %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
