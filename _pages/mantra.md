@@ -6,6 +6,7 @@ header-style: particles
 parent: projects.md
 head-title: MANTRA
 no-site-title: false
+permalink: projects/mantra/
 intro:
   <center> Thibaut Durand, Nicolas Thome, Matthieu Cord </br>
   UPMC Paris 6 - Sorbonne Universités - LIP6 </center>
