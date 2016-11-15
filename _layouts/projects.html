@@ -23,7 +23,7 @@ layout: page
             <a class="btn btn-{{ url.style | default: "primary" }}" href="{% include url.html url=url.url %}">{{ url.title }}</a>
           {% endfor %}
         {% else %}
-          <a class="btn btn-primary" href="{{ project.url }}">Project page</a>
+          <a class="btn btn-primary" href="{% include url.html url=project.url %}">Project page</a>
         {% endif %}
         </p>
       {% endif %}
