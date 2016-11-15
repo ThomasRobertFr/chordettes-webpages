@@ -41,12 +41,12 @@
   urls:
      - url: pdfs/2015_ICCV/Durand_MANTRA_ICCV_2015.pdf
        title: Paper
-     - url: pdfs/2015_ICCV/Durand_MANTRA_ICCV_2015_supp.pdf
-       title: Supplementary
-       style: default
      - url: mantra/
        title: Project page
        style: success
+     - url: pdfs/2015_ICCV/Durand_MANTRA_ICCV_2015_supp.pdf
+       title: Supplementary
+       style: default
      - url: pdfs/2015_ICCV/Durand_MANTRA_ICCV_2015_poster.pdf
        title: Poster
        style: default
