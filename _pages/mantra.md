@@ -22,11 +22,11 @@ We propose a novel **Weakly Supervised Learning (WSL)** framework dedicated to l
 
 This paper has been published at _IEEE International Conference on Computer Vision_ (ICCV) 2015.
 
-[Paper](../pdfs/2015_ICCV/Durand_MANTRA_ICCV_2015.pdf)
+[Paper](../../pdfs/2015_ICCV/Durand_MANTRA_ICCV_2015.pdf)
 
-[Supplementary](../pdfs/2015_ICCV/Durand_MANTRA_ICCV_2015_supp.pdf)
+[Supplementary](../../pdfs/2015_ICCV/Durand_MANTRA_ICCV_2015_supp.pdf)
 
-[Poster](../pdfs/2015_ICCV/Durand_MANTRA_ICCV_2015_poster.pdf)
+[Poster](../../pdfs/2015_ICCV/Durand_MANTRA_ICCV_2015_poster.pdf)
 
 Bibtex
 ```bibtex

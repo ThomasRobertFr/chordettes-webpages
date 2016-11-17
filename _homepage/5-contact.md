@@ -9,7 +9,7 @@ contacts:
   - type: address
   #- type: twitter
   #- type: linkedin
-  #- type: github
+  - type: github
   #- type: google-plus
   #- type: custom
     #icon: soundcloud

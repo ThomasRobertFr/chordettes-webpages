@@ -41,7 +41,7 @@
   urls:
      - url: pdfs/2015_ICCV/Durand_MANTRA_ICCV_2015.pdf
        title: Paper
-     - url: mantra/
+     - url: projects/mantra/
        title: Project page
        style: success
      - url: pdfs/2015_ICCV/Durand_MANTRA_ICCV_2015_supp.pdf
