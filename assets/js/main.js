@@ -52,7 +52,7 @@ $(document).ready(function () {
       {
         "particles": {
           "number": {
-            "value": 180,
+            "value": $(window).width() / 1440 * 180,
             "density": {
               "enable": false,
               "value_area": 100
