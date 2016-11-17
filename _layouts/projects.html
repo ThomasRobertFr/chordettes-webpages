@@ -17,7 +17,7 @@ layout: page
         <p class="proj-desc">{{ project.desc }}</p>
       {% endif %}
       {% if project.urls or project.url %}
-        <p class="proj-urls">
+        <p class="proj-urls btns-container">
         {% if project.urls %}
           {% for url in project.urls %}
             <a class="btn btn-{{ url.style | default: "primary" }}" href="{% include url.html url=url.url %}">{{ url.title }}</a>

@@ -34,7 +34,7 @@
       </p>
     {% endif %}
     {% if publication.urls or publication.url or publication.bibtex %}
-      <p class="pub-urls">
+      <p class="pub-urls btns-container">
       {% if publication.urls %}
         {% for url in publication.urls %}
           <a class="btn btn-{{ url.style | default: "primary" }} {% if page.tidy %}btn-xs{% endif %}" href="{% include url.html url=url.url %}">{{ url.title }}</a>

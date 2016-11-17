@@ -16,7 +16,7 @@ types:
 
 {% if page.groupby == "year" %}
     {% assign publicationsByYear = site.data[page.data-name] | group_by: "year" | sort: "name" %}
-    <div class="years text-center">
+    <div class="years text-center btns-container">
     {% for year in publicationsByYear reversed %}
         <a class="btn btn-default" href="#{{ year.name | slugify }}">{{ year.name }}</a>
     {% endfor %}
@@ -30,7 +30,7 @@ types:
     {% endfor %}
 {% elsif page.groupby == "type" %}
     {% assign publicationsByType = site.data[page.data-name] | group_by: "type" %}
-    <div class="types text-center">
+    <div class="types text-center btns-container">
     {% for type in publicationsByType %}
         <a class="btn btn-default" href="#{{ type.name | slugify }}">{{ layout.types[type.name] | default: type.name }}</a>
     {% endfor %}
