@@ -6,6 +6,10 @@
     color: #9d9d9d;
 }
 
+.navbar-fixed-side .divider {
+    border-top: 1px solid #333;
+}
+
 @media (max-width: 767px) {
     .navbar-brand {
         padding: 8px 0 8px 12px;
@@ -145,10 +149,6 @@
     .navbar-fixed-side .navbar-right {
         float: none !important;
     }
-    .navbar-fixed-side .divider {
-        border-top: 1px solid #333;
-    }
-
     .navbar-fixed-side .navbar-nav .dropdown-menu {
         position: static;
         float: none;
