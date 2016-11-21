@@ -1,10 +1,6 @@
 # Website title & description (the description is used in the HTML <head>, read by Google and co)
 title: Thomas Robert
-description: >
-  Write a short bio. The above ">" allows to have multiple lines here.
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget dolor
-  venenatis massa sodales tincidunt ac nec erat. Aenean fermentum erat eget
-  dapibus pulvinar. Mauris diam odio, sagittis ut odio eget.
+description: I'm a PhD Student in Deep Learning for Computer Vision at LIP6 lab (UPMC / Sorbonne Universités). I am advised by Matthieu Cord and Nicolas Thome.
 
 
 # Your personal infos (used for the sidebar)
