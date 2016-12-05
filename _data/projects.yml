@@ -2,10 +2,10 @@
   desc: Weakly Supervised Learning of Deep Convolutional Neural Networks
   image: images/publis/2016_cvpr_weldon_small.png
   date: 2016
-  #url: http://visiir.lip6.fr
+  url: projects/weldon/
 
 - title: MANTRA
   desc: Minimum Maximum Latent Structural SVM
   image: images/publis/2015_iccv_mantra2.png
   date: 2015
-  url: mantra/
+  url: projects/mantra/

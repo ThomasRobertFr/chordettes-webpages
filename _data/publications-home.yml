@@ -16,6 +16,9 @@
   urls:
      - url: pdfs/2016_CVPR/Durand_WELDON_CVPR_2016.pdf
        title: Paper
+     - url: projects/weldon/
+       title: Project page
+       style: success
      - url: pdfs/2016_CVPR/Durand_WELDON_CVPR_2016_supp.pdf
        title: Supplementary
        style: default

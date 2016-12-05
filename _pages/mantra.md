@@ -30,11 +30,11 @@ This paper has been published at _IEEE International Conference on Computer Visi
 
 Bibtex
 ```bibtex
-@inproceedings{Durand_WELDON_CVPR_2016,
-author = {Durand, Thibaut and Thome, Nicolas and Cord, Matthieu},
-title = {WELDON: Weakly Supervised Learning of Deep Convolutional Neural Networks},
-booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-year = {2016}
+@inproceedings{Durand_MANTRA_ICCV_2015,
+Author = {Thibaut Durand and Nicolas Thome and Matthieu Cord},
+Title = {MANTRA: Minimum Maximum Latent Structural SVM for Image Classification and Ranking},
+booktitle = {IEEE International Conference on Computer Vision (ICCV)},
+Year = {2015}
 }
 ```
 
