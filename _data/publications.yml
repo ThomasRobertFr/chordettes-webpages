@@ -1,3 +1,34 @@
+# 2017
+
+- title: "WILDCAT: Weakly Supervised Learning of Deep ConvNets for Image Classification, Pointwise Localization and Segmentation" # Titre (obligatoire)
+  authors: Thibaut Durand, Taylor Mordan, Nicolas Thome, Matthieu Cord # Auteurs (obligatoire)
+  year: 2017 # Année de publication (obligatoire)
+  type: conf # Type de papier (obligatoire), idéalement parmi [conf, workshop, journal, book, bookchapter], mais ajoutez votre propre type si besoin
+  in: IEEE Conference on Computer Vision and Pattern Recognition # Nom de la conférence / du journal (optionnel)
+  additional: Honolulu, Hawaii # Infos additionnelles quelconques (pages, chapitre, IF, etc.) que vous voulez voir figurer après l'année de publication, en plus petit (optionnel)
+  image: images/publis/2017_cvpr_wildcat_small.png
+  # Entrée BibTex (optionnel)
+  bibtex: |
+    @inproceedings{Durand_WILDCAT_CVPR_2017,
+    author = {Durand, Thibaut and Mordan, Taylor and Thome, Nicolas and Cord, Matthieu},
+    title = {{WILDCAT: Weakly Supervised Learning of Deep ConvNets for Image Classification, Pointwise Localization and Segmentation}},
+    booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+    year = {2017}
+    }
+  urls:
+     - url: pdfs/2017_CVPR/Durand_WILDCAT_CVPR_2017.pdf
+       title: Paper
+     - url: projects/wildcat/
+       title: Project page
+       style: success
+    #  - url: pdfs/2017_CVPR/Durand_WILDCAT_CVPR_2017_supp.pdf
+    #    title: Supplementary
+    #    style: default
+    #  - url: pdfs/2016_CVPR/Durand_WELDON_CVPR_2016_poster.pdf
+    #    title: Poster
+    #    style: default
+  highlight: false
+
 # 2016
 
 - title: "WELDON: Weakly Supervised Learning of Deep Convolutional Neural Networks" # Titre (obligatoire)

@@ -1,3 +1,9 @@
+- title: WILDCAT
+  desc: Weakly Supervised Learning of Deep Convolutional Neural Networks
+  image: images/publis/2017_cvpr_wildcat_small.png
+  date: 2016
+  url: projects/wildcat/
+
 - title: WELDON
   desc: Weakly Supervised Learning of Deep Convolutional Neural Networks
   image: images/publis/2016_cvpr_weldon_small.png
