@@ -29,6 +29,8 @@ This paper has been published at _IEEE Conference on Computer Vision and Pattern
 
 [Poster](../../pdfs/2016_CVPR/Durand_WELDON_CVPR_2016_poster.pdf)
 
+[Code](https://github.com/durandtibo/wsl.resnet.torch) with ResNet-101 architecture
+
 Bibtex
 ```bibtex
 @inproceedings{Durand_WELDON_CVPR_2016,

@@ -28,6 +28,8 @@ This paper has been published at _IEEE International Conference on Computer Visi
 
 [Poster](../../pdfs/2015_ICCV/Durand_MANTRA_ICCV_2015_poster.pdf)
 
+[Code](https://github.com/durandtibo/mantra-python)
+
 Bibtex
 ```bibtex
 @inproceedings{Durand_MANTRA_ICCV_2015,
@@ -38,13 +40,13 @@ Year = {2015}
 }
 ```
 
-## Code
+<!-- ## Code
 
 [README](../pdfs/2015_ICCV/README.md)
 
 [Jar](../pdfs/2015_ICCV/mantra.jar)
 
-<!-- code matlab visu / github / code java / code scala / code python -->
+code matlab visu / github / code java / code scala / code python -->
 
 ## Visual Results
 

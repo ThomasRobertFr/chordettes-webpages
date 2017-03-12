@@ -7,7 +7,7 @@ parent: projects.md
 intro:
     <center> Thibaut Durand, Taylor Mordan, Nicolas Thome, Matthieu Cord </br>
     UPMC Paris 6 - Sorbonne Universités - LIP6 </center>
-head-title: WELDON
+head-title: WILDCAT
 no-site-title: false
 permalink: projects/wildcat/
 ---
