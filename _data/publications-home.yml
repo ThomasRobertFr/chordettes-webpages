@@ -19,6 +19,9 @@
      - url: projects/wildcat/
        title: Project page
        style: success
+     - url: pdfs/2017_CVPR/Durand_WILDCAT_CVPR_2017_supp.pdf
+       title: Supplementary
+       style: default
   highlight: false
 
 - title: "WELDON: Weakly Supervised Learning of Deep Convolutional Neural Networks" # Titre (obligatoire)

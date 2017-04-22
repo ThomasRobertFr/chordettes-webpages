@@ -21,9 +21,9 @@
      - url: projects/wildcat/
        title: Project page
        style: success
-    #  - url: pdfs/2017_CVPR/Durand_WILDCAT_CVPR_2017_supp.pdf
-    #    title: Supplementary
-    #    style: default
+     - url: pdfs/2017_CVPR/Durand_WILDCAT_CVPR_2017_supp.pdf
+       title: Supplementary
+       style: default
     #  - url: pdfs/2016_CVPR/Durand_WELDON_CVPR_2016_poster.pdf
     #    title: Poster
     #    style: default
