@@ -1,4 +1,4 @@
-<div class="publication clearfix {% if page.tidy %}tidy{% endif %} {% if publication.class %}{{ publication.class }}{% endif %} {% if publication.highlight %}pub-highlight{% endif %}">
+<div class="publication clearfix {% if page.tidy %}tidy{% endif %} {% if publication.class %}{{ publication.class }}{% endif %} {% if publication.highlight %}publi-highlight{% endif %}">
   <div class="icon color-emph">
     {% if publication.type == "conf" or publication.type == "conference" or publication.type == "inproceedings" or publication.type == "proceedings" %}
       <i class="fa fa-building-o" data-toggle="tooltip" title="Conference"></i>
@@ -17,15 +17,15 @@
     {% endif %}
   </div>
   {% if publication.image %}
-    <div class="pub-image"><img src="{% include url.html url=publication.image %}" alt=""></div>
+    <div class="publi-image"><img src="{% include url.html url=publication.image %}" alt=""></div>
   {% endif %}
-  <div class="pub-content">
-    <h4 class="pub-title">{{ publication.title }}</h4>
+  <div class="publi-content">
+    <h4 class="publi-title">{{ publication.title }}</h4>
     {% if publication.full-raw-desc %}
-      <p class="pub-authors">{{ publication.full-raw-desc }}</p>
+      <p class="publi-authors">{{ publication.full-raw-desc }}</p>
     {% else %}
-      <p class="pub-authors">{{ publication.authors }}</p>
-      <p class="pub-in"><span class="color-emph-light">{%
+      <p class="publi-authors">{{ publication.authors }}</p>
+      <p class="publi-in"><span class="color-emph-light">{%
         if publication.raw-desc
           %}{{ publication.raw-desc }}{%
         else
@@ -34,7 +34,7 @@
       </p>
     {% endif %}
     {% if publication.urls or publication.url or publication.bibtex %}
-      <p class="pub-urls btns-container">
+      <p class="publi-urls btns-container">
       {% if publication.urls %}
         {% for url in publication.urls %}
           <a class="btn btn-{{ url.style | default: "primary" }} {% if page.tidy %}btn-xs{% endif %}" href="{% include url.html url=url.url %}">{{ url.title }}</a>
