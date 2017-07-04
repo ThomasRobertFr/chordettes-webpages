@@ -12,7 +12,7 @@
         top: -2px;
     }
 
-    .pub-image {
+    .publi-image {
         float: right;
         max-width: 20%;
         img {
@@ -22,15 +22,15 @@
         }
     }
 
-    .pub-content {}
+    .publi-content {}
 
     // normalize to smaller spacing
-    .pub-title, .pub-authors, .pub-in, .pub-urls {
+    .publi-title, .publi-authors, .publi-in, .publi-urls {
         margin-top: 0;
         margin-bottom: 5px;
     }
 
-    .pub-in {
+    .publi-in {
         font-style: italic;
     }
 
@@ -43,21 +43,21 @@
             left: -22px;
         }
 
-        .pub-image {
+        .publi-image {
             max-width: 15%;
             img {
                 max-height: 90px;
             }
         }
 
-        .pub-content {}
+        .publi-content {}
 
-        .pub-title {
+        .publi-title {
             font-size: 18px;
             margin-bottom: 2px;
         }
 
-        .pub-authors {
+        .publi-authors {
             font-size: 15px;
             margin-bottom: 3px;
         }
@@ -68,8 +68,8 @@
         }
     }
 
-    &.pub-highlight {
-        .pub-title {
+    &.publi-highlight {
+        .publi-title {
             font-weight: 700;
             text-shadow: 0 1px 0.7px rgba(0, 0, 0, .3);
         }
@@ -89,7 +89,7 @@
         .icon {
             color: $color-1;
         }
-        .pub-title {
+        .publi-title {
             color: $color-1;
         }
 
@@ -102,8 +102,8 @@
         }
     }
 
-    &.pub-highlight {
-        .pub-title {
+    &.publi-highlight {
+        .publi-title {
             font-weight: 700;
             text-shadow: 0 1px 0.7px rgba($color-1-dark,.3);
         }
