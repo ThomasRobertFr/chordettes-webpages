@@ -1,5 +1,26 @@
 # 2017
 
+- title: "Weakly Supervised Learning for Visual Recognition" # Titre (obligatoire)
+  authors: Thibaut Durand # Auteurs (obligatoire)
+  year: 2017 # Année de publication (obligatoire)
+  type: book # Type de papier (obligatoire), idéalement parmi [conf, workshop, journal, book, bookchapter], mais ajoutez votre propre type si besoin
+  in: PhD Thesis
+  image: pdfs/2017_Thesis/image.jpg
+  # Entrée BibTex (optionnel)
+  bibtex: |
+    @inproceedings{Durand_Thesis_2017,
+    author = {Durand, Thibaut},
+    title = {{Weakly Supervised Learning for Visual Recognition}},
+    year = {2017}
+    }
+  urls:
+     - url: pdfs/2017_Thesis/thesis.pdf
+       title: Thesis
+     - url: pdfs/2017_Thesis/slides.pdf
+       title: Slides
+       style: default
+  highlight: false
+
 - title: "WILDCAT: Weakly Supervised Learning of Deep ConvNets for Image Classification, Pointwise Localization and Segmentation" # Titre (obligatoire)
   authors: Thibaut Durand, Taylor Mordan, Nicolas Thome, Matthieu Cord # Auteurs (obligatoire)
   year: 2017 # Année de publication (obligatoire)
@@ -23,6 +44,27 @@
        style: success
      - url: pdfs/2017_CVPR/Durand_WILDCAT_CVPR_2017_supp.pdf
        title: Supplementary
+       style: default
+  highlight: false
+
+- title: "Using a Deep Convolutional Neural Network for Extracting Morphological Traits from Herbarium Images" # Titre (obligatoire)
+  authors: Yue Zhu, Thibaut Durand, Eric Chenin, Marc Pignal, Patrick Gallinari, Régine Vignes-Lebbe # Auteurs (obligatoire)
+  year: 2017 # Année de publication (obligatoire)
+  type: conf # Type de papier (obligatoire), idéalement parmi [conf, workshop, journal, book, bookchapter], mais ajoutez votre propre type si besoin
+  in: Biodiversity Information Standards (TDWG) # Nom de la conférence / du journal (optionnel)
+  additional: Ottawa, Canada # Infos additionnelles quelconques (pages, chapitre, IF, etc.) que vous voulez voir figurer après l'année de publication, en plus petit (optionnel)
+  image: images/publis/2017_tdwg_leaf_small.png
+  # Entrée BibTex (optionnel)
+  bibtex: |
+    @inproceedings{zhu2017,
+    title={Using a Deep Convolutional Neural Network for Extracting Morphological Traits from Herbarium Images},
+    author={Zhu, Yue and Durand, Thibaut and Chenin, Eric and Pignal, Marc and Gallinari, Patrick and Vignes-Lebbe, R{\'e}gine},
+    booktitle = {TDWG},
+    year = {2017}
+    }
+  urls:
+     - url: pdfs/2017_TDWG/Poster_TDWG2017_Yue-et-al.pdf
+       title: Poster
        style: default
   highlight: false
 
