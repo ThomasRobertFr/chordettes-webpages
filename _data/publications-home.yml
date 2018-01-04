@@ -2,7 +2,7 @@
   authors: Thibaut Durand,  Nicolas Thome, Matthieu Cord # Auteurs (obligatoire)
   year: 2018 # Année de publication (obligatoire)
   type: journal # Type de papier (obligatoire), idéalement parmi [conf, workshop, journal, book, bookchapter], mais ajoutez votre propre type si besoin
-  in: IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) # Nom de la conférence / du journal (optionnel)
+  in: IEEE Transactions on Pattern Analysis and Machine Intelligence # Nom de la conférence / du journal (optionnel)
   image: images/publis/2018_tpami_resnet-weldon.png
   # Entrée BibTex (optionnel)
   bibtex: |
