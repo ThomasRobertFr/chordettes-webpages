@@ -1,3 +1,28 @@
+- title: "Exploiting Negative Evidence for Deep Latent Structured Models" # Titre (obligatoire)
+  authors: Thibaut Durand,  Nicolas Thome, Matthieu Cord # Auteurs (obligatoire)
+  year: 2018 # Année de publication (obligatoire)
+  type: journal # Type de papier (obligatoire), idéalement parmi [conf, workshop, journal, book, bookchapter], mais ajoutez votre propre type si besoin
+  in: IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) # Nom de la conférence / du journal (optionnel)
+  image: images/publis/2018_tpami_resnet-weldon.png
+  # Entrée BibTex (optionnel)
+  bibtex: |
+    @inproceedings{Durand_ResNetWELDON_TPAMI_2018,
+    author = {Durand, Thibaut and Thome, Nicolas and Cord, Matthieu},
+    title = {{Exploiting Negative Evidence for Deep Latent Structured Models}},
+    booktitle = {IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)},
+    year = {2018}
+    }
+  urls:
+     - url: pdfs/2018_TPAMI/Durand_ResNetWELDON_TPAMI_2018.pdf
+       title: Paper
+     - url: pdfs/2018_TPAMI/Durand_ResNetWELDON_TPAMI_2018_supp.pdf
+       title: Supplementary
+       style: default
+     - url: https://github.com/durandtibo/wsl.resnet.torch
+       title: Code
+       style: default
+  highlight: false
+
 - title: "WILDCAT: Weakly Supervised Learning of Deep ConvNets for Image Classification, Pointwise Localization and Segmentation" # Titre (obligatoire)
   authors: Thibaut Durand, Taylor Mordan, Nicolas Thome, Matthieu Cord # Auteurs (obligatoire)
   year: 2017 # Année de publication (obligatoire)
@@ -21,6 +46,9 @@
        style: success
      - url: pdfs/2017_CVPR/Durand_WILDCAT_CVPR_2017_supp.pdf
        title: Supplementary
+       style: default
+     - url: https://github.com/durandtibo/wildcat.pytorch
+       title: Code
        style: default
   highlight: false
 
